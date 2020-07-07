@@ -1,0 +1,234 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SourceFile Checksum="8B9DEFD9DD4CE57E0CAB5944AA52B17913C47F07F3338D0BD5901C85F625123490D1FC4E536CCE96F9CC1C1122B036CE13410C7DBE82B309EDA3BBD8E222D094" Timestamp="1D64D6D2A273FA4" xmlns="http://www.ni.com/PlatformFramework">
+	<SourceModelFeatureSet>
+		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="Web Module: WebVI" Name="http://www.ni.com/NationalInstruments.LabVIEW.HtmlVI" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="Editor" Name="http://www.ni.com/PanelCommon" OldestCompatibleVersion="6.1.0.0" Version="6.1.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
+		<ApplicationVersionInfo Build="8.1.0.50414" Name="LabVIEW NXG" Version="5.0.0" />
+	</SourceModelFeatureSet>
+	<VirtualInstrument Id="a7d09907300a4c5dac6673450a4b64e6" OverridingModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.HTMLVirtualInstrument" xmlns="http://www.ni.com/LabVIEW.VI">
+		<Icon Id="942050e60213448dad9fc27efbe395f1" ListViewIconCrop="0 0 40 40" xmlns="http://www.ni.com/PlatformFramework">
+			<IconPanel Height="[float]40" Id="7235e4fd2cb54b828de807f1bbe80f9c" Left="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+				<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Id="599a5db8ee17452685e72c9670c40a44" Left="[float]0" TemplateName="[string]Gray" Top="[float]0" Width="[float]40">
+					<Rectangle Fill="[SMSolidColorBrush]#ff727272" Id="6fc558fb9fa148ce950f276311d5b3b8" IsHitTestVisible="[bool]False" Left="[float]0" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+					<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" Id="a4f4385a90624559806b3bb68607ec35" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+					<FileNameText Attached="[bool]True" Id="7d353e4bc6ed44b39cc91d1758121065" Left="[float]0" Margin="[SMThickness]2,2,2,2" SizeMode="[TextModelSizeMode]AutoFont" Text="[string]குறளிசை" TextAlignment="[TextAlignment]Center" TextWrapping="[TextWrapping]Wrap" Top="[float]0" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden">
+						<FontSetting FontFamily="Segoe UI" FontSize="6" Id="da4ecff7817e4e10ba3377a53077da88" />
+					</FileNameText>
+				</IconTemplate>
+			</IconPanel>
+		</Icon>
+		<ConnectorPane Height="40" Id="eddcd133c594567adf558a0768c7c7d" ListViewHeight="85" ListViewWidth="150" Width="40" xmlns="http://www.ni.com/PlatformFramework">
+			<ConnectorPaneTerminal ListViewHotspot="0 35" Parameter="9497caf3ccf3417aa4c3c7435f906224" />
+			<ConnectorPaneTerminal Hotspot="0 15" />
+			<ConnectorPaneTerminal Hotspot="0 25" />
+			<ConnectorPaneTerminal Hotspot="0 35" />
+			<ConnectorPaneTerminal Hotspot="15 0" />
+			<ConnectorPaneTerminal Hotspot="25 0" />
+			<ConnectorPaneTerminal Hotspot="40 5" ListViewHotspot="150 65" Parameter="75d8ce75f2e447c6ad8f9bca4a9099df" />
+			<ConnectorPaneTerminal Hotspot="40 15" />
+			<ConnectorPaneTerminal Hotspot="40 25" />
+			<ConnectorPaneTerminal Hotspot="40 35" ListViewHotspot="150 50" Parameter="a8038bfce4ab4954958cd0cfccc16fdb" />
+			<ConnectorPaneTerminal Hotspot="15 40" />
+			<ConnectorPaneTerminal Hotspot="25 40" />
+		</ConnectorPane>
+		<DiagramUnplacedItems Id="805a729de3be4bebb8f0ecf21ebc6235" xmlns="http://www.ni.com/MocCommon" />
+		<FrontPanelUnplacedItems Id="a41f9e00763b42988db984c0a83d88ef" Left="[float]0" PanelSizeMode="Fixed" Top="[float]0" />
+		<BlockDiagram Id="7a0305cd9176400281804bbc34394edc">
+			<MethodCall Bounds="585 320 40 40" Id="a7b07b4338a442abadc804ed8e37a8a8" ResolveFailedHint="PlayAudio" Signature="@0f95777334a242e0817a470cd651ea80" Target="Library::குறளிசை.jsli::PlayAudio" xmlns="http://www.ni.com/MocCommon">
+				<p.MethodDeclaration>
+					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+						<Parameter Id="L1" Desc="X" />
+						<Parameter Id="L3" Desc="error in" />
+						<Parameter Id="R0" Desc="Z" />
+						<Parameter Id="R3" Desc="error out" />
+					</MethodDeclaration>
+				</p.MethodDeclaration>
+				<Terminal DataType="String" Direction="Input" Hotspot="0 15" Id="L1" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Error" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="String" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Error" Direction="Output" Hotspot="40 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
+			</MethodCall>
+			<Wire Id="dadc62e44ed04e489437fc3492d972d3" Joints="N(44798553373541cdb8f7f6b3f75e1fbe:outString)|(575,335) N(a7b07b4338a442abadc804ed8e37a8a8:L1)|(585,335)" xmlns="http://www.ni.com/PlatformFramework" />
+			<FormatIntoString Bounds="535 330 40 50" Id="44798553373541cdb8f7f6b3f75e1fbe" Terminals="formatString=da97d7b9332c468e8af836db61c5b775, initString=197df9cc39634a6bac0e47467f4ba6d7, outString=dadc62e44ed04e489437fc3492d972d3, c0t0v=e0a90e23799c47ceb26148959261353f, c1t0v=b247fb524b6c44d7b4c25e27ac522566" VerticalChunkCount="2" />
+			<Literal Bounds="410 275 145 15" DataType="String" Id="537012c1400845c6a38d9220e9e44195" Label="3c104a209a1f4708b773ab297e6b17d7" xmlns="http://www.ni.com/MocCommon">
+				<p.Data>%s/kural-%04d.mp3</p.Data>
+				<StringBehavior SizeToContent="False" TextDisplayMode="Default" />
+			</Literal>
+			<Literal Bounds="440 295 80 15" DataType="String" Id="467321fe2bdb44c4b136400945ce8aa0" Label="aa553a9ebb81401ca6925662b1bdd20c" xmlns="http://www.ni.com/MocCommon">
+				<p.Data>குறளிசை/</p.Data>
+				<StringBehavior TextDisplayMode="Default" />
+			</Literal>
+			<Wire Id="da97d7b9332c468e8af836db61c5b775" Joints="N(537012c1400845c6a38d9220e9e44195:Out)|(555,280) h(5) N(44798553373541cdb8f7f6b3f75e1fbe:formatString)|(560,330)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="197df9cc39634a6bac0e47467f4ba6d7" Joints="N(467321fe2bdb44c4b136400945ce8aa0:Out)|(520,300) h(10) v(35) N(44798553373541cdb8f7f6b3f75e1fbe:initString)|(535,335)" xmlns="http://www.ni.com/PlatformFramework" />
+			<CaseStructure Bounds="405 315 100 70" DataType="UInt16" Default="d1834fe731b14ff4a19ad1636cf0a9af" Id="98dce1600fd046d188018359083d4688" Selected="11ce07c0c34142eeb6bd711a99fc427f" UserSelectorBounds="0 0 100 16.8">
+				<CaseStructure.Case Bounds="5 5 90 60" Id="d1834fe731b14ff4a19ad1636cf0a9af" Pattern="1..380, Default">
+					<Literal Bounds="25 40 50 15" DataType="String" Id="9a5c2458fb1e44aab2b67dc34ce319ca" Label="b4c959422a1240d6ad8f7ca106463b75" xmlns="http://www.ni.com/MocCommon">
+						<p.Data>அறம்</p.Data>
+						<StringBehavior TextDisplayMode="Default" />
+					</Literal>
+					<NodeLabel AttachedTo="9a5c2458fb1e44aab2b67dc34ce319ca" Bounds="25 22 30 15" Id="b4c959422a1240d6ad8f7ca106463b75" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+						<p.Text>initial string</p.Text>
+					</NodeLabel>
+					<Wire Id="4b2f9dd7395c4406b924f591129463c1" Joints="N(9a5c2458fb1e44aab2b67dc34ce319ca:Out)|(75,45) N(df3eee65e0cd4324913eb83dd29d94de:d1834fe731b14ff4a19ad1636cf0a9af)|(86,45)" xmlns="http://www.ni.com/PlatformFramework" />
+				</CaseStructure.Case>
+				<CaseStructure.Case Bounds="5 5 90 60" Id="11ce07c0c34142eeb6bd711a99fc427f" Pattern="381..1080">
+					<Literal Bounds="5 40 70 15" DataType="String" Id="b1ea22c9d46a423295c61b4e28c3a6fb" Label="4e1e15a0974747fb8e907b2aeba14524" xmlns="http://www.ni.com/MocCommon">
+						<p.Data>பொருள்</p.Data>
+						<StringBehavior TextDisplayMode="Default" />
+					</Literal>
+					<NodeLabel AttachedTo="b1ea22c9d46a423295c61b4e28c3a6fb" Bounds="5 22 30 15" Id="4e1e15a0974747fb8e907b2aeba14524" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+						<p.Text>initial string</p.Text>
+					</NodeLabel>
+					<Wire Id="4fd21ea94f6140218977f14befb634da" Joints="N(b1ea22c9d46a423295c61b4e28c3a6fb:Out)|(75,45) N(df3eee65e0cd4324913eb83dd29d94de:11ce07c0c34142eeb6bd711a99fc427f)|(86,45)" xmlns="http://www.ni.com/PlatformFramework" />
+				</CaseStructure.Case>
+				<CaseStructure.Case Bounds="5 5 90 60" Id="191e5c3e69e444497dc7009f116e6a3" Pattern="1081..1330">
+					<Literal Bounds="10 40 65 15" DataType="String" Id="b12cdbfa90a74e86b0286a222a414e45" Label="dce26acffbec41baa031e37e47cfa4e5" xmlns="http://www.ni.com/MocCommon">
+						<p.Data>இன்பம்</p.Data>
+						<StringBehavior TextDisplayMode="Default" />
+					</Literal>
+					<NodeLabel AttachedTo="b12cdbfa90a74e86b0286a222a414e45" Bounds="10 22 30 15" Id="dce26acffbec41baa031e37e47cfa4e5" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+						<p.Text>initial string</p.Text>
+					</NodeLabel>
+					<Wire Id="51e14d0b537844b09027e8dc36766a44" Joints="N(b12cdbfa90a74e86b0286a222a414e45:Out)|(75,45) N(df3eee65e0cd4324913eb83dd29d94de:191e5c3e69e444497dc7009f116e6a3)|(86,45)" xmlns="http://www.ni.com/PlatformFramework" />
+				</CaseStructure.Case>
+				<CaseStructure.Selector Bounds="-4 50 13 10" Docking="Left" Id="4771cfd0b99f4e358732d71cf67d61b6" Terminals="98dce1600fd046d188018359083d4688=b247fb524b6c44d7b4c25e27ac522566, d1834fe731b14ff4a19ad1636cf0a9af, 11ce07c0c34142eeb6bd711a99fc427f, 191e5c3e69e444497dc7009f116e6a3" />
+				<CaseStructure.Tunnel Bounds="91 45 13 10" Docking="Right" Id="df3eee65e0cd4324913eb83dd29d94de" Terminals="98dce1600fd046d188018359083d4688=e0a90e23799c47ceb26148959261353f, d1834fe731b14ff4a19ad1636cf0a9af=4b2f9dd7395c4406b924f591129463c1, 11ce07c0c34142eeb6bd711a99fc427f=4fd21ea94f6140218977f14befb634da, 191e5c3e69e444497dc7009f116e6a3=51e14d0b537844b09027e8dc36766a44" />
+			</CaseStructure>
+			<Wire Id="e0a90e23799c47ceb26148959261353f" Joints="N(df3eee65e0cd4324913eb83dd29d94de:98dce1600fd046d188018359083d4688)|(509,365) N(44798553373541cdb8f7f6b3f75e1fbe:c0t0v)|(535,365)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="b247fb524b6c44d7b4c25e27ac522566" Joints="N(7ececd593f124461aec7289f38b8b547:Value)|(354,370) h(41) B(1) N(4771cfd0b99f4e358732d71cf67d61b6:98dce1600fd046d188018359083d4688)|(401,370) B(1) v(25) h(135) v(-20) N(44798553373541cdb8f7f6b3f75e1fbe:c1t0v)|(535,375)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="cb8dd0c2a7074e6b8d45268bc0dd7d03" Joints="N(a7b07b4338a442abadc804ed8e37a8a8:R0)|(625,325) N(7a0ab793ccbe42a680b5ce5a317d20ca:Value)|(648,325)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="eab325ed92e644ee8d5e8996a2d7dee7" Joints="N(a7b07b4338a442abadc804ed8e37a8a8:R3)|(625,355) N(c1114a833ea74fd4a6b0e8a23e5921b7:Value)|(648,355)" xmlns="http://www.ni.com/PlatformFramework" />
+			<DataAccessor Bounds="314 365 40 15" DataItem="9497caf3ccf3417aa4c3c7435f906224" Id="7ececd593f124461aec7289f38b8b547" Label="9d3a20a393cb4faba10f720e2f6d22b3" xmlns="http://www.ni.com/MocCommon">
+				<Terminal DataType="UInt16" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<DataAccessor Bounds="645 320 40 15" DataItem="75d8ce75f2e447c6ad8f9bca4a9099df" Id="7a0ab793ccbe42a680b5ce5a317d20ca" Label="714249c084c645dda2d3e27f2e59b4fd" xmlns="http://www.ni.com/MocCommon">
+				<Terminal DataType="String" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<DataAccessor Bounds="645 350 40 15" DataItem="a8038bfce4ab4954958cd0cfccc16fdb" Id="c1114a833ea74fd4a6b0e8a23e5921b7" Label="f505de1f5df140a2bbf6f9ea4f4ab672" xmlns="http://www.ni.com/MocCommon">
+				<Terminal DataType="Error" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<NodeLabel AttachedTo="537012c1400845c6a38d9220e9e44195" Bounds="410 257 30 15" Id="3c104a209a1f4708b773ab297e6b17d7" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>format string</p.Text>
+			</NodeLabel>
+			<NodeLabel AttachedTo="467321fe2bdb44c4b136400945ce8aa0" Bounds="440 277 30 15" Id="aa553a9ebb81401ca6925662b1bdd20c" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>initial string</p.Text>
+			</NodeLabel>
+			<NodeLabel AttachedTo="7ececd593f124461aec7289f38b8b547" Bounds="242 365 67 14" Id="9d3a20a393cb4faba10f720e2f6d22b3" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>தொடக்கம்</p.Text>
+			</NodeLabel>
+			<NodeLabel AttachedTo="7a0ab793ccbe42a680b5ce5a317d20ca" Bounds="690 320 29 14" Id="714249c084c645dda2d3e27f2e59b4fd" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>Kural</p.Text>
+			</NodeLabel>
+			<NodeLabel AttachedTo="c1114a833ea74fd4a6b0e8a23e5921b7" Bounds="690 350 50 14" Id="f505de1f5df140a2bbf6f9ea4f4ab672" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>error out</p.Text>
+			</NodeLabel>
+		</BlockDiagram>
+		<HtmlFrontPanel Height="[float]768" HtmlPanel="[bool]False" Id="a237606a5bf54207b6aafcf635bc9d04" Left="[float]0" PanelSizeMode="Fixed" Top="[float]0" Width="[float]1024" xmlns="http://www.ni.com/NationalInstruments.LabVIEW.HtmlVI">
+			<NumericText BaseName="[string]Numeric" Height="[float]24" Id="5fa95b6ebcca4da3adadd95470a77cd5" Interval="[ushort]1" IsReadOnly="[bool]False" Label="[UIModel]a085c3f2612a44b0b4c87c4e162a40a8" Left="[float]100" RadixBase="[RadixBase]Decimal" TabIndex="[int]0" Top="[float]116" Value="{DataItemBinding Id=9497caf3ccf3417aa4c3c7435f906224}" ValueFormatter="[string]Decimal, Uppercase, Signed" ValueType="[Type]UInt16" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<StringControl AcceptsReturn="[bool]True" BaseName="[string]String" Height="[float]24" HorizontalScrollBarVisibility="[ScrollBarVisibility]Hidden" Id="59981e7cb23d470f821f245009bc5185" IsReadOnly="[bool]True" Label="[UIModel]fc526a1eb63e44d8b75434f2b41bdf90" Left="[float]196" TabIndex="[int]1" Text="{DataItemBinding Id=75d8ce75f2e447c6ad8f9bca4a9099df}" Top="[float]116" VerticalScrollBarVisibility="[ScrollBarVisibility]Auto" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<Cluster BaseName="[string]Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]Error" Height="[float]176" Id="ac6e979eee624dcdbeafecfbf59b2601" Label="[UIModel]18d1c0a6831342dcacd7a7eeca8db521" Left="[float]196" TabIndex="[int]2" Top="[float]180" Value="{DataItemBinding Id=a8038bfce4ab4954958cd0cfccc16fdb}" Width="[float]176" xmlns="http://www.ni.com/PanelCommon">
+				<LED ContentVisibility="[Visibility]Collapsed" Height="[float]24" Id="bad36d7073c348c5ac98379dbbee59ec" IsReadOnly="[bool]True" Label="[UIModel]4ba20520aec74054bf23ce141b676604" Left="[float]8" Shape="[LEDShape]Round" Top="[float]24" TrueBackground="[SMSolidColorBrush]#ffff0000" Value="{ClusterBinding FieldName=status}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+				<Label Height="[float]16" Id="4ba20520aec74054bf23ce141b676604" LabelOwner="[UIModel]bad36d7073c348c5ac98379dbbee59ec" Left="[float]8" Text="[string]status" Top="[float]4" Width="[float]32" />
+				<NumericText Height="[float]24" Id="92112434023b41c0a0e5c96cb6b0283a" Interval="[int]1" IsReadOnly="[bool]True" Label="[UIModel]a3d7a86eb49c4687856684b5647d5467" Left="[float]64" RadixBase="[RadixBase]Decimal" RadixVisibility="[SMVisibility]Visible" Top="[float]24" Value="{ClusterBinding FieldName=code}" ValueFormatter="[string]Decimal, Uppercase, Signed" ValueType="[Type]Int32" Width="[float]104" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+				<Label Height="[float]16" Id="a3d7a86eb49c4687856684b5647d5467" LabelOwner="[UIModel]92112434023b41c0a0e5c96cb6b0283a" Left="[float]64" Text="[string]code" Top="[float]4" Width="[float]26" />
+				<StringControl AcceptsReturn="[bool]True" Height="[float]96" Id="19dd8808821549cd87a38e61ea5c6171" IsReadOnly="[bool]True" Label="[UIModel]3806c290523047b3b518921b0cd859dc" Left="[float]8" Text="{ClusterBinding FieldName=source}" Top="[float]72" Width="[float]160" WordWrap="[bool]True" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+				<Label Height="[float]16" Id="3806c290523047b3b518921b0cd859dc" LabelOwner="[UIModel]19dd8808821549cd87a38e61ea5c6171" Left="[float]8" Text="[string]source" Top="[float]52" Width="[float]35" />
+			</Cluster>
+			<Label Height="[float]16" Id="a085c3f2612a44b0b4c87c4e162a40a8" LabelOwner="[UIModel]5fa95b6ebcca4da3adadd95470a77cd5" Left="[float]100" Text="[string]தொடக்கம்" Top="[float]96" Width="[float]73" xmlns="http://www.ni.com/PanelCommon" />
+			<Label Height="[float]16" Id="fc526a1eb63e44d8b75434f2b41bdf90" LabelOwner="[UIModel]59981e7cb23d470f821f245009bc5185" Left="[float]196" Text="[string]Kural" Top="[float]96" Width="[float]27" xmlns="http://www.ni.com/PanelCommon" />
+			<Label Height="[float]16" Id="18d1c0a6831342dcacd7a7eeca8db521" LabelOwner="[UIModel]ac6e979eee624dcdbeafecfbf59b2601" Left="[float]196" Text="[string]error out" Top="[float]160" Width="[float]47" xmlns="http://www.ni.com/PanelCommon" />
+		</HtmlFrontPanel>
+		<DataItem AdaptToDiagramType="True" CallDirection="Input" CallIndex="0" DataType="UInt16" Id="9497caf3ccf3417aa4c3c7435f906224" Name="தொடக்கம்" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>0</p.DefaultValue>
+		</DataItem>
+		<DataItem AdaptToDiagramType="True" CallDirection="Output" CallIndex="1" DataType="String" Id="75d8ce75f2e447c6ad8f9bca4a9099df" Name="Kural" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>""</p.DefaultValue>
+		</DataItem>
+		<DataItem CallDirection="Output" CallIndex="2" DataType="Error" Id="a8038bfce4ab4954958cd0cfccc16fdb" Name="error out" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>
+				<Cluster>
+					<Field1>False</Field1>
+					<Field2>0</Field2>
+					<Field3>""</Field3>
+				</Cluster>
+			</p.DefaultValue>
+			<p.TypeDefinitionTargets xmlns="http://www.ni.com/PanelCommon">
+				<TypeDefinitionTarget TargetName="NI::G Core::Error::Error.gtype" />
+			</p.TypeDefinitionTargets>
+		</DataItem>
+	</VirtualInstrument>
+	<DataTypeReferenceTable xmlns="http://www.ni.com/PlatformFramework">
+		<p.TypeReference TypeId="0f95777334a242e0817a470cd651ea80">
+			<Attributed AttributedType="@5833e2d78d2c4afaae40aaa202fa1e17">
+				<AttributeValues>
+					<AttributeValue Name="NationalInstruments.Compiler.ParameterCallIndex" Value="[ParameterCallIndexFields]0|1|0|1" />
+					<AttributeValue Name="NI.ConnectorPaneHeight" Value="[int]40" />
+					<AttributeValue Name="NI.ConnectorPaneWidth" Value="[int]40" />
+				</AttributeValues>
+			</Attributed>
+		</p.TypeReference>
+		<p.TypeReference TypeId="5833e2d78d2c4afaae40aaa202fa1e17">
+			<Function Id="1" IsStatic="True" IsConstructor="False" Name="PlayAudio" ReturnType="Void" GenericTypeDefinition="Void">
+				<Parameters>
+					<Attributed AttributedType="@4eb30e86daaa46569b6e766eb4ee2529">
+						<AttributeValues>
+							<AttributeValue Name="NI.UserDefinedName" Value="[string]X" />
+						</AttributeValues>
+					</Attributed>
+					<Attributed AttributedType="@e644d82de5364f9caf3924d31d60d8ce">
+						<AttributeValues>
+							<AttributeValue Name="NI.UserDefinedName" Value="[string]error in" />
+						</AttributeValues>
+					</Attributed>
+					<Attributed AttributedType="@7ca5268ed68f4f4fbcfcc3205d86775d">
+						<AttributeValues>
+							<AttributeValue Name="NI.UserDefinedName" Value="[string]Z" />
+						</AttributeValues>
+					</Attributed>
+					<Attributed AttributedType="@17bff48168cc4e78885944fac1c367fa">
+						<AttributeValues>
+							<AttributeValue Name="NI.UserDefinedName" Value="[string]error out" />
+						</AttributeValues>
+					</Attributed>
+				</Parameters>
+			</Function>
+		</p.TypeReference>
+		<p.TypeReference TypeId="4eb30e86daaa46569b6e766eb4ee2529">
+			<Parameter InputParameterPassingRule="Recommended" OutputParameterPassingRule="NotAllowed" Name="L1" DataType="String" />
+		</p.TypeReference>
+		<p.TypeReference TypeId="e644d82de5364f9caf3924d31d60d8ce">
+			<Parameter InputParameterPassingRule="Recommended" OutputParameterPassingRule="NotAllowed" Name="L3" DataType="Error" />
+		</p.TypeReference>
+		<p.TypeReference TypeId="7ca5268ed68f4f4fbcfcc3205d86775d">
+			<Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Recommended" Name="R0" DataType="String" />
+		</p.TypeReference>
+		<p.TypeReference TypeId="17bff48168cc4e78885944fac1c367fa">
+			<Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Recommended" Name="R3" DataType="Error" />
+		</p.TypeReference>
+	</DataTypeReferenceTable>
+	<IconTable xmlns="http://www.ni.com/PlatformFramework">
+		<p.IconModel Target="Library::குறளிசை.jsli::PlayAudio">
+			<MergeScript>
+				<MergeItem Path="." IsPrimary="True">
+					<Icon ListViewIconCrop="0 0 40 40">
+						<IconPanel Height="[float]40" Left="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+							<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Left="[float]0" TemplateName="[string]Gray" Top="[float]0" Width="[float]40">
+								<Rectangle Fill="[SMSolidColorBrush]#ff727272" IsHitTestVisible="[bool]False" Left="[float]0" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+								<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+								<FileNameText Attached="[bool]True" Left="[float]0" Margin="[SMThickness]2,2,2,2" SizeMode="[TextModelSizeMode]AutoFont" Text="[string]PlayAudio" TextAlignment="[TextAlignment]Center" TextWrapping="[TextWrapping]Wrap" Top="[float]0" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden">
+									<FontSetting FontFamily="Segoe UI" FontSize="6" />
+								</FileNameText>
+							</IconTemplate>
+							<IconTemplate Height="[float]40" IsHitTestVisible="[bool]False" Left="[float]0" TemplateName="[string][Comp]இசை.gcomp" Top="[float]0" Width="[float]40" />
+							<IconTemplate Height="[float]40" IsHitTestVisible="[bool]False" Left="[float]0" TemplateName="[string][JSLI]&lt;இசை.jsli&gt;" Top="[float]0" Width="[float]40" />
+						</IconPanel>
+					</Icon>
+				</MergeItem>
+			</MergeScript>
+		</p.IconModel>
+	</IconTable>
+</SourceFile>

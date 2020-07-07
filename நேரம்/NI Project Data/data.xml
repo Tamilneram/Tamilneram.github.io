@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SourceFile Checksum="0656A37F7BC9A467C0C184D4CD61B25070ADF3C7F82254109C53E1E01BB3ED8E4BDDF8E2D1CD190B0087390542311628F02DF29E1F969A71386504D0DDB709E2" Timestamp="1D62212FCE65C04" xmlns="http://www.ni.com/PlatformFramework">
+	<SourceModelFeatureSet>
+		<ParsableNamespace AssemblyFileVersion="7.1.0.50148" FeatureSetName="Data" Name="http://www.ni.com/Data" OldestCompatibleVersion="6.2.0.0" Version="6.2.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="7.1.0.50148" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="7.1.0.49153" Version="7.1.0.49153" />
+		<ApplicationVersionInfo Build="7.1.0.50148" Name="LabVIEW NXG" Version="4.0.0" />
+	</SourceModelFeatureSet>
+	<DataIndexDefinition xmlns="http://www.ni.com/Data" />
+	<EnvoyManagerFile Id="2c957bf11d92482a8d13be52f73fc362" xmlns="http://www.ni.com/PlatformFramework">
+		<EnvoyManagerRootEnvoy Id="af6f49234088471981d0d6466699548b" ModelDefinitionType="EnvoyManagerRootEnvoy" Name="RootEnvoy" />
+		<NameScopingEnvoy AutomaticallyResolveUp="True" Id="591fea6ebe6a4c438b607292f32b4245" Name="data.xml" NameTracksFileName="True" />
+	</EnvoyManagerFile>
+</SourceFile>

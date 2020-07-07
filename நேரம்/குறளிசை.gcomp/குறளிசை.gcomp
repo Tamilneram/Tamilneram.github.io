@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SourceFile Checksum="8E8E11BA1D50CC6B8FED984381B3D2785D062495B28A54B3E551EC5DBAE63A7ABA8EB1B0FD902C4B75C266A7D908C1E931AF49CE22C6522850C6B80940663432" Timestamp="1D64D6F92D6CE21" xmlns="http://www.ni.com/PlatformFramework">
+	<SourceModelFeatureSet>
+		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="GComponentFeatureSet" Name="http://www.ni.com/GComponent.xsd" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="JavaScript Library" Name="http://www.ni.com/JavaScriptLibrary" OldestCompatibleVersion="6.4.0.49152" Version="6.4.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
+		<ApplicationVersionInfo Build="8.1.0.50414" Name="LabVIEW NXG" Version="5.0.0" />
+	</SourceModelFeatureSet>
+	<ComponentDefinition AutoIncrementOnBuild="True" DefaultConfigurationName="Configuration1" Id="d7290d9f019748ceb1747b3a7664a831" RootNamespaceId="690f44d7f3554553beb80974fc241cdb" xmlns="http://www.ni.com/GComponent.xsd">
+		<Icon Id="9581bcceb65144e09285f423feb976c9" ListViewIconCrop="0 0 40 40" xmlns="http://www.ni.com/PlatformFramework">
+			<IconPanel Height="[float]40" Id="aaa21e0c0384460ab21069cd11e0dad0" Left="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+				<IconTemplate Height="[float]40" Id="e8053796ee8e4a8db8ed1a8258cba6da" Left="[float]0" TemplateName="[string]Blank" Top="[float]0" Width="[float]40" />
+			</IconPanel>
+		</Icon>
+		<CompilerSymbolTable Id="3e6ee0b27354ff79449413823de4010" xmlns="http://www.ni.com/PlatformFramework" />
+		<ComponentConfiguration Id="b9d65a75834f468fb89feb5d599b86bb" Name="Configuration1">
+			<CompilerSymbolTable Id="51fe5622d12940b9a006747cfcaac0f9" xmlns="http://www.ni.com/PlatformFramework" />
+			<GLibraryProperties Id="baf7076c1515471f89a41ddf69512ba0" />
+			<ComponentItemProperties AssociatedEnvoyId="b376f57c54b44d3797c2ab40f84153ad" Exported="True" Id="2d6ea4934bf49158fd260d3f4054137" />
+			<ComponentItemProperties AlwaysInclude="True" AssociatedEnvoyId="af874e3c9f704e1c9c0475b19057c564" Id="5fa1c87f62fe4fdb8887eb5dec1a8724" />
+		</ComponentConfiguration>
+	</ComponentDefinition>
+	<EnvoyManagerFile Id="aee4ca70b9b94ea0ae694fdedeee3277" xmlns="http://www.ni.com/PlatformFramework">
+		<EnvoyManagerRootEnvoy Id="b22ffb7829014c1d8154310476f80581" ModelDefinitionType="EnvoyManagerRootEnvoy" Name="RootEnvoy" />
+		<EmbeddedDefinitionReference Id="d8f32b90cab7413797beb4a5d30200f1" ModelDefinitionType="{http://www.ni.com/GComponent.xsd}ComponentDefinitionEnvoyHierarchyRoot" Name="Global namespace">
+			<ComponentDefinitionEnvoyHierarchyRoot xmlns="http://www.ni.com/GComponent.xsd" />
+			<NameScopingEnvoy AutomaticallyResolveUp="True" Id="690f44d7f3554553beb80974fc241cdb" Name="Library">
+				<SourceFileReference Bindings="EnvoyManager" Id="b376f57c54b44d3797c2ab40f84153ad" ModelDefinitionType="{http://www.ni.com/JavaScriptLibrary}JavaScriptLibrary" Name="குறளிசை.jsli" StoragePath="குறளிசை.jsli" />
+				<FileReference Bindings=".js" Id="af874e3c9f704e1c9c0475b19057c564" ModelDefinitionType="{http://www.ni.com/PlatformFramework}ExternalFile" Name="குறளிசை.js" StoragePath="குறளிசை.js" />
+			</NameScopingEnvoy>
+		</EmbeddedDefinitionReference>
+		<NameScopingEnvoy Id="d68405f1e36c4f55bf2401779451558d" Name="குறளிசை.gcomp" NameTracksFileName="True">
+			<ContentReference ContentIdentifier="b9d65a75834f468fb89feb5d599b86bb" Id="e512333e0ebe42c2839076b3dceb3000" Name="Configuration1" OverridingModelDefinitionType="{http://www.ni.com/GComponent.xsd}ComponentConfiguration" />
+		</NameScopingEnvoy>
+	</EnvoyManagerFile>
+</SourceFile>

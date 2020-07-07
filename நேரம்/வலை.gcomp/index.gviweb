@@ -1,0 +1,1771 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SourceFile Checksum="6BD71E656D851CA748B0825254FED10C3979B87EE78F0444ED94EF324DA6776FC4C9FA908379F447C5CA371B951F8056A0B4AE3031150EFCAB523930277384DB" Timestamp="1D65400219C5A15" xmlns="http://www.ni.com/PlatformFramework">
+	<SourceModelFeatureSet>
+		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="Web Module: WebVI" Name="http://www.ni.com/NationalInstruments.LabVIEW.HtmlVI" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="Editor" Name="http://www.ni.com/PanelCommon" OldestCompatibleVersion="6.1.0.0" Version="6.1.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
+		<ApplicationVersionInfo Build="8.1.0.50414" Name="LabVIEW NXG" Version="5.0.0" />
+	</SourceModelFeatureSet>
+	<VirtualInstrument CustomTitle="நேரம்-தொடர்முறை" Id="1" OverridingModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.HTMLVirtualInstrument" xmlns="http://www.ni.com/LabVIEW.VI">
+		<Icon Id="2" ListViewIconCrop="0 0 40 40" xmlns="http://www.ni.com/PlatformFramework">
+			<IconPanel Height="[float]40" Id="37" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+				<Canvas Id="38" Left="[float]0" Top="[float]0">
+					<Path Data="[PathGeometry]M 39,36 C 39,37.6500015 37.6500015,39 36,39 L 4,39 C 2.3499999,39 1,37.6500015 1,36 L 1,4 C 1,2.3499999 2.3499999,1 4,1 L 36,1 C 37.6500015,1 39,2.3499999 39,4 L 39,36 Z" Fill="[SMSolidColorBrush]#ffffffff" Height="[float]40" Id="39" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" Top="[float]0" Width="[float]40" />
+					<Path Data="[PathGeometry]M 36,1 C 37.6539993,1 39,2.34599996 39,4 L 39,36 C 39,37.6539993 37.6539993,39 36,39 L 4,39 C 2.34599996,39 1,37.6539993 1,36 L 1,4 C 1,2.34599996 2.34599996,1 4,1 L 36,1 M 36,0 L 4,0 C 1.79999995,0 0,1.79999995 0,4 L 0,36 C 0,38.2000008 1.79999995,40 4,40 L 36,40 C 38.2000008,40 40,38.2000008 40,36 L 40,4 C 40,1.79999995 38.2000008,0 36,0 L 36,0 Z" Fill="[SMSolidColorBrush]#ff727272" Height="[float]40" Id="40" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" Top="[float]0" Width="[float]40" />
+					<Path Data="[PathGeometry]M 38,36 C 38,37.0999985 37.0999985,38 36,38 L 4,38 C 2.9000001,38 2,37.0999985 2,36 L 2,4 C 2,2.9000001 2.9000001,2 4,2 L 36,2 C 37.0999985,2 38,2.9000001 38,4 L 38,36 Z" Fill="[SMSolidColorBrush]#ffebebeb" Height="[float]40" Id="41" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" Top="[float]0" Width="[float]40" />
+					<Path Data="[PathGeometry]M 30.1270008,18.5489998 C 31.2910004,19.2229996 31.2910004,20.3260002 30.1270008,21 L 11.1169996,31.7119999 C 9.95300007,32.3860016 9,31.8369999 9,30.4909992 L 9,9.50899982 C 9,8.16399956 9.95300007,7.61399984 11.1169996,8.28800011 L 30.1270008,18.5489998 Z M 21,19 L 17,19 L 17,15 L 15,15 L 15,19 L 11,19 L 11,21 L 15,21 L 15,25 L 17,25 L 17,21 L 21,21 L 21,19 Z" Fill="[SMSolidColorBrush]#b2000000" Height="[float]40" Id="42" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" Top="[float]0" Width="[float]40" />
+					<Path Data="[PathGeometry]M 38,10 L 38,19 L 35.9080009,19 C 35.7010002,18.4190006 35.1520004,18 34.5,18 C 33.6720009,18 33,18.6720009 33,19.5 C 33,20.3279991 33.6720009,21 34.5,21 C 35.1520004,21 35.7019997,20.5809994 35.9080009,20 L 38,20 L 38,30 L 16.1919994,30 L 30.618,21.8710003 C 31.5,21.3610001 32,20.5979996 32,19.7740002 C 32,18.9500008 31.5,18.1879997 30.6280003,17.6830006 L 16.3929996,10 L 38,10 Z M 2,10 L 2,14 L 4.09200001,14 C 4.29899979,13.4189997 4.84800005,13 5.5,13 C 6.32800007,13 7,13.6719999 7,14.5 C 7,15.3280001 6.32800007,16 5.5,16 C 4.84800005,16 4.29799986,15.5810003 4.09200001,15 L 2,15 L 2,25 L 4.09200001,25 C 4.29899979,24.4190006 4.84800005,24 5.5,24 C 6.32800007,24 7,24.6720009 7,25.5 C 7,26.3279991 6.32800007,27 5.5,27 C 4.84800005,27 4.29799986,26.5809994 4.09200001,26 L 2,26 L 2,30 L 8,30 L 8,10 L 2,10 Z" Fill="[SMSolidColorBrush]#ff62839d" Height="[float]40" Id="43" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" Top="[float]0" Width="[float]40" />
+				</Canvas>
+			</IconPanel>
+		</Icon>
+		<ConnectorPane Height="40" Id="9" ListViewHeight="40" ListViewWidth="150" Width="40" xmlns="http://www.ni.com/PlatformFramework">
+			<ConnectorPaneTerminal />
+			<ConnectorPaneTerminal Hotspot="0 15" />
+			<ConnectorPaneTerminal Hotspot="0 25" />
+			<ConnectorPaneTerminal Hotspot="0 35" />
+			<ConnectorPaneTerminal Hotspot="15 0" />
+			<ConnectorPaneTerminal Hotspot="25 0" />
+			<ConnectorPaneTerminal Hotspot="40 5" />
+			<ConnectorPaneTerminal Hotspot="40 15" />
+			<ConnectorPaneTerminal Hotspot="40 25" />
+			<ConnectorPaneTerminal Hotspot="40 35" />
+			<ConnectorPaneTerminal Hotspot="15 40" />
+			<ConnectorPaneTerminal Hotspot="25 40" />
+		</ConnectorPane>
+		<DiagramUnplacedItems Id="10" xmlns="http://www.ni.com/MocCommon">
+			<DataAccessor Bounds="55 405 40 15" DataItem="8a076ec6436940d5bff78f206eaf3f2d" Id="64ad7c8d908d411580e5f3091208b744" Label="95325c5a7784489a8c09cc18353c0b2f">
+				<Terminal DataType="Int32" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<NodeLabel AttachedTo="64ad7c8d908d411580e5f3091208b744" Bounds="-202 405 252 14" Id="95325c5a7784489a8c09cc18353c0b2f" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>திருவள்ளுவர் ஆண்டு  :  நாள்</p.Text>
+			</NodeLabel>
+			<DataAccessor Bounds="50 350 40 15" DataItem="dcd53f6902fa4abab59c64d2bb394629" Id="d04db3fed3eb4ec48f18712cbd18ee0c" Label="dec1b1a2994b4c44bf8f2453e435513b">
+				<Terminal DataType="Int32" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<NodeLabel AttachedTo="d04db3fed3eb4ec48f18712cbd18ee0c" Bounds="-235 350 280 14" Id="dec1b1a2994b4c44bf8f2453e435513b" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>நாழிகை            :               கணம்</p.Text>
+			</NodeLabel>
+			<DataAccessor Bounds="0 0 40 15" DataItem="851333fd2d2f40afabba777bc70a07d8" Id="b08bd4b2191b43e5aaa769dd767af242" Label="c12fb6b5216449b394c8cb5e56b2d463">
+				<Terminal DataType="String" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<NodeLabel AttachedTo="b08bd4b2191b43e5aaa769dd767af242" Bounds="-35 0 30 15" Id="c12fb6b5216449b394c8cb5e56b2d463" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>Next</p.Text>
+			</NodeLabel>
+			<DataAccessor Bounds="55 440 40 15" DataItem="d56d8320f75b47afbd92409ad407f678" Id="4b45d6f9457848139c664692a2e8bd0e" Label="6728671ab1f1495581c523a2bcfea57f">
+				<Terminal DataType="Int32" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<NodeLabel AttachedTo="4b45d6f9457848139c664692a2e8bd0e" Bounds="-211 440 261 14" Id="6728671ab1f1495581c523a2bcfea57f" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>நிமிடம்               :               நொடி</p.Text>
+			</NodeLabel>
+			<DataAccessor Bounds="335 -65 40 15" DataItem="b2d4701b1c024a5b9c91c6eecca9188b" Id="24233780d6d47f889e34651f84e7b2a" Label="91cbf64982a54325a57800cdbdcf7ed2">
+				<Terminal DataType="Int32" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<NodeLabel AttachedTo="24233780d6d47f889e34651f84e7b2a" Bounds="278 -65 52 14" Id="91cbf64982a54325a57800cdbdcf7ed2" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>கிழமை             :           பொழுது</p.Text>
+			</NodeLabel>
+			<DataAccessor Bounds="390 610 40 15" DataItem="4b1e0595233b4a469795d649d91ab3e8" Id="4e19617ee5204cee8296b095629c78b4" Label="ef5fa9ac7e21405bb2d008a68fed19ce">
+				<Terminal DataType="String" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<NodeLabel AttachedTo="4e19617ee5204cee8296b095629c78b4" Bounds="345 610 40 14" Id="ef5fa9ac7e21405bb2d008a68fed19ce" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>Next_2</p.Text>
+			</NodeLabel>
+		</DiagramUnplacedItems>
+		<FrontPanelUnplacedItems Id="11" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Fixed" Top="[float]0" />
+		<BlockDiagram Id="12">
+			<WhileLoop Bounds="-200 10 925 475" DiagramId="17" Id="16">
+				<LoopIteration Bounds="210 115 15 15" Id="18" />
+				<LoopCondition Bounds="125 80 15 15" Id="19" />
+				<Literal Bounds="70 80 25 15" DataType="Boolean" Id="20" Label="21" xmlns="http://www.ni.com/MocCommon">
+					<p.Data>False</p.Data>
+					<BooleanBehavior />
+				</Literal>
+				<NodeLabel AttachedTo="20" Bounds="35 80 30 15" Id="21" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+					<p.Text>stop</p.Text>
+				</NodeLabel>
+				<Wire Id="22" Joints="N(20:Out)|(95,85) N(19:Input)|(125,85)" xmlns="http://www.ni.com/PlatformFramework" />
+				<Literal Bounds="85 425 45 16" DataType="UInt32" Id="24" Label="25" xmlns="http://www.ni.com/MocCommon">
+					<p.Data>1000</p.Data>
+					<NumericBehavior Interpretation="Exact" ValueFormatter="LV:G6" />
+				</Literal>
+				<NodeLabel AttachedTo="24" Bounds="50 425 30 15" Id="25" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+					<p.Text>milliseconds to wait</p.Text>
+				</NodeLabel>
+				<Wire Id="26" Joints="N(24:Out)|(130,430) N(9f2b791db8ca4c3ba51a9b2bf8b6b6d4:multiple to wait)|(140,430)" xmlns="http://www.ni.com/PlatformFramework" />
+				<GetCurrentTime Bounds="5 110 35 30" Id="41c128de37ab42d1ab88deaee0f37802" />
+				<DataAccessor Bounds="200 80 40 15" DataItem="acae751dbbbf4794916c073afcd4378a" Id="ca23717002e54ff2952247cf39e5ed82" Label="7a0d15f169b146c9b94add0e912262d5" xmlns="http://www.ni.com/MocCommon">
+					<Terminal DataType="Int32" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+				</DataAccessor>
+				<NodeLabel AttachedTo="ca23717002e54ff2952247cf39e5ed82" Bounds="245 80 38 14" Id="7a0d15f169b146c9b94add0e912262d5" xmlns="http://www.ni.com/PlatformFramework">
+					<p.Text>நொடி</p.Text>
+				</NodeLabel>
+				<CaseStructure Bounds="330 15 567 440" Id="b271c4efd2b46b98919b85107112231" Selected="cdb5446b20e048ffb3d00215e789dbe1" UserSelectorBounds="240 0 88 16.8">
+					<CaseStructure.Case Bounds="5 5 557 430" Id="cdb5446b20e048ffb3d00215e789dbe1" Pattern="False">
+						<DataAccessor Bounds="120 75 40 15" DataItem="44c7d8a87cf476fa90536d537ed0668" Id="cbf5c301529143ec91cf4e44ecf75fec" Label="67bf7f36bf614406914e37844c694f4b" xmlns="http://www.ni.com/MocCommon">
+							<Terminal DataType="Boolean" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+						</DataAccessor>
+						<NodeLabel AttachedTo="cbf5c301529143ec91cf4e44ecf75fec" Bounds="120 58 28 14" Id="67bf7f36bf614406914e37844c694f4b" xmlns="http://www.ni.com/PlatformFramework">
+							<p.Text>முன்</p.Text>
+						</NodeLabel>
+						<DataAccessor Bounds="120 40 40 15" DataItem="857f4cb876ab4e3e8ac48743c1c0474d" Id="d55086153c7a4c8bbbba7c04a280cd18" Label="93bc323e36a346a7b90aa1ba917a73b9" xmlns="http://www.ni.com/MocCommon">
+							<Terminal DataType="Boolean" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+						</DataAccessor>
+						<NodeLabel AttachedTo="d55086153c7a4c8bbbba7c04a280cd18" Bounds="120 23 56 14" Id="93bc323e36a346a7b90aa1ba917a73b9" xmlns="http://www.ni.com/PlatformFramework">
+							<p.Text>அடுத்தது</p.Text>
+						</NodeLabel>
+						<CaseStructure Bounds="220 85 140 86" Default="60dbcf06923847e3b9ea21a25a5f1a0b" Id="68b04367fa0040358e17d70b1a9f7cba" Selected="e76f4642eb424094b0271ce510b7b40c" UserSelectorBounds="25.6 0 88 16.8">
+							<CaseStructure.Case Bounds="5 5 130 76" Id="60dbcf06923847e3b9ea21a25a5f1a0b" Pattern="False">
+								<Wire Id="e397e042fe32483aabd4a9b7c5a2c114" Joints="N(ca03e64ba5f84470a692ded349a29091:60dbcf06923847e3b9ea21a25a5f1a0b)|(4,40) N(842a421d519f4646bae66b05d750fecb:60dbcf06923847e3b9ea21a25a5f1a0b)|(126,40)" xmlns="http://www.ni.com/PlatformFramework" />
+							</CaseStructure.Case>
+							<CaseStructure.Case Bounds="5 5 130 76" Id="e76f4642eb424094b0271ce510b7b40c" Pattern="True">
+								<Subtract Bounds="85 35 30 30" Id="b7bb302eb3874319b33c7c9798e18a8e" />
+								<Literal Bounds="15 50 40 16" DataType="UInt16" Id="dd25ab91efff4272b8c90b629759ac03" Label="a13eff2fc0b241879c0370a02514639a" xmlns="http://www.ni.com/MocCommon">
+									<p.Data>2</p.Data>
+									<NumericBehavior Interpretation="Exact" ValueFormatter="LV:0" />
+								</Literal>
+								<NodeLabel AttachedTo="dd25ab91efff4272b8c90b629759ac03" Bounds="15 32 30 15" Id="a13eff2fc0b241879c0370a02514639a" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+									<p.Text>y</p.Text>
+								</NodeLabel>
+								<Wire Id="dabdf470a5d340b2b4f94223093f5bfe" Joints="N(b7bb302eb3874319b33c7c9798e18a8e:x-y)|(115,50) h(6) v(-10) N(842a421d519f4646bae66b05d750fecb:e76f4642eb424094b0271ce510b7b40c)|(126,40)" xmlns="http://www.ni.com/PlatformFramework" />
+								<Wire Id="dc541fa6cf9441388ce82cc1ed507e26" Joints="N(ca03e64ba5f84470a692ded349a29091:e76f4642eb424094b0271ce510b7b40c)|(4,40) N(b7bb302eb3874319b33c7c9798e18a8e:x)|(85,40)" xmlns="http://www.ni.com/PlatformFramework" />
+								<Wire Id="df15d356236e4d54b6d76f34abe4ee84" Joints="N(dd25ab91efff4272b8c90b629759ac03:Out)|(55,55) N(b7bb302eb3874319b33c7c9798e18a8e:y)|(85,55)" xmlns="http://www.ni.com/PlatformFramework" />
+							</CaseStructure.Case>
+							<CaseStructure.Selector Bounds="-4 25 13 10" Docking="Left" Id="e1f4b6f5677a4a04b36b0158d11ec3d5" Terminals="68b04367fa0040358e17d70b1a9f7cba=abef722264c24b0389a9bbbe7ade5416, 60dbcf06923847e3b9ea21a25a5f1a0b, e76f4642eb424094b0271ce510b7b40c" />
+							<CaseStructure.Tunnel Bounds="131 40 13 10" Docking="Right" Id="842a421d519f4646bae66b05d750fecb" Terminals="68b04367fa0040358e17d70b1a9f7cba=3960c8ab7c474ebdb03fced54161bca1, 60dbcf06923847e3b9ea21a25a5f1a0b=e397e042fe32483aabd4a9b7c5a2c114, e76f4642eb424094b0271ce510b7b40c=dabdf470a5d340b2b4f94223093f5bfe" />
+							<CaseStructure.Tunnel Bounds="-4 40 13 10" Docking="Left" Id="ca03e64ba5f84470a692ded349a29091" Terminals="68b04367fa0040358e17d70b1a9f7cba=43c737df5897451ca1d8dd934fc408e0, 60dbcf06923847e3b9ea21a25a5f1a0b=e397e042fe32483aabd4a9b7c5a2c114, e76f4642eb424094b0271ce510b7b40c=dc541fa6cf9441388ce82cc1ed507e26" />
+						</CaseStructure>
+						<LogicalOr Bounds="175 45 25 20" Id="edd6a3dbbe584d4db24eb80566a96b4f" Terminals="o=d8c520abdd084e0bb43aff3cad6d2c79, c0t0v=ab1eddc57c824b89b9e8947a6a037134, c1t0v=abef722264c24b0389a9bbbe7ade5416" />
+						<DataAccessor Bounds="215 280 40 15" DataItem="d37a50139fe2438cb187d5867b5d92c5" Id="54a0083db5c34cdc9f2c44c9f33542c5" Label="98a0135f8cb74f149315f113d4c41206" xmlns="http://www.ni.com/MocCommon">
+							<Terminal DataType="@33c55de015ca49d2a0f221452f9d046e" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+						</DataAccessor>
+						<NodeLabel AttachedTo="54a0083db5c34cdc9f2c44c9f33542c5" Bounds="215 263 41 14" Id="98a0135f8cb74f149315f113d4c41206" xmlns="http://www.ni.com/PlatformFramework">
+							<p.Text>மொழி</p.Text>
+						</NodeLabel>
+						<Wire Id="d8c520abdd084e0bb43aff3cad6d2c79" Joints="N(edd6a3dbbe584d4db24eb80566a96b4f:o)|(200,55) h(175) v(120) N(5bbed28771f844ee8c01a55baab24163:cdb5446b20e048ffb3d00215e789dbe1)|(553,175)" xmlns="http://www.ni.com/PlatformFramework" />
+						<Wire Id="ab1eddc57c824b89b9e8947a6a037134" Joints="N(d55086153c7a4c8bbbba7c04a280cd18:Value)|(160,45) h(5) v(5) N(edd6a3dbbe584d4db24eb80566a96b4f:c0t0v)|(177,50)" xmlns="http://www.ni.com/PlatformFramework" />
+						<Wire Id="d9e75234ad31435f924c1e2d5ce87f31" Joints="N(8710e2d8a8664513ab7c697e27f3fb70:cdb5446b20e048ffb3d00215e789dbe1)|(4,210) h(266) B(1) N(c350a994c56b4e16aa6dc18fb3c30d8a:cdb5446b20e048ffb3d00215e789dbe1)|(553,210) B(1) v(55) N(a717717a0f074d35942da8d71fb2a137:array)|(280,265)" xmlns="http://www.ni.com/PlatformFramework" />
+						<Wire Id="3960c8ab7c474ebdb03fced54161bca1" Joints="N(842a421d519f4646bae66b05d750fecb:68b04367fa0040358e17d70b1a9f7cba)|(364,130) h(6) v(60) N(37878346cdac49f38fad023b82f69840:cdb5446b20e048ffb3d00215e789dbe1)|(553,190)" xmlns="http://www.ni.com/PlatformFramework" />
+						<Wire Id="abef722264c24b0389a9bbbe7ade5416" Joints="N(cbf5c301529143ec91cf4e44ecf75fec:Value)|(160,80) h(10) B(1) v(-20) N(edd6a3dbbe584d4db24eb80566a96b4f:c1t0v)|(177,60) B(1) v(35) N(e1f4b6f5677a4a04b36b0158d11ec3d5:68b04367fa0040358e17d70b1a9f7cba)|(216,115)" xmlns="http://www.ni.com/PlatformFramework" />
+						<ArrayIndex Bounds="280 260 40 30" Id="a717717a0f074d35942da8d71fb2a137" Terminals="array=d9e75234ad31435f924c1e2d5ce87f31, c0t0v=897ba46e3c0b4167beea6ac0778a82ba, c0out=3125cee458214c1e9875f95414c3b5de" />
+						<Wire Id="897ba46e3c0b4167beea6ac0778a82ba" Joints="N(54a0083db5c34cdc9f2c44c9f33542c5:Value)|(255,285) N(a717717a0f074d35942da8d71fb2a137:c0t0v)|(280,285)" xmlns="http://www.ni.com/PlatformFramework" />
+						<DataAccessor Bounds="390 260 40 15" DataItem="8fa20102c1244f50b7dd961005e303ce" Id="f298bf2975bb4a778fc79914a1f95f34" Label="3b7f5475e8a74128817abba6e09f99d0" xmlns="http://www.ni.com/MocCommon">
+							<Terminal DataType="String" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+						</DataAccessor>
+						<NodeLabel AttachedTo="f298bf2975bb4a778fc79914a1f95f34" Bounds="435 260 67 14" Id="3b7f5475e8a74128817abba6e09f99d0" xmlns="http://www.ni.com/PlatformFramework">
+							<p.Text>திருக்குறள்</p.Text>
+						</NodeLabel>
+						<DataAccessor Bounds="235 175 40 15" DataItem="3dc7715d6a1c43f88eb2cdc31ae17a87" Id="77c8877ab6d40b0bf714b5de21eb798" Label="c8e482ccd80d49b7a9ece26efa243cf9" xmlns="http://www.ni.com/MocCommon">
+							<Terminal DataType="UInt16" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+						</DataAccessor>
+						<NodeLabel AttachedTo="77c8877ab6d40b0bf714b5de21eb798" Bounds="280 175 65 14" Id="c8e482ccd80d49b7a9ece26efa243cf9" xmlns="http://www.ni.com/PlatformFramework">
+							<p.Text>குறள் எண்</p.Text>
+						</NodeLabel>
+						<ConcatenateStrings Bounds="340 260 40 30" Id="8cf06b0aa7e04963aee5effb8d642b5a" Terminals="outString=214bceb901fe4747a272fe5f8b1eeb41, c0t0v=fcb1017a75bb40a7862464d59c582779, c1t0v=feb85a8e293041d2ac6624ec1cae0867, c2t0v=3125cee458214c1e9875f95414c3b5de" VerticalChunkCount="3" />
+						<Literal Bounds="328 270 12 9" DataType="String" Id="699c36ba8143447498d406b5bdf707dd" xmlns="http://www.ni.com/MocCommon">
+							<p.Data>"\r\n"</p.Data>
+							<StringBehavior TextDisplayMode="Default" />
+							<FixedConstantFacade Facade="End of Line Constant" />
+							<DockedConstantFacade UndockedSize="40 15" />
+						</Literal>
+						<Wire Facade="WireInvisibleFacade" Id="feb85a8e293041d2ac6624ec1cae0867" Joints="N(699c36ba8143447498d406b5bdf707dd:Out)|(340,275) N(8cf06b0aa7e04963aee5effb8d642b5a:c1t0v)|(340,275)" Visible="False" xmlns="http://www.ni.com/PlatformFramework" />
+						<Wire Id="3125cee458214c1e9875f95414c3b5de" Joints="N(a717717a0f074d35942da8d71fb2a137:c0out)|(320,285) N(8cf06b0aa7e04963aee5effb8d642b5a:c2t0v)|(340,285)" xmlns="http://www.ni.com/PlatformFramework" />
+						<Wire Id="fcb1017a75bb40a7862464d59c582779" Joints="N(10f35762ac084c39bfc9a79022868e22:cdb5446b20e048ffb3d00215e789dbe1)|(4,200) h(331) B(1) N(4b0d4024bd0649a9ad3a67c274d7d620:cdb5446b20e048ffb3d00215e789dbe1)|(553,200) B(1) v(65) N(8cf06b0aa7e04963aee5effb8d642b5a:c0t0v)|(340,265)" xmlns="http://www.ni.com/PlatformFramework" />
+						<Wire Id="214bceb901fe4747a272fe5f8b1eeb41" Joints="N(8cf06b0aa7e04963aee5effb8d642b5a:outString)|(380,265) N(f298bf2975bb4a778fc79914a1f95f34:Value)|(393,265)" xmlns="http://www.ni.com/PlatformFramework" />
+						<DataAccessor Bounds="350 315 40 15" DataItem="aca69e31e4ca4be4b34ac15a3efdedef" Id="ae053d9c5b2a4d78b32d76ef7e99b846" Label="c86c70877b0f4e7e9af4d31e779e358f" xmlns="http://www.ni.com/MocCommon">
+							<Terminal DataType="@e5e89f32c7f747619b72e02b41fda6e9" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+						</DataAccessor>
+						<NodeLabel AttachedTo="ae053d9c5b2a4d78b32d76ef7e99b846" Bounds="395 315 28 14" Id="c86c70877b0f4e7e9af4d31e779e358f" xmlns="http://www.ni.com/PlatformFramework">
+							<p.Text>பால்</p.Text>
+						</NodeLabel>
+						<DataAccessor Bounds="350 345 40 15" DataItem="e899c3acd2f44cd4b3879e9772d3ccdf" Id="28da10f6ea344a02b4b2867767bacca7" Label="bffab6e314994c9d9e3423026ecfc9e4" xmlns="http://www.ni.com/MocCommon">
+							<Terminal DataType="@ab31d5e25cd24bbe8d0563eaf23b2f47" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+						</DataAccessor>
+						<NodeLabel AttachedTo="28da10f6ea344a02b4b2867767bacca7" Bounds="395 345 61 14" Id="bffab6e314994c9d9e3423026ecfc9e4" xmlns="http://www.ni.com/PlatformFramework">
+							<p.Text>அதிகாரம்</p.Text>
+						</NodeLabel>
+						<DataAccessor Bounds="350 330 40 15" DataItem="1da4e818e90e4334a60d481159b821a0" Id="9775279bfe5c4dec8f0c6bd3179c3276" Label="ebaa1eed04fa47abbdf4fa0d17ef1b8b" xmlns="http://www.ni.com/MocCommon">
+							<Terminal DataType="@0353c461f8354c9f87f43bb02b05146c" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+						</DataAccessor>
+						<NodeLabel AttachedTo="9775279bfe5c4dec8f0c6bd3179c3276" Bounds="395 330 34 14" Id="ebaa1eed04fa47abbdf4fa0d17ef1b8b" xmlns="http://www.ni.com/PlatformFramework">
+							<p.Text>இயல்</p.Text>
+						</NodeLabel>
+						<PropertyNode Bounds="215 305 95.2 65" HasErrorTerminals="False" Id="7742c2df61474080a753502b2fc05315" InstanceDataType="@774f8c1e884b4ef3ba3cc9fc93b833da" Mode="InstanceProperties" xmlns="http://www.ni.com/MocCommon">
+							<PropertyItemTerminal DataType="@e5e89f32c7f747619b72e02b41fda6e9" Hotspot="95.2 15" Id="c0t0v" Path="பால்" PathElementMemberKinds="Field" Usage="Optional" />
+							<PropertyItemTerminal DataType="@9f91e29f03f2407b9a544d96dfd01f2d" Hotspot="95.2 30" Id="c1t0v" Path="இயல்" PathElementMemberKinds="Field" Usage="Optional" />
+							<PropertyItemTerminal DataType="@ab31d5e25cd24bbe8d0563eaf23b2f47" Hotspot="95.2 45" Id="c2t0v" Path="அதிகாரம்" PathElementMemberKinds="Field" Usage="Optional" />
+						</PropertyNode>
+						<Wire Id="8a3cc4df8e1e4a04880ceb2e92872c2f" Joints="N(c36283f40ebc49c5855a661ab71e4571:cdb5446b20e048ffb3d00215e789dbe1)|(4,220) h(191) B(1) N(57dff61d98a64f4c92f99189d5590b89:cdb5446b20e048ffb3d00215e789dbe1)|(553,220) B(1) v(90) N(7742c2df61474080a753502b2fc05315:instance in)|(215,310)" xmlns="http://www.ni.com/PlatformFramework" />
+						<Wire Id="dcc0c7412ce64262ae531e916d42aeb6" Joints="N(7742c2df61474080a753502b2fc05315:c0t0v)|(310.2,320) N(ae053d9c5b2a4d78b32d76ef7e99b846:Value)|(353,320)" xmlns="http://www.ni.com/PlatformFramework" />
+						<Wire Id="43c737df5897451ca1d8dd934fc408e0" Joints="N(53edfeae0e3b4170a863f598373ed923:cdb5446b20e048ffb3d00215e789dbe1)|(4,190) h(191) v(-10) B(2) N(77c8877ab6d40b0bf714b5de21eb798:Value)|(238,180) B(2) v(-50) N(ca03e64ba5f84470a692ded349a29091:68b04367fa0040358e17d70b1a9f7cba)|(216,130)" xmlns="http://www.ni.com/PlatformFramework" />
+						<Wire Id="31129e8c9d794c7ea355e245981c662b" Joints="N(7742c2df61474080a753502b2fc05315:c2t0v)|(310.2,350) N(28da10f6ea344a02b4b2867767bacca7:Value)|(353,350)" xmlns="http://www.ni.com/PlatformFramework" />
+						<Wire Id="7984a1b29d2443f0a51c14e9c6de0fb3" Joints="N(7742c2df61474080a753502b2fc05315:c1t0v)|(310.2,335) N(9775279bfe5c4dec8f0c6bd3179c3276:Value)|(353,335)" xmlns="http://www.ni.com/PlatformFramework" />
+					</CaseStructure.Case>
+					<CaseStructure.Case Bounds="5 5 557 430" Id="d26ffc4f6fca42db8ee31ffbd60bb424" Pattern="True">
+						<DataAccessor Bounds="215 110 40 15" DataItem="27043b4c36f44f02bcd153d740c7a8fb" Id="7bb3d53ab1d3482fad083ad026e68d54" Label="7b761604507e4cf1b0f476f1b3017927" xmlns="http://www.ni.com/MocCommon">
+							<Terminal DataType="UInt8" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+						</DataAccessor>
+						<DataAccessor Bounds="215 155 40 15" DataItem="fa7aa36b97fa4928ae90f7cd64f8669e" Id="a12e9ef685ab41bb941ef765b46e3140" Label="1cc0c039eb464435a6879c838fdfdc62" xmlns="http://www.ni.com/MocCommon">
+							<Terminal DataType="UInt8" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+						</DataAccessor>
+						<DataAccessor Bounds="215 95 40 15" DataItem="24b6cbb359f24df4aafb2fe6bc1d9c31" Id="86d751bacaf4402a80fee4551545505b" Label="9cd018bacd344578aadf0988dfbf4b8a" xmlns="http://www.ni.com/MocCommon">
+							<Terminal DataType="UInt8" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+						</DataAccessor>
+						<DataAccessor Bounds="215 80 40 15" DataItem="b7a40914d94e444e89fe7d38d5ecb4bb" Id="dd6a3ec937094ff089bd6f7a2de98810" Label="4b7e967aef13449585f42cb0dbe65c5c" xmlns="http://www.ni.com/MocCommon">
+							<Terminal DataType="UInt8" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+						</DataAccessor>
+						<DataAccessor Bounds="215 35 40 15" DataItem="2b34a30b979e4f4b80b39f279eebf00c" Id="2a922e27a64c40ed96d4556fb144e664" Label="e001205f829f4e45bc888cf72dc76e94" xmlns="http://www.ni.com/MocCommon">
+							<Terminal DataType="@1a0a8480262d4ec793dadf151a4ba029" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+						</DataAccessor>
+						<NodeLabel AttachedTo="7bb3d53ab1d3482fad083ad026e68d54" Bounds="260 110 62 14" Id="7b761604507e4cf1b0f476f1b3017927" xmlns="http://www.ni.com/PlatformFramework">
+							<p.Text>கணங்கள்</p.Text>
+						</NodeLabel>
+						<NodeLabel AttachedTo="a12e9ef685ab41bb941ef765b46e3140" Bounds="260 155 45 14" Id="1cc0c039eb464435a6879c838fdfdc62" xmlns="http://www.ni.com/PlatformFramework">
+							<p.Text>நிமிடம்</p.Text>
+						</NodeLabel>
+						<NodeLabel AttachedTo="86d751bacaf4402a80fee4551545505b" Bounds="260 95 75 14" Id="9cd018bacd344578aadf0988dfbf4b8a" xmlns="http://www.ni.com/PlatformFramework">
+							<p.Text>நாழிகைகள்</p.Text>
+						</NodeLabel>
+						<NodeLabel AttachedTo="dd6a3ec937094ff089bd6f7a2de98810" Bounds="260 80 53 14" Id="4b7e967aef13449585f42cb0dbe65c5c" xmlns="http://www.ni.com/PlatformFramework">
+							<p.Text>நாழிகை</p.Text>
+						</NodeLabel>
+						<NodeLabel AttachedTo="2a922e27a64c40ed96d4556fb144e664" Bounds="260 35 47 14" Id="e001205f829f4e45bc888cf72dc76e94" xmlns="http://www.ni.com/PlatformFramework">
+							<p.Text>கிழமை</p.Text>
+						</NodeLabel>
+						<CaseStructure Bounds="140 180 407 240" Id="b3788481cd4046fda7c27e06df0bbbb9" Selected="36fc7e2ec02b4a2cb7591fcfaff9fc9a" UserSelectorBounds="160 0 88 16.8">
+							<CaseStructure.Case Bounds="5 5 397 230" Id="a445ad0c966640778824787fff258b4a" Pattern="False" />
+							<CaseStructure.Case Bounds="5 5 397 230" Id="36fc7e2ec02b4a2cb7591fcfaff9fc9a" Pattern="True">
+								<DataAccessor Bounds="125 160 40 15" DataItem="e32c12be275c4131bef903c0a838c049" Id="d6c0dfdf0da645d99262fa67073efbb1" Label="b5c651770cd44b36901ffb361bfa90ab" xmlns="http://www.ni.com/MocCommon">
+									<Terminal DataType="UInt16" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+								</DataAccessor>
+								<DataAccessor Bounds="125 130 40 15" DataItem="992cd524cf164985a070d1f29fcdb7fc" Id="529ab21addef4c58a0853f71c0c749ba" Label="da7d61199394258aefd56fea57f1376" xmlns="http://www.ni.com/MocCommon">
+									<Terminal DataType="UInt32" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+								</DataAccessor>
+								<NodeLabel AttachedTo="d6c0dfdf0da645d99262fa67073efbb1" Bounds="170 160 73 14" Id="b5c651770cd44b36901ffb361bfa90ab" xmlns="http://www.ni.com/PlatformFramework">
+									<p.Text>ஆண்டுநாள்</p.Text>
+								</NodeLabel>
+								<NodeLabel AttachedTo="529ab21addef4c58a0853f71c0c749ba" Bounds="170 130 45 14" Id="da7d61199394258aefd56fea57f1376" xmlns="http://www.ni.com/PlatformFramework">
+									<p.Text>ஆண்டு</p.Text>
+								</NodeLabel>
+								<ControlReference Bounds="30.3999939 55 209.6 20" Id="993dbdb43b8745eb935dc951658ef5af" SourceControl="9792238839c646c18a6dea425b81e1fa" />
+								<PropertyNode Bounds="265 65 132 60" Id="83d19b6f11784a79a9d2f1ab10ac099f" InstanceDataType=":DotNet:NationalInstruments.Controls.Runtime.TreeControlProxy, NationalInstruments.Controls.Runtime`String`@c56984567cc44a6ca9929f0595ccee4c`@dc502994293742aeadfd94106683a9a0`@dc502994293742aeadfd94106683a9a0" Mode="InstanceProperties" xmlns="http://www.ni.com/MocCommon">
+									<p.TypeDefinitionTargets xmlns="http://www.ni.com/PanelCommon">
+										<TypeDefinitionTarget TargetName="NI::G Core::Color Picker::Color.gtype" />
+									</p.TypeDefinitionTargets>
+									<PropertyItemTerminal Action="Write" DataType="String[]" Hotspot="0 25" Id="c0t0v" Path="ColumnHeaders" PathElementMemberKinds="Property" Usage="Required" />
+									<PropertyItemTerminal Action="Write" DataType="String" Hotspot="0 40" Id="c1t0v" Path="Selection" PathElementMemberKinds="Property" Usage="Required" />
+								</PropertyNode>
+								<Wire Id="9cc22c782a76493389d284596cf42c1b" Joints="N(993dbdb43b8745eb935dc951658ef5af:control reference)|(240,60) h(15) v(10) N(83d19b6f11784a79a9d2f1ab10ac099f:instance in)|(265,70)" xmlns="http://www.ni.com/PlatformFramework" />
+								<MethodCall Bounds="40 130 40 40" Id="e66f26b50f224bd2a44d7b117a6303c5" ResolveFailedHint="&quot;D:\\GitHub\\Tamilneram.github.io\\நேரம்\\வலை.gcomp\\தேதிமாற்றம்.gviweb&quot;" Signature="@66dd3b1400b84734ba20b581bb2b46ae" Target="வலை::தேதிமாற்றம்.gviweb" xmlns="http://www.ni.com/MocCommon">
+									<p.MethodDeclaration>
+										<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+											<Parameter Id="B1" Desc="பருவம்" />
+											<Parameter Id="R0" Desc="ஆண்டு" />
+											<Parameter Id="R1" Desc="நாள்" />
+											<Parameter Id="R2" Desc="மாதம்" />
+											<Parameter Id="R3" Desc="மாதநாள்" />
+										</MethodDeclaration>
+									</p.MethodDeclaration>
+									<Terminal DataType="@1d3849759cf9478bbbb04229fd434a20" Direction="Output" Hotspot="25 40" Id="B1" xmlns="http://www.ni.com/PlatformFramework" />
+									<Terminal DataType="UInt32" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+									<Terminal DataType="Int32" Direction="Output" Hotspot="40 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
+									<Terminal DataType="@16f4cfaf044c45348fe93f8775520157" Direction="Output" Hotspot="40 25" Id="R2" xmlns="http://www.ni.com/PlatformFramework" />
+									<Terminal DataType="Int16" Direction="Output" Hotspot="40 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
+								</MethodCall>
+								<ArrayIndex Bounds="215 80 40 30" Id="d9b878bc855c4789aea59af35e3926d7" Terminals="array=17a0441b07404683abd0db84fcb6076a, c0t0v=10928e534a624b7c8df4b10833f1d3cd, c0out=90812e66d36c4b1b8991ed9f3142fe1f" />
+								<Wire Id="17a0441b07404683abd0db84fcb6076a" Joints="N(8d6e379a317341bc932af67296a870ee:Out)|(210,85) N(d9b878bc855c4789aea59af35e3926d7:array)|(215,85)" xmlns="http://www.ni.com/PlatformFramework" />
+								<ArrayLiteral Bounds="30.8000031 80 179.2 24.8" DataType="String[]" Id="8d6e379a317341bc932af67296a870ee" Label="a8dabcf5256f4820849fb77965d1f665" xmlns="http://www.ni.com/MocCommon">
+									<p.Data>
+										<Array Lengths="12" IsBinary="True" Compression="GZip">
+											<BinaryElements>H4sIAAAAAAAEAI1ROwrCQBBdf+snCraClSAIVt4nl9HCpAnYWGiTwjSmmF3UtOYqcxOdmU00QgIuZDO8ee/NZ1VLKfWiw38+Uw7G9Ok2XWsEQLNFuKKJEFIOIPcZhSeCFfSI8CBUd0gwbxIkaELdJcZC0LzJ8sxOPVe6nkfRqajrCpFAk2CDECDcETI0gcMRbsT0nav0EPHNseV++q5Oo4ygUOYrGxuQYFWOmMhdI9sXXQ3/ZcfMHhF7Vlazn1yGcOG058x+0ql4WjbgyeJvo/yCS1nRrjIxaw4icxsV6sTtroZ6rDxydXdEDb034FKBajoCAAA=</BinaryElements>
+										</Array>
+									</p.Data>
+									<ArrayBehavior ElementType="String" IndexEditorWidth="42">
+										<p.DefaultElementValue>""</p.DefaultElementValue>
+									</ArrayBehavior>
+									<Literal Bounds="47.6 2 126 15" DataType="String" Id="2cea2b92c26f4239a6969c5195059b65">
+										<StringBehavior TextDisplayMode="Default" />
+									</Literal>
+								</ArrayLiteral>
+								<NodeLabel AttachedTo="8d6e379a317341bc932af67296a870ee" Bounds="30.8000031 62 30 15" Id="a8dabcf5256f4820849fb77965d1f665" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+									<p.Text>Output</p.Text>
+								</NodeLabel>
+								<Wire Id="5a6979cb173347a2aee434609d17b9ca" Joints="N(e66f26b50f224bd2a44d7b117a6303c5:R0)|(80,135) h(15) B(1) N(529ab21addef4c58a0853f71c0c749ba:Value)|(128,135) B(1) v(-15) N(399f663cea844788ff881e9214903cd:Value)|(128,120)" xmlns="http://www.ni.com/PlatformFramework" />
+								<Wire Id="10928e534a624b7c8df4b10833f1d3cd" Joints="N(e66f26b50f224bd2a44d7b117a6303c5:R2)|(80,155) h(25) v(-50) N(d9b878bc855c4789aea59af35e3926d7:c0t0v)|(215,105)" xmlns="http://www.ni.com/PlatformFramework" />
+								<DataAccessor Bounds="125 145 40 15" DataItem="57ace7772831469691281c78df8fbc22" Id="6df14cf636914760ab2260f800058ee2" Label="ca8f22c1445045b3b83e984555fecb49" xmlns="http://www.ni.com/MocCommon">
+									<Terminal DataType="UInt8" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+								</DataAccessor>
+								<NodeLabel AttachedTo="6df14cf636914760ab2260f800058ee2" Bounds="170 145 94 14" Id="ca8f22c1445045b3b83e984555fecb49" xmlns="http://www.ni.com/PlatformFramework">
+									<p.Text>ஆண்டுநாள்கள்</p.Text>
+								</NodeLabel>
+								<Wire Id="d84063d5293f4ba2a71fca7b622c497d" Joints="N(e66f26b50f224bd2a44d7b117a6303c5:R1)|(80,145) h(35) v(5) h(5) B(3) N(6df14cf636914760ab2260f800058ee2:Value)|(128,150) B(3) v(15) N(d6c0dfdf0da645d99262fa67073efbb1:Value)|(128,165)" xmlns="http://www.ni.com/PlatformFramework" />
+								<Wire Id="90812e66d36c4b1b8991ed9f3142fe1f" Joints="N(d9b878bc855c4789aea59af35e3926d7:c0out)|(255,105) N(83d19b6f11784a79a9d2f1ab10ac099f:c1t0v)|(265,105)" xmlns="http://www.ni.com/PlatformFramework" />
+								<Wire Id="6cf18ddba774d11a9bf55965258d87a" Joints="N(e66f26b50f224bd2a44d7b117a6303c5:R3)|(80,165) h(10) v(15) N(22b0b943be5c40b9863cf9de7776cede:value)|(265,180)" xmlns="http://www.ni.com/PlatformFramework" />
+								<DataAccessor Bounds="125 115 40 15" DataItem="6f5a22d2571f4b1b9cfda60333dbaf21" Id="399f663cea844788ff881e9214903cd" Label="b228bcd9bf9049dd8f66957f5c1067d5" xmlns="http://www.ni.com/MocCommon">
+									<Terminal DataType="Int32" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+								</DataAccessor>
+								<NodeLabel AttachedTo="399f663cea844788ff881e9214903cd" Bounds="170 115 130 14" Id="b228bcd9bf9049dd8f66957f5c1067d5" xmlns="http://www.ni.com/PlatformFramework">
+									<p.Text>திருவள்ளுவர் ஆண்டு</p.Text>
+								</NodeLabel>
+								<ArrayLiteral Bounds="313 145 12 9" DataType="String[]" Id="7301a622f03f4c1d9b6e692d37056f2a" Label="9b06ef107c5847229319158ebe4793aa" xmlns="http://www.ni.com/MocCommon">
+									<p.Data>
+										<Array Lengths="1" IsBinary="True" Compression="GZip">
+											<BinaryElements>H4sIAAAAAAAEAGNgZGBg+A8EIBoEBEAMEGZjAhKiD9ate7Bu34N1Sx6sWwFmbH6wvpcbAC7GCRQ2AAAA</BinaryElements>
+										</Array>
+									</p.Data>
+									<ArrayBehavior ElementType="String" IndexEditorWidth="42">
+										<p.DefaultElementValue>""</p.DefaultElementValue>
+									</ArrayBehavior>
+									<Literal Bounds="47.1999931 1.8 81 15" DataType="String" Id="c57de2c5da484aae84e5c74ebb48db4e">
+										<StringBehavior TextDisplayMode="Default" />
+									</Literal>
+									<DockedConstantFacade UndockedSize="134.4 24.8" />
+								</ArrayLiteral>
+								<NodeLabel AttachedTo="7301a622f03f4c1d9b6e692d37056f2a" Bounds="313 128 30 15" Id="9b06ef107c5847229319158ebe4793aa" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+									<p.Text>ColumnHeaders</p.Text>
+								</NodeLabel>
+								<FormatValue Bounds="265 145 40 40" Id="22b0b943be5c40b9863cf9de7776cede" />
+								<BuildArray Bounds="325 145 40 20" Id="fbb37375955647ba9fc114a1f610b044" Terminals="outArray=378fc655eaf844c381d27889a4c43a3e, c0t0v=a22a5689fbfd4275abfbcbd74ffb8196, c1t0v=6ff7e4f6e16345bdafa454331ce43e5b" />
+								<Wire Id="6ff7e4f6e16345bdafa454331ce43e5b" Joints="N(22b0b943be5c40b9863cf9de7776cede:output string)|(305,165) h(5) v(-5) N(fbb37375955647ba9fc114a1f610b044:c1t0v)|(325,160)" xmlns="http://www.ni.com/PlatformFramework" />
+								<Wire Facade="WireInvisibleFacade" Id="a22a5689fbfd4275abfbcbd74ffb8196" Joints="N(7301a622f03f4c1d9b6e692d37056f2a:Out)|(325,150) v(9) h(-77.3999939) v(-20) h(-50) v(10) h(127.399994) N(fbb37375955647ba9fc114a1f610b044:c0t0v)|(325,150)" Visible="False" xmlns="http://www.ni.com/PlatformFramework" />
+								<Wire Id="378fc655eaf844c381d27889a4c43a3e" Joints="N(fbb37375955647ba9fc114a1f610b044:outArray)|(365,150) h(5) v(-15) h(-115) v(-45) N(83d19b6f11784a79a9d2f1ab10ac099f:c0t0v)|(265,90)" xmlns="http://www.ni.com/PlatformFramework" />
+							</CaseStructure.Case>
+							<CaseStructure.Selector Bounds="-4 65 13 10" Docking="Left" Id="74064e8563db4eda9c638c2f444990ab" Terminals="b3788481cd4046fda7c27e06df0bbbb9=1a468a190d8f463293afb254b28e3375, a445ad0c966640778824787fff258b4a, 36fc7e2ec02b4a2cb7591fcfaff9fc9a" />
+						</CaseStructure>
+						<Wire Id="27aeae7452424a2eb27ffa3c86562c5c" Joints="N(9fdeb9c136084b898be6ecb5141951e3:T1)|(100,50) v(-25) h(90) B(2) N(d0ae6df0b8f740a2acde862dca232b23:Value)|(218,25) B(2) v(15) N(2a922e27a64c40ed96d4556fb144e664:Value)|(218,40)" xmlns="http://www.ni.com/PlatformFramework" />
+						<DataAccessor Bounds="215 125 40 15" DataItem="cecd0de888b241ccb25466829e5af167" Id="b119c5baa98f4363a62f86ec82f0191b" Label="525e2b077744460fb305e8ba1c2f70e7" xmlns="http://www.ni.com/MocCommon">
+							<Terminal DataType="UInt8" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+						</DataAccessor>
+						<NodeLabel AttachedTo="b119c5baa98f4363a62f86ec82f0191b" Bounds="260 125 39 14" Id="525e2b077744460fb305e8ba1c2f70e7" xmlns="http://www.ni.com/PlatformFramework">
+							<p.Text>கணம்</p.Text>
+						</NodeLabel>
+						<DataAccessor Bounds="215 140 40 15" DataItem="93d6f9fb47fe4cbbaa35cfeec8aa16e8" Id="5af0384912734273ac01815b60b96d9f" Label="5d045e65063d443d86a138083f2e3d17" xmlns="http://www.ni.com/MocCommon">
+							<Terminal DataType="UInt8" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+						</DataAccessor>
+						<NodeLabel AttachedTo="5af0384912734273ac01815b60b96d9f" Bounds="260 140 67 14" Id="5d045e65063d443d86a138083f2e3d17" xmlns="http://www.ni.com/PlatformFramework">
+							<p.Text>நிமிடங்கள்</p.Text>
+						</NodeLabel>
+						<MethodCall Bounds="75 50 40 40" Id="9fdeb9c136084b898be6ecb5141951e3" ResolveFailedHint="&quot;D:\\GitHub\\Tamilneram.github.io\\நேரம்\\வலை.gcomp\\நேரமாற்றம்.gviweb&quot;" Signature="@b1a941ced33f4c8db36ccad6b913c8e6" Target="வலை::நேரமாற்றம்.gviweb" xmlns="http://www.ni.com/MocCommon">
+							<p.MethodDeclaration>
+								<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+									<Parameter Id="L3" Desc="அடுத்த குறள்" />
+									<Parameter Id="B1" Desc="அடுத்தது?" />
+									<Parameter Id="R0" Desc="சிறுபொழுது" />
+									<Parameter Id="R1" Desc="நாழிகை" />
+									<Parameter Id="R2" Desc="கணம்" />
+									<Parameter Id="R3" Desc="நிமிடம்" />
+									<Parameter Id="T1" Desc="கிழமை" />
+								</MethodDeclaration>
+							</p.MethodDeclaration>
+							<Terminal DataType="@e7408ea99de140c287cc13ef235e34ca" Direction="Input" Hotspot="0 35" Id="L3" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
+							<Terminal DataType="Boolean" Direction="Output" Hotspot="25 40" Id="B1" xmlns="http://www.ni.com/PlatformFramework" />
+							<Terminal DataType="@8fb2b2be1db34145b0eb94ce8b726c4d" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+							<Terminal DataType="UInt8" Direction="Output" Hotspot="40 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
+							<Terminal DataType="UInt8" Direction="Output" Hotspot="40 25" Id="R2" xmlns="http://www.ni.com/PlatformFramework" />
+							<Terminal DataType="UInt8" Direction="Output" Hotspot="40 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
+							<Terminal DataType="@1a0a8480262d4ec793dadf151a4ba029" Direction="Output" Hotspot="25 0" Id="T1" xmlns="http://www.ni.com/PlatformFramework" />
+						</MethodCall>
+						<Wire Id="a103fa0fed694c83b2ba314be72d282f" Joints="N(9fdeb9c136084b898be6ecb5141951e3:R2)|(115,75) h(50) v(40) B(2) N(7bb3d53ab1d3482fad083ad026e68d54:Value)|(218,115) B(2) v(15) N(b119c5baa98f4363a62f86ec82f0191b:Value)|(218,130)" xmlns="http://www.ni.com/PlatformFramework" />
+						<Wire Id="65e117d2adad4175b8d9965f74b824e6" Joints="N(9fdeb9c136084b898be6ecb5141951e3:R3)|(115,85) h(40) v(60) B(2) N(5af0384912734273ac01815b60b96d9f:Value)|(218,145) B(2) v(15) N(a12e9ef685ab41bb941ef765b46e3140:Value)|(218,160)" xmlns="http://www.ni.com/PlatformFramework" />
+						<Wire Id="ff644e7ac4587b77b42060f2ef09b" Joints="N(9fdeb9c136084b898be6ecb5141951e3:R1)|(115,65) h(65) v(20) B(2) N(dd6a3ec937094ff089bd6f7a2de98810:Value)|(218,85) B(2) v(15) N(86d751bacaf4402a80fee4551545505b:Value)|(218,100)" xmlns="http://www.ni.com/PlatformFramework" />
+						<Wire Id="8b0a4febcfd4758a601d616ce4470c5" Joints="N(9fdeb9c136084b898be6ecb5141951e3:R0)|(115,55) h(80) B(1) N(a5613b67f38c448a8170bb02bf994120:Value)|(218,55) B(1) v(15) N(945f51342a1f4e53b06f32e3c9d27e88:Value)|(218,70)" xmlns="http://www.ni.com/PlatformFramework" />
+						<DataAccessor Bounds="215 65 40 15" DataItem="9eadcb37aa654b059dfcdccf51ea0381" Id="945f51342a1f4e53b06f32e3c9d27e88" Label="90ac17968edf41ff9080fd09fd2a7ce8" xmlns="http://www.ni.com/MocCommon">
+							<Terminal DataType="@8fb2b2be1db34145b0eb94ce8b726c4d" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+						</DataAccessor>
+						<NodeLabel AttachedTo="945f51342a1f4e53b06f32e3c9d27e88" Bounds="260 65 52 14" Id="90ac17968edf41ff9080fd09fd2a7ce8" xmlns="http://www.ni.com/PlatformFramework">
+							<p.Text>பொழுது</p.Text>
+						</NodeLabel>
+						<DataAccessor Bounds="215 50 40 15" DataItem="156a44abda124999bd9a3f332cd3d5c1" Id="a5613b67f38c448a8170bb02bf994120" Label="f4d001c7b23e4663b7c01f339d8c7f16" xmlns="http://www.ni.com/MocCommon">
+							<Terminal DataType="UInt8" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+						</DataAccessor>
+						<NodeLabel AttachedTo="a5613b67f38c448a8170bb02bf994120" Bounds="260 50 76 14" Id="f4d001c7b23e4663b7c01f339d8c7f16" xmlns="http://www.ni.com/PlatformFramework">
+							<p.Text>சிறுபொழுது</p.Text>
+						</NodeLabel>
+						<DataAccessor Bounds="215 20 40 15" DataItem="363f1bc6f448473bbd23d3f1bebcb3e2" Id="d0ae6df0b8f740a2acde862dca232b23" Label="ed407c3853e74620bf595e58c7cb0f2b" xmlns="http://www.ni.com/MocCommon">
+							<Terminal DataType="UInt8" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+						</DataAccessor>
+						<NodeLabel AttachedTo="d0ae6df0b8f740a2acde862dca232b23" Bounds="260 20 69 14" Id="ed407c3853e74620bf595e58c7cb0f2b" xmlns="http://www.ni.com/PlatformFramework">
+							<p.Text>கிழமைகள்</p.Text>
+						</NodeLabel>
+						<Wire Id="c5466302bc9f4f329f8aa65cb66374ac" Joints="N(53edfeae0e3b4170a863f598373ed923:d26ffc4f6fca42db8ee31ffbd60bb424)|(4,190) N(37878346cdac49f38fad023b82f69840:d26ffc4f6fca42db8ee31ffbd60bb424)|(553,190)" xmlns="http://www.ni.com/PlatformFramework" />
+						<Wire Id="2bd55e2f58984409a37ae8ad1825ea39" Joints="N(8fd4e824d83547f99da0b4b032ec0a17:Value)|(50,45) h(20) v(40) N(9fdeb9c136084b898be6ecb5141951e3:L3)|(75,85)" xmlns="http://www.ni.com/PlatformFramework" />
+						<IsFirstCall Bounds="85 250 15 15" Id="710729ae3e3e4649893a405b3f2bf999" />
+						<LogicalOr Bounds="105 240 25 20" Id="82bdedf26e6d4cdb8409e922c201302f" Terminals="o=1a468a190d8f463293afb254b28e3375, c0t0v=99896dea623146368200593c55babc67, c1t0v=92d645b5b2d94f57b0bc7a4f78f2f18e" />
+						<Wire Id="92d645b5b2d94f57b0bc7a4f78f2f18e" Joints="N(710729ae3e3e4649893a405b3f2bf999:First Call?: T/F)|(100,255) N(82bdedf26e6d4cdb8409e922c201302f:c1t0v)|(107,255)" xmlns="http://www.ni.com/PlatformFramework" />
+						<Wire Id="99896dea623146368200593c55babc67" Joints="N(9fdeb9c136084b898be6ecb5141951e3:B1)|(100,90) v(85) B(1) N(5bbed28771f844ee8c01a55baab24163:d26ffc4f6fca42db8ee31ffbd60bb424)|(553,175) B(1) v(70) N(82bdedf26e6d4cdb8409e922c201302f:c0t0v)|(107,245)" xmlns="http://www.ni.com/PlatformFramework" />
+						<Wire Id="1a468a190d8f463293afb254b28e3375" Joints="N(82bdedf26e6d4cdb8409e922c201302f:o)|(130,250) N(74064e8563db4eda9c638c2f444990ab:b3788481cd4046fda7c27e06df0bbbb9)|(136,250)" xmlns="http://www.ni.com/PlatformFramework" />
+						<Wire Id="dcbd8871b1bf4309b04f8b97b80f8668" Joints="N(8710e2d8a8664513ab7c697e27f3fb70:d26ffc4f6fca42db8ee31ffbd60bb424)|(4,210) N(c350a994c56b4e16aa6dc18fb3c30d8a:d26ffc4f6fca42db8ee31ffbd60bb424)|(553,210)" xmlns="http://www.ni.com/PlatformFramework" />
+						<Wire Id="856d783bc20e4a40abf4d832f9f0ac14" Joints="N(10f35762ac084c39bfc9a79022868e22:d26ffc4f6fca42db8ee31ffbd60bb424)|(4,200) N(4b0d4024bd0649a9ad3a67c274d7d620:d26ffc4f6fca42db8ee31ffbd60bb424)|(553,200)" xmlns="http://www.ni.com/PlatformFramework" />
+						<DataAccessor Bounds="10 40 40 15" DataItem="89e259adc03a49eb9f086f55a6f7cfc3" Id="8fd4e824d83547f99da0b4b032ec0a17" Label="7c0a11668ace48c295783551ff304068" xmlns="http://www.ni.com/MocCommon">
+							<Terminal DataType="@e7408ea99de140c287cc13ef235e34ca" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+						</DataAccessor>
+						<NodeLabel AttachedTo="8fd4e824d83547f99da0b4b032ec0a17" Bounds="10 23 82 14" Id="7c0a11668ace48c295783551ff304068" xmlns="http://www.ni.com/PlatformFramework">
+							<p.Text>அடுத்த குறள்</p.Text>
+						</NodeLabel>
+						<Wire Id="108e93fd4d234597bd908c94cd306f24" Joints="N(c36283f40ebc49c5855a661ab71e4571:d26ffc4f6fca42db8ee31ffbd60bb424)|(4,220) N(57dff61d98a64f4c92f99189d5590b89:d26ffc4f6fca42db8ee31ffbd60bb424)|(553,220)" xmlns="http://www.ni.com/PlatformFramework" />
+					</CaseStructure.Case>
+					<CaseStructure.Selector Bounds="-4 110 13 10" Docking="Left" Id="4910a8458f31446db077707a0b8c2bc2" Terminals="b271c4efd2b46b98919b85107112231=a1a09c7584c949a195d5b6a27b801235, cdb5446b20e048ffb3d00215e789dbe1, d26ffc4f6fca42db8ee31ffbd60bb424" />
+					<CaseStructure.Tunnel Bounds="-4 190 13 10" Docking="Left" Id="53edfeae0e3b4170a863f598373ed923" Terminals="b271c4efd2b46b98919b85107112231=4c5b22e7e71c4ff2978d6362009694ba, cdb5446b20e048ffb3d00215e789dbe1=43c737df5897451ca1d8dd934fc408e0, d26ffc4f6fca42db8ee31ffbd60bb424=c5466302bc9f4f329f8aa65cb66374ac" />
+					<CaseStructure.Tunnel Bounds="558 190 13 10" Docking="Right" Id="37878346cdac49f38fad023b82f69840" Terminals="b271c4efd2b46b98919b85107112231=225d1da830254f4d8515613ea8a03a78, cdb5446b20e048ffb3d00215e789dbe1=3960c8ab7c474ebdb03fced54161bca1, d26ffc4f6fca42db8ee31ffbd60bb424=c5466302bc9f4f329f8aa65cb66374ac" />
+					<CaseStructure.Tunnel Bounds="558 175 13 10" DefaultIfUnwired="True" Docking="Right" Id="5bbed28771f844ee8c01a55baab24163" Terminals="b271c4efd2b46b98919b85107112231=2948212faa89474aaddb411d5edcdd87, cdb5446b20e048ffb3d00215e789dbe1=d8c520abdd084e0bb43aff3cad6d2c79, d26ffc4f6fca42db8ee31ffbd60bb424=99896dea623146368200593c55babc67" />
+					<CaseStructure.Tunnel Bounds="-4 210 13 10" Docking="Left" Id="8710e2d8a8664513ab7c697e27f3fb70" Terminals="b271c4efd2b46b98919b85107112231=1b57d0ee61514254bc4609d060107d35, cdb5446b20e048ffb3d00215e789dbe1=d9e75234ad31435f924c1e2d5ce87f31, d26ffc4f6fca42db8ee31ffbd60bb424=dcbd8871b1bf4309b04f8b97b80f8668" />
+					<CaseStructure.Tunnel Bounds="558 210 13 10" Docking="Right" Id="c350a994c56b4e16aa6dc18fb3c30d8a" Terminals="b271c4efd2b46b98919b85107112231=2af3951cb94d41c29fe66b36c553e9f0, cdb5446b20e048ffb3d00215e789dbe1=d9e75234ad31435f924c1e2d5ce87f31, d26ffc4f6fca42db8ee31ffbd60bb424=dcbd8871b1bf4309b04f8b97b80f8668" />
+					<CaseStructure.Tunnel Bounds="-4 200 13 10" Docking="Left" Id="10f35762ac084c39bfc9a79022868e22" Terminals="b271c4efd2b46b98919b85107112231=12bf3ee597834334a12c90959d71802c, cdb5446b20e048ffb3d00215e789dbe1=fcb1017a75bb40a7862464d59c582779, d26ffc4f6fca42db8ee31ffbd60bb424=856d783bc20e4a40abf4d832f9f0ac14" />
+					<CaseStructure.Tunnel Bounds="558 200 13 10" Docking="Right" Id="4b0d4024bd0649a9ad3a67c274d7d620" Terminals="b271c4efd2b46b98919b85107112231=c1136c1491354cec8fc46c776ba45b41, cdb5446b20e048ffb3d00215e789dbe1=fcb1017a75bb40a7862464d59c582779, d26ffc4f6fca42db8ee31ffbd60bb424=856d783bc20e4a40abf4d832f9f0ac14" />
+					<CaseStructure.Tunnel Bounds="-4 220 13 10" Docking="Left" Id="c36283f40ebc49c5855a661ab71e4571" Terminals="b271c4efd2b46b98919b85107112231=4022ef7f97fc42c4868c12af0bbd02e9, cdb5446b20e048ffb3d00215e789dbe1=8a3cc4df8e1e4a04880ceb2e92872c2f, d26ffc4f6fca42db8ee31ffbd60bb424=108e93fd4d234597bd908c94cd306f24" />
+					<CaseStructure.Tunnel Bounds="558 220 13 10" Docking="Right" Id="57dff61d98a64f4c92f99189d5590b89" Terminals="b271c4efd2b46b98919b85107112231=3e85e47df58f46a6badda6a0d6bf803a, cdb5446b20e048ffb3d00215e789dbe1=8a3cc4df8e1e4a04880ceb2e92872c2f, d26ffc4f6fca42db8ee31ffbd60bb424=108e93fd4d234597bd908c94cd306f24" />
+				</CaseStructure>
+				<DataAccessor Bounds="200 95 40 15" DataItem="a43c60103b8d4720be71b39dfd680af9" Id="16f726d768964123814799b7e33492c8" Label="f915206386ea42a4b47a0fae5038fe65" xmlns="http://www.ni.com/MocCommon">
+					<Terminal DataType="UInt8" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+				</DataAccessor>
+				<NodeLabel AttachedTo="16f726d768964123814799b7e33492c8" Bounds="245 95 59 14" Id="f915206386ea42a4b47a0fae5038fe65" xmlns="http://www.ni.com/PlatformFramework">
+					<p.Text>நொடிகள்</p.Text>
+				</NodeLabel>
+				<Wire Id="225d1da830254f4d8515613ea8a03a78" Joints="N(37878346cdac49f38fad023b82f69840:b271c4efd2b46b98919b85107112231)|(901,210) N(d861a46ee729405a9c59c78627252444:17)|(911,210)" xmlns="http://www.ni.com/PlatformFramework" />
+				<Wire Id="2948212faa89474aaddb411d5edcdd87" Joints="N(5bbed28771f844ee8c01a55baab24163:b271c4efd2b46b98919b85107112231)|(901,195) N(be99eabf14474ff08c75f89ad26fbffd:17)|(911,195)" xmlns="http://www.ni.com/PlatformFramework" />
+				<CaseStructure Bounds="65 175 105 90" Default="e4f858249ce41a497a05a6136a38c4b" Id="8126dea584b147fb874dc5908bad85ee" Selected="a6a5979173b043b28940b14f4dc57bd0" UserSelectorBounds="8 0 88 16.8">
+					<CaseStructure.Case Bounds="5 5 95 80" Id="e4f858249ce41a497a05a6136a38c4b" Pattern="False">
+						<Wire Id="316b1adadb034d168d7272a41a0dfc17" Joints="N(71423b9c1191439e855da6cbc1843d38:e4f858249ce41a497a05a6136a38c4b)|(4,30) N(5489f8ce72724e819f975791dc385d71:e4f858249ce41a497a05a6136a38c4b)|(91,30)" xmlns="http://www.ni.com/PlatformFramework" />
+						<Wire Id="adaced648c44fba9ff18adbf7b42948" Joints="N(2e716bbdee504f348dc9129a12b9275d:e4f858249ce41a497a05a6136a38c4b)|(4,50) N(df4ee948237241b5a93fa638df7e3192:e4f858249ce41a497a05a6136a38c4b)|(91,50)" xmlns="http://www.ni.com/PlatformFramework" />
+						<Wire Id="966bbd7905d4370a2c828a505c98eec" Joints="N(ca5140fc966e4e2591bc00b9350695b1:e4f858249ce41a497a05a6136a38c4b)|(4,40) N(57c5d653f23246d98008703ba43306e4:e4f858249ce41a497a05a6136a38c4b)|(91,40)" xmlns="http://www.ni.com/PlatformFramework" />
+						<Wire Id="c99d3a1a4ffa4de8bca81ca996474cf5" Joints="N(62b93fb5435c40069f6dffd3828deb17:e4f858249ce41a497a05a6136a38c4b)|(4,60) N(14c5e0eb980f4ee9aa0f50787861e1b2:e4f858249ce41a497a05a6136a38c4b)|(91,60)" xmlns="http://www.ni.com/PlatformFramework" />
+					</CaseStructure.Case>
+					<CaseStructure.Case Bounds="5 5 95 80" Id="a6a5979173b043b28940b14f4dc57bd0" Pattern="True">
+						<MethodCall Bounds="30 25 40 40" Id="479b1e2b7f864e5f87daec28e7ba92f2" ResolveFailedHint="&quot;D:\\GitHub\\Tamilneram.github.io\\நேரம்\\வலை.gcomp\\குறள்படி.gviweb&quot;" Signature="@2f30ebad99d94bb4aff764efdf3c9f10" Target="வலை::குறள்படி.gviweb" xmlns="http://www.ni.com/MocCommon">
+							<p.MethodDeclaration>
+								<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+									<Parameter Id="L0" Desc="அடைவு" />
+									<Parameter Id="R0" Desc="குறள் எண்" />
+									<Parameter Id="R1" Desc="திருக்குறள்" />
+									<Parameter Id="R2" Desc="பொருள்" />
+									<Parameter Id="R3" Desc="தகவல்" />
+								</MethodDeclaration>
+							</p.MethodDeclaration>
+							<Terminal DataType="UInt16" Direction="Input" Id="L0" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
+							<Terminal DataType="UInt16" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+							<Terminal DataType="String" Direction="Output" Hotspot="40 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
+							<Terminal DataType="String[]" Direction="Output" Hotspot="40 25" Id="R2" xmlns="http://www.ni.com/PlatformFramework" />
+							<Terminal DataType="@774f8c1e884b4ef3ba3cc9fc93b833da" Direction="Output" Hotspot="40 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
+						</MethodCall>
+						<Wire Id="7bcc2838cc5a42c590cb8eff412257ed" Joints="N(479b1e2b7f864e5f87daec28e7ba92f2:R1)|(70,40) N(57c5d653f23246d98008703ba43306e4:a6a5979173b043b28940b14f4dc57bd0)|(91,40)" xmlns="http://www.ni.com/PlatformFramework" />
+						<Wire Id="9f32d1bc68ee427d9f4f36cc5e24b8b1" Joints="N(71423b9c1191439e855da6cbc1843d38:a6a5979173b043b28940b14f4dc57bd0)|(4,30) N(479b1e2b7f864e5f87daec28e7ba92f2:L0)|(30,30)" xmlns="http://www.ni.com/PlatformFramework" />
+						<Wire Id="109a4c51c0f94d37823b733c5b48ebf0" Joints="N(479b1e2b7f864e5f87daec28e7ba92f2:R0)|(70,30) N(5489f8ce72724e819f975791dc385d71:a6a5979173b043b28940b14f4dc57bd0)|(91,30)" xmlns="http://www.ni.com/PlatformFramework" />
+						<Wire Id="79634dbcf2f740939b2f4521215e2a7e" Joints="N(479b1e2b7f864e5f87daec28e7ba92f2:R2)|(70,50) N(df4ee948237241b5a93fa638df7e3192:a6a5979173b043b28940b14f4dc57bd0)|(91,50)" xmlns="http://www.ni.com/PlatformFramework" />
+						<Wire Id="4e25c950bd1c45a9b2acd09c66b252b8" Joints="N(479b1e2b7f864e5f87daec28e7ba92f2:R3)|(70,60) N(14c5e0eb980f4ee9aa0f50787861e1b2:a6a5979173b043b28940b14f4dc57bd0)|(91,60)" xmlns="http://www.ni.com/PlatformFramework" />
+					</CaseStructure.Case>
+					<CaseStructure.Selector Bounds="-4 16.8 13 10" Docking="Left" Id="c7cc0902e60448b2a55f3891bd51b948" Terminals="8126dea584b147fb874dc5908bad85ee=2c6a7583f0b74555a170d8a8125c43ab, e4f858249ce41a497a05a6136a38c4b, a6a5979173b043b28940b14f4dc57bd0" />
+					<CaseStructure.Tunnel Bounds="-4 30 13 10" Docking="Left" Id="71423b9c1191439e855da6cbc1843d38" Terminals="8126dea584b147fb874dc5908bad85ee=7f1241e665cd40a4b1f3b3db7cc8e164, e4f858249ce41a497a05a6136a38c4b=316b1adadb034d168d7272a41a0dfc17, a6a5979173b043b28940b14f4dc57bd0=9f32d1bc68ee427d9f4f36cc5e24b8b1" />
+					<CaseStructure.Tunnel Bounds="96 30 13 10" Docking="Right" Id="5489f8ce72724e819f975791dc385d71" Terminals="8126dea584b147fb874dc5908bad85ee=4c5b22e7e71c4ff2978d6362009694ba, e4f858249ce41a497a05a6136a38c4b=316b1adadb034d168d7272a41a0dfc17, a6a5979173b043b28940b14f4dc57bd0=109a4c51c0f94d37823b733c5b48ebf0" />
+					<CaseStructure.Tunnel Bounds="96 50 13 10" Docking="Right" Id="df4ee948237241b5a93fa638df7e3192" Terminals="8126dea584b147fb874dc5908bad85ee=1b57d0ee61514254bc4609d060107d35, e4f858249ce41a497a05a6136a38c4b=adaced648c44fba9ff18adbf7b42948, a6a5979173b043b28940b14f4dc57bd0=79634dbcf2f740939b2f4521215e2a7e" />
+					<CaseStructure.Tunnel Bounds="-4 50 13 10" Docking="Left" Id="2e716bbdee504f348dc9129a12b9275d" Terminals="8126dea584b147fb874dc5908bad85ee=f336a5ce4db244bbbc8da34a0372ff33, e4f858249ce41a497a05a6136a38c4b=adaced648c44fba9ff18adbf7b42948, a6a5979173b043b28940b14f4dc57bd0" />
+					<CaseStructure.Tunnel Bounds="-4 40 13 10" Docking="Left" Id="ca5140fc966e4e2591bc00b9350695b1" Terminals="8126dea584b147fb874dc5908bad85ee=62a217f0c7b24b6da42b966cb2a2f193, e4f858249ce41a497a05a6136a38c4b=966bbd7905d4370a2c828a505c98eec, a6a5979173b043b28940b14f4dc57bd0" />
+					<CaseStructure.Tunnel Bounds="96 40 13 10" Docking="Right" Id="57c5d653f23246d98008703ba43306e4" Terminals="8126dea584b147fb874dc5908bad85ee=12bf3ee597834334a12c90959d71802c, e4f858249ce41a497a05a6136a38c4b=966bbd7905d4370a2c828a505c98eec, a6a5979173b043b28940b14f4dc57bd0=7bcc2838cc5a42c590cb8eff412257ed" />
+					<CaseStructure.Tunnel Bounds="96 60 13 10" Docking="Right" Id="14c5e0eb980f4ee9aa0f50787861e1b2" Terminals="8126dea584b147fb874dc5908bad85ee=4022ef7f97fc42c4868c12af0bbd02e9, e4f858249ce41a497a05a6136a38c4b=c99d3a1a4ffa4de8bca81ca996474cf5, a6a5979173b043b28940b14f4dc57bd0=4e25c950bd1c45a9b2acd09c66b252b8" />
+					<CaseStructure.Tunnel Bounds="-4 60 13 10" Docking="Left" Id="62b93fb5435c40069f6dffd3828deb17" Terminals="8126dea584b147fb874dc5908bad85ee=c35ca27b2a4946a0b8c42080209f1bde, e4f858249ce41a497a05a6136a38c4b=c99d3a1a4ffa4de8bca81ca996474cf5, a6a5979173b043b28940b14f4dc57bd0" />
+				</CaseStructure>
+				<Wire Id="2c6a7583f0b74555a170d8a8125c43ab" Joints="N(176f6555fa43451788f0985902d59e93:i0)|(4,195) h(5) v(1.800003) N(c7cc0902e60448b2a55f3891bd51b948:8126dea584b147fb874dc5908bad85ee)|(61,196.8)" xmlns="http://www.ni.com/PlatformFramework" />
+				<Wire Id="7f1241e665cd40a4b1f3b3db7cc8e164" Joints="N(d55d0b7d06ac4f4fa54e9922b308aead:i0)|(4,210) N(71423b9c1191439e855da6cbc1843d38:8126dea584b147fb874dc5908bad85ee)|(61,210)" xmlns="http://www.ni.com/PlatformFramework" />
+				<IsFirstCall Bounds="215 130 15 15" Id="6c47b7706d7448f8be8b88a393a748dc" />
+				<IsEqualTo0 Bounds="185 110 30 30" Id="382386206d6f4b2f946950a8149d91de" />
+				<LogicalOr Bounds="235 120 25 20" Id="a155c91d57e04b489140bede7d9bd5fd" Terminals="o=a1a09c7584c949a195d5b6a27b801235, c0t0v=dedec319d5cc404eab0f99b2651e3e0d, c1t0v=ae10fb01e09547df997fb2e1bb9d4cee" />
+				<Wire Id="ae10fb01e09547df997fb2e1bb9d4cee" Joints="N(6c47b7706d7448f8be8b88a393a748dc:First Call?: T/F)|(230,135) N(a155c91d57e04b489140bede7d9bd5fd:c1t0v)|(237,135)" xmlns="http://www.ni.com/PlatformFramework" />
+				<Wire Id="dedec319d5cc404eab0f99b2651e3e0d" Joints="N(382386206d6f4b2f946950a8149d91de:x = 0?)|(215,125) N(a155c91d57e04b489140bede7d9bd5fd:c0t0v)|(237,125)" xmlns="http://www.ni.com/PlatformFramework" />
+				<TimestampToDateAndTime Bounds="55 110 35 30" Id="8170947340454dceb6da9c652ca04858" />
+				<Wire Id="b14d5c26cd0948cc956f0e465bdc49f9" Joints="N(8170947340454dceb6da9c652ca04858:date time rec)|(90,115) N(8bdf4518823a4c97aa949294297871b2:instance in)|(100,115)" xmlns="http://www.ni.com/PlatformFramework" />
+				<PropertyNode Bounds="100 110 72.8 35" HasErrorTerminals="False" Id="8bdf4518823a4c97aa949294297871b2" InstanceDataType="@ce022d6d79ee44d1845b0156c4b68643" Mode="InstanceProperties" xmlns="http://www.ni.com/MocCommon">
+					<PropertyItemTerminal DataType="Int32" Hotspot="72.8 15" Id="c0t0v" Path="second" PathElementMemberKinds="Field" Usage="Optional" />
+				</PropertyNode>
+				<Comment Bounds="65 335 184.8 68" Id="6ccdc7d308f54cce93e426fe70cb1459" xmlns="http://www.ni.com/MocCommon">
+					<p.Text>"நிமிடம்     = 60 நொடிகள்\r\nகணம்      = 4 நிமிடங்கள்\r\nநாழிகை   = 6 கணங்கள்\r\nபொழுது   = 10 நாழிகைகள்\r\nநாள்         = 6 பொழுதுகள்"</p.Text>
+				</Comment>
+				<Wire Id="1fbcf04ea3c843939df13ecfa2b82c48" Joints="N(41c128de37ab42d1ab88deaee0f37802:current time)|(40,115) N(8170947340454dceb6da9c652ca04858:time stamp)|(55,115)" xmlns="http://www.ni.com/PlatformFramework" />
+				<Wire Id="a1a09c7584c949a195d5b6a27b801235" Joints="N(a155c91d57e04b489140bede7d9bd5fd:o)|(260,130) N(4910a8458f31446db077707a0b8c2bc2:b271c4efd2b46b98919b85107112231)|(326,130)" xmlns="http://www.ni.com/PlatformFramework" />
+				<Wire Id="2af3951cb94d41c29fe66b36c553e9f0" Joints="N(c350a994c56b4e16aa6dc18fb3c30d8a:b271c4efd2b46b98919b85107112231)|(901,230) N(ff18f506fcc449ba885434bd3b73123e:17)|(911,230)" xmlns="http://www.ni.com/PlatformFramework" />
+				<Wire Id="4c5b22e7e71c4ff2978d6362009694ba" Joints="N(5489f8ce72724e819f975791dc385d71:8126dea584b147fb874dc5908bad85ee)|(174,210) N(53edfeae0e3b4170a863f598373ed923:b271c4efd2b46b98919b85107112231)|(326,210)" xmlns="http://www.ni.com/PlatformFramework" />
+				<Wire Id="f336a5ce4db244bbbc8da34a0372ff33" Joints="N(528b13ae1674428ea90c99be4ce05e3f:i0)|(4,230) N(2e716bbdee504f348dc9129a12b9275d:8126dea584b147fb874dc5908bad85ee)|(61,230)" xmlns="http://www.ni.com/PlatformFramework" />
+				<Wire Id="1b57d0ee61514254bc4609d060107d35" Joints="N(df4ee948237241b5a93fa638df7e3192:8126dea584b147fb874dc5908bad85ee)|(174,230) N(8710e2d8a8664513ab7c697e27f3fb70:b271c4efd2b46b98919b85107112231)|(326,230)" xmlns="http://www.ni.com/PlatformFramework" />
+				<Wire Id="62a217f0c7b24b6da42b966cb2a2f193" Joints="N(b30d7d0c36aa4c9ba9f318e38d14ff8e:i0)|(4,220) N(ca5140fc966e4e2591bc00b9350695b1:8126dea584b147fb874dc5908bad85ee)|(61,220)" xmlns="http://www.ni.com/PlatformFramework" />
+				<Wire Id="12bf3ee597834334a12c90959d71802c" Joints="N(57c5d653f23246d98008703ba43306e4:8126dea584b147fb874dc5908bad85ee)|(174,220) N(10f35762ac084c39bfc9a79022868e22:b271c4efd2b46b98919b85107112231)|(326,220)" xmlns="http://www.ni.com/PlatformFramework" />
+				<Wire Id="c1136c1491354cec8fc46c776ba45b41" Joints="N(4b0d4024bd0649a9ad3a67c274d7d620:b271c4efd2b46b98919b85107112231)|(901,220) N(8da63ad8e4304ea98a848bc76d53a9a0:17)|(911,220)" xmlns="http://www.ni.com/PlatformFramework" />
+				<Wire Id="714ffc8103ff4b2cb33a073b9593658a" Joints="N(8bdf4518823a4c97aa949294297871b2:c0t0v)|(172.8,125) h(7.199997) B(1) N(382386206d6f4b2f946950a8149d91de:x)|(185,125) B(1) v(-25) B(3) N(16f726d768964123814799b7e33492c8:Value)|(203,100) B(3) v(-15) N(ca23717002e54ff2952247cf39e5ed82:Value)|(203,85)" xmlns="http://www.ni.com/PlatformFramework" />
+				<WaitUntilNextMultiple Bounds="140 410 40 40" Id="9f2b791db8ca4c3ba51a9b2bf8b6b6d4" />
+				<Wire Id="4022ef7f97fc42c4868c12af0bbd02e9" Joints="N(14c5e0eb980f4ee9aa0f50787861e1b2:8126dea584b147fb874dc5908bad85ee)|(174,240) N(c36283f40ebc49c5855a661ab71e4571:b271c4efd2b46b98919b85107112231)|(326,240)" xmlns="http://www.ni.com/PlatformFramework" />
+				<Wire Id="3e85e47df58f46a6badda6a0d6bf803a" Joints="N(57dff61d98a64f4c92f99189d5590b89:b271c4efd2b46b98919b85107112231)|(901,240) N(b4f8d29c814c497391240eb0a83852b1:17)|(911,240)" xmlns="http://www.ni.com/PlatformFramework" />
+				<Wire Id="c35ca27b2a4946a0b8c42080209f1bde" Joints="N(171ce9fd3b1044a09645799e6fa7041e:i0)|(4,240) N(62b93fb5435c40069f6dffd3828deb17:8126dea584b147fb874dc5908bad85ee)|(61,240)" xmlns="http://www.ni.com/PlatformFramework" />
+				<RightShiftRegister Bounds="916 210 13 10" Docking="Right" Id="d861a46ee729405a9c59c78627252444" Terminals="16, 17=225d1da830254f4d8515613ea8a03a78" />
+				<LeftShiftRegister Bounds="-4 210 13 10" Docking="Left" Id="d55d0b7d06ac4f4fa54e9922b308aead" RightRegister="d861a46ee729405a9c59c78627252444" Terminals="o0=c220f931341f4f948daa4fe53054420e, i0=7f1241e665cd40a4b1f3b3db7cc8e164" />
+				<RightShiftRegister Bounds="916 195 13 10" Docking="Right" Id="be99eabf14474ff08c75f89ad26fbffd" Terminals="16, 17=2948212faa89474aaddb411d5edcdd87" />
+				<LeftShiftRegister Bounds="-4 195 13 10" Docking="Left" Id="176f6555fa43451788f0985902d59e93" RightRegister="be99eabf14474ff08c75f89ad26fbffd" Terminals="o0=dd0616cdafa647ef990f80f338f109b8, i0=2c6a7583f0b74555a170d8a8125c43ab" />
+				<RightShiftRegister Bounds="916 230 13 10" Docking="Right" Id="ff18f506fcc449ba885434bd3b73123e" Terminals="16, 17=2af3951cb94d41c29fe66b36c553e9f0" />
+				<LeftShiftRegister Bounds="-4 230 13 10" Docking="Left" Id="528b13ae1674428ea90c99be4ce05e3f" RightRegister="ff18f506fcc449ba885434bd3b73123e" Terminals="o0, i0=f336a5ce4db244bbbc8da34a0372ff33" />
+				<RightShiftRegister Bounds="916 220 13 10" Docking="Right" Id="8da63ad8e4304ea98a848bc76d53a9a0" Terminals="16, 17=c1136c1491354cec8fc46c776ba45b41" />
+				<LeftShiftRegister Bounds="-4 220 13 10" Docking="Left" Id="b30d7d0c36aa4c9ba9f318e38d14ff8e" RightRegister="8da63ad8e4304ea98a848bc76d53a9a0" Terminals="o0, i0=62a217f0c7b24b6da42b966cb2a2f193" />
+				<RightShiftRegister Bounds="916 240 13 10" Docking="Right" Id="b4f8d29c814c497391240eb0a83852b1" Terminals="16, 17=3e85e47df58f46a6badda6a0d6bf803a" />
+				<LeftShiftRegister Bounds="-4 240 13 10" Docking="Left" Id="171ce9fd3b1044a09645799e6fa7041e" RightRegister="b4f8d29c814c497391240eb0a83852b1" Terminals="o0, i0=c35ca27b2a4946a0b8c42080209f1bde" />
+			</WhileLoop>
+			<ArrayLiteral Bounds="-218.200012 505 363.2 34.4" DataType="@dc502994293742aeadfd94106683a9a0" Id="2ca7496332e44fa7b731537f469a2919" Label="a456a19b0d9f48059a2b4530578c533a" xmlns="http://www.ni.com/MocCommon">
+				<p.Data>
+					<Array Lengths="12" IsBinary="True" Compression="GZip">
+						<BinaryElements>H4sIAAAAAAAEAM1UzY/SUBAv2/Jo+RDxO8ZE4lXSsAIuHDgYjLpZXYyse2EJPsrTVB/tpq816SYevBkTDx486NmLHooHz/Kv9D/RmbYGNgGzBxK3TafT+fjNvJnpSClJkn7DhW+88htAurvUNW2L8m1LuI43YZYr9I7tsEp5nzkCVO2mXsW7Uu543PUc1raY5zqUV8qPvRE3jR3m79mvmNW2PM7TiN5YBnqXunSfco8BPveEy5x7JuPjjs05M9BcAU/yHGUibdEJE9noY88/ZKJoxC4dekgN0/VlWZbep3o+yCb6HELo95nFHNPQH5rCfbbZ7y8x2UZdpTwRhu1wczQ/aP2kBx1tbdGG0bi92arVWbXZGgw+LsulO3oJ7CN7zLj+hNFx1+L+XL+QXc91TOvFmlN6c/LqYInXHF3F4dJkJNhXLQ0EGQVFp6lzmA8ZmhBKpIfCPGLq8HWMCpqrq5LoD1RVI+C6kTwKHu4UTgH+jgqHjOXisTD9gZZBFfbl/07KPxtQWIgb1VxdqHkGGyClksmSr6xqlqbhBGaBFDZKmcSZ5ICo3DaiVUXyiDKGFZVRj4HmFhLQCohTiHG0xIKcAXIzDIJw+jYMvoXTD2HwHZlgdoDS4FcY/Iikn8LgJ0hJERyurXL4Gk7fkbNgcSOSzlZBfkGkUhx6uR1wn5O4caBgVsr+TfockPStll5rkPMJW2+QC6gGtkkuorBWBb2C572eVOGpBbu3B4NBuXkUFe6BzcfMwR4quOC1yAKLlb8jBJuMuL8LqzwlpVRySZr3Mx7CKJXLQHbWOFG5PyeM4avpBgAA</BinaryElements>
+						<BinaryElements>H4sIAAAAAAAEAM1VzW8SURBfYHns8mHFz8aLHE0kG1aglAMHg1GbajFSe0GCy/I0q4/dZt+uCU2M6UUbEw8evHjx4sXLYjRe9V95/4nOLNuACTQcatpHGN58vvnNDBkpJknSHzj4iycbB9LaMjzLsQ22YXPP9YfU9rjWdFxaLOxQl4Oqsa6V8FMsNH3m+S5t2NT3XIMVCw/8PrPMTTradl5Qu2H7jCUxenVe0FuGZ+wYzKcQn/nco+5ti7JB02GMmmgugyd5ijKetI0h5emQ2R7tUr5iTlyaxq5hWt4okUhI72LtEciG2jQE1+5Qm7qWqd2zuPdE73TmmGygrlgYctNxmdWfAq0sC7RfqxlVs7qm18sVWlqvd7sf5uXS6j+H631nQJn2kBqDls1GU/1Mdm3Ptexnx5zSq+WrgyU+5tcVHC41gQT7qiaB4EVG0WnqHOZDehY8xZM9bu1RpfdyEhU0VxYl0ekqikrANR59ZQR3CqcA/44yg4wTr5ev+X/JRE1hKjgHJzuZRzY8N/Nu2GNlpscpbLgUiyY5sbpoOFQVJz4NJBeXEfVJl34xZEAEIDMRQDwp5R+QmZmCqFnElQ1x5dXIguSA6CJ4K4IfIvgpxnD5KoLfIvguxu8fi+BTyHwBBinev4nxATkDbtePcAPRgQg+iuDXJARZAYdrIgjEeD8Mtz/X7c2EJ2eXtf4MfD59CCYPJFkuafUb5BzKyrpWIedDoa6t6eRCpK/U8odFIxeBKMwxw51HLqHbAHadjIW6GpXvkQ1Lqw0NN5i1FxreddiAutgZGTejGlpglbM3OafDPhttwQ6MSTGFXJamgzmZjzDXVSCbxzgnmb9YcQ8fIggAAA==</BinaryElements>
+						<BinaryElements>H4sIAAAAAAAEAM1Vz4/SQBQutJSWH674c/UiFxMPpIEFZDlwMBh1s7oYWffCEhzKaKpDu+m0Jt3EGD0YY7KJHrx48aAnD8WLV/1X+p/oe6UraMBwwOwO4WNm3jcz73vvkSfEBEH4CQN/cWTiAK0t4hiWSdiGyR3bHVLT4VrTsmkhv0NtDqbGulbETyHfdJnj2rRhUtexCSvk77p9Zuib1Nu2nlCzYbqMJfD26qxLrxOH7BDmUrifudyh9g2DskHTYozqSJfgpPwQ93jCJEPKU+Fi29ujfEUfH2mSPaIbjieKovAm1vZgb6hNruDaTWpS29C12wZ3HpQ6nRmUDbQV8kOuWzYz+hOhlUWF9ms1UtWrV0v1coUW1+vd7rtZvrT6j2F6xxpQpt2jZNAymTexT3nXdmzDfLRkl54tHh0M8ZJfV7C4VBEB86omAHAi4dZxyhz6I/cMeIonetzYp0rv6fhWsFyc50SnqyiqDEfj0VdCccewCvDvKDHwWHy+eMz/iydqEl3BOjjayvxnwrNT74Y5VqZynMSEC7GoksXVecWhqljxKYBsXELVRx36+ZJBEYhMRwJxJJU/RKanAqJmUFcm1JVTI4acBbgQ+O8D/3vgfw1GB7uB/yrwvwX+p8D/IZ8A85W/zF+C0Qtc+B9hjYi2D8heAfZlZI9eBv5n2Pl95m147ABxTD0J1NJM6uQtNIwRzUB9nUsd+p0DSJTXtGJZPhVOi1qlJp9G81pdq8tnolk1dxge+SyAwiw97G7yOSQMoKtJGJJLUaDum9Ce2pBawoz9kHjLYgNqYw4k7IFqyMB4Zq5xTod95m1Bt4sJMUU+L0xKcFwJoaurAJtLrIj0L+1X9QQMCAAA</BinaryElements>
+					</Array>
+				</p.Data>
+				<ArrayBehavior ElementType="@c56984567cc44a6ca9929f0595ccee4c" IndexEditorWidth="42">
+					<p.DefaultElementValue>
+						<Cluster>
+							<Field1>""</Field1>
+							<Field2>""</Field2>
+						</Cluster>
+					</p.DefaultElementValue>
+				</ArrayBehavior>
+				<ClusterLiteral Bounds="47.6000137 2 310 29" DataType="@c56984567cc44a6ca9929f0595ccee4c" Id="20436a82633a4eb0810b8e23fc786a1b">
+					<ClusterBehavior AutoArrange="ArrangeHorizontally" />
+					<Literal Bounds="2 2 180 15" DataType="String" Id="8221f069005c4a7cafc1e173b1e45ebf" Label="5fb95e4dabd141afb4f61583b746c6b7">
+						<StringBehavior TextDisplayMode="Default" />
+					</Literal>
+					<NodeLabel AttachedTo="8221f069005c4a7cafc1e173b1e45ebf" Bounds="2 -16 45 15" Id="5fb95e4dabd141afb4f61583b746c6b7" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+						<p.Text>location</p.Text>
+					</NodeLabel>
+					<Literal Bounds="186 2 105 15" DataType="String" Id="716e6408b9f244c3ab3067ca3125e915" Label="5c6c04d08c47462db49f90e22989cb6e">
+						<StringBehavior TextDisplayMode="Default" />
+					</Literal>
+					<NodeLabel AttachedTo="716e6408b9f244c3ab3067ca3125e915" Bounds="186 -16 25 15" Id="5c6c04d08c47462db49f90e22989cb6e" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+						<p.Text>data</p.Text>
+					</NodeLabel>
+				</ClusterLiteral>
+			</ArrayLiteral>
+			<DataAccessor Bounds="165 505 40 15" DataItem="bed0d190b2534254ab13b836cd977c13" Id="4dbf841f879e499da2a4602722b3e2f2" Label="df863119a5e8423eb8d7f4fc870bf623" xmlns="http://www.ni.com/MocCommon">
+				<Terminal DataType="@dc502994293742aeadfd94106683a9a0" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<NodeLabel AttachedTo="2ca7496332e44fa7b731537f469a2919" Bounds="-218.200012 487 30 15" Id="a456a19b0d9f48059a2b4530578c533a" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>பருவம்:திங்கள்</p.Text>
+			</NodeLabel>
+			<NodeLabel AttachedTo="4dbf841f879e499da2a4602722b3e2f2" Bounds="210 505 179 14" Id="df863119a5e8423eb8d7f4fc870bf623" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>பருவம் &gt;&gt; மாதம்  :   நாட்கள்</p.Text>
+			</NodeLabel>
+			<Wire Id="2e0b699097a948e9828d85834f1fd0b4" Joints="N(2ca7496332e44fa7b731537f469a2919:Out)|(145,510) N(4dbf841f879e499da2a4602722b3e2f2:Value)|(168,510)" xmlns="http://www.ni.com/PlatformFramework" />
+			<MethodCall Bounds="-250 220 40 40" Id="6f7b3afa5599493d99e9e177b4c665e5" ResolveFailedHint="&quot;D:\\GitHub\\Tamilneram.github.io\\நேரம்\\வலை.gcomp\\குறள்தொடக்கம்.gviweb&quot;" Signature="@c76cd323ac1644c898aab90a0506b95a" Target="வலை::குறள்தொடக்கம்.gviweb" xmlns="http://www.ni.com/MocCommon">
+				<p.MethodDeclaration>
+					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+						<Parameter Id="L0" Desc="கணம்?" />
+						<Parameter Id="R0" Desc="தொடக்கம்" />
+					</MethodDeclaration>
+				</p.MethodDeclaration>
+				<Terminal DataType="Boolean" Direction="Input" Id="L0" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt16" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+			</MethodCall>
+			<Wire Id="c220f931341f4f948daa4fe53054420e" Joints="N(6f7b3afa5599493d99e9e177b4c665e5:R0)|(-210,225) N(d55d0b7d06ac4f4fa54e9922b308aead:o0)|(-204,225)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Literal Bounds="-235 205 25 15" DataType="Boolean" Id="fcf90bfd5a5b416ea648c67cc821e047" xmlns="http://www.ni.com/MocCommon">
+				<p.Data>True</p.Data>
+				<BooleanBehavior />
+			</Literal>
+			<Wire Id="dd0616cdafa647ef990f80f338f109b8" Joints="N(fcf90bfd5a5b416ea648c67cc821e047:Out)|(-210,210) N(176f6555fa43451788f0985902d59e93:o0)|(-204,210)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Literal Bounds="-285 220 25 15" DataType="Boolean" Id="6c6ebc8d6feb435da6f63431ae0ea81a" Label="6ac33bd9b8f54d2a8fe3042455fd3d28" xmlns="http://www.ni.com/MocCommon">
+				<p.Data>False</p.Data>
+				<BooleanBehavior />
+			</Literal>
+			<NodeLabel AttachedTo="6c6ebc8d6feb435da6f63431ae0ea81a" Bounds="-285 202 30 15" Id="6ac33bd9b8f54d2a8fe3042455fd3d28" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>கணம்?</p.Text>
+			</NodeLabel>
+			<Wire Id="fe77f8d325724319b517babf10a7b2d8" Joints="N(6c6ebc8d6feb435da6f63431ae0ea81a:Out)|(-260,225) N(6f7b3afa5599493d99e9e177b4c665e5:L0)|(-250,225)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Literal Bounds="180 530 155 110" DataType="String" Id="c5585ad2b3654ff39f978e65905b26d1" xmlns="http://www.ni.com/MocCommon">
+				<p.Data>" &lt;audio id="audiotag1" autoplay="true" controls="true"&gt; &lt;source src="இசை\\அறம்\\kural-0404.mp3" type="audio/mpeg"&gt;&lt;/source&gt;&lt;/audio&gt;"</p.Data>
+				<StringBehavior SizeToContent="False" TextDisplayMode="Default" />
+			</Literal>
+		</BlockDiagram>
+		<HtmlFrontPanel Background="[SMSolidColorBrush]#00ffffff" Height="[float]830" Id="15" LayoutSystem="[LayoutSystem]Flexible" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Fixed" Top="[float]0" UpdatedRootPage="[string]&lt;!DOCTYPE html&gt;&#xA;&lt;html lang=&quot;en&quot;&gt;&#xA;&#xA;    &lt;head&gt;&#xA;        &lt;meta charset=&quot;utf-8&quot;&gt;&#xA;        &lt;!---Read only section. Source panel edits to these document properties will not be persisted--&gt;&#xA;        &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;&#xA;        &lt;title&gt;நேரம்-தொடர்முறை&lt;/title&gt;&#xA;        &lt;!---End read only section. Additional scripts or document properties can be added outside this section--&gt;&#xA;        &lt;style ni-autogenerated-style-id=&quot;&quot;&gt;&#xA;            /* Edits to the content of this style tag will not be persisted. To add additional styles, add a new style tag before or after this one */&#xA;        &lt;/style&gt;&#xA;&#xA;    &lt;/head&gt;&#xA;&#xA;    &lt;body&gt;&#xA;        &lt;div id=&quot;ni-outdated-browser-message&quot; style=&quot;display:none&quot;&gt;இந்த வலை பயன்பாட்டை இயக்க தேவையான அம்சங்களை இந்த உலாவியில் காணவில்லை. ஆதரிக்கப்படும் உலாவியில் இந்த வலை பயன்பாட்டைத் திறக்கவும்.&lt;/div&gt;&#xA;        &lt;div id=&quot;ni-failed-to-load-vireo-source&quot; style=&quot;display:none&quot;&gt;&#xA;            &lt;div id=&quot;ni-failed-to-load-vireo-message-title&quot;&gt;&#xA;                ஆதார கோப்பை ஏற்ற முடியவில்லை&#xA;            &lt;/div&gt;&#xA;            &lt;div id=&quot;ni-failed-to-load-vireo-message-body&quot;&gt;&#xA;                அனைத்து WebVI கோப்புகளும் ஒரு HTTP சேவையகத்தைப் பயன்படுத்தி கிடைக்கின்றனவா என்பதை சரிபார்க்கவும் அல்லது கோப்பு முறைமையிலிருந்து கோப்புகளை நேரடியாக ஏற்றக்கூடிய உலாவியைப் பயன்படுத்தவும். மேலும் தகவலுக்கு &lt;a href=&quot;http://digital.ni.com/express.nsf/bycode/HOSTWEBAPP&quot;&gt;ஒரு சேவையகத்தில் வலை பயன்பாட்டை ஹோஸ்டிங் &lt;/a&gt;                செய்வதைப் பார்க்கவும்.&#xA;            &lt;/div&gt;&#xA;        &lt;/div&gt;&#xA;        &lt;div class=&quot;ni-front-panel-wrapper&quot; vi-ref=&quot;&quot; ni-control-id=&quot;FrontPanelWrapper&quot;&gt;&#xA;            &lt;ni-front-panel control-resize-mode='fixed' layout='flexible' ni-control-id='2'&gt;&#xA;&#xA;                &#xA;                &#xA;                &#xA;                &#xA;            &lt;/ni-front-panel&gt;&#xA;            &lt;audio id=&quot;audiotag1&quot; autoplay=&quot;true&quot; controls=&quot;true&quot;&gt; &lt;source src=&quot;இசை\அறம்\kural-0404.mp3&quot; type=&quot;audio/mpeg&quot;&gt;&lt;/source&gt;&lt;/audio&gt;&#xA;        &lt;/div&gt;&#xA;    &lt;/body&gt;&#xA;&#xA;&lt;/html&gt;" Width="[float]2000" xmlns="http://www.ni.com/NationalInstruments.LabVIEW.HtmlVI">
+			<FlexibleLayoutGroup Height="[float]50" Id="58e95831ce7849d484377ccad1f1b10e" Left="[float]30" Top="[float]30" Width="[float]1940" xmlns="http://www.ni.com/PanelCommon">
+				<FlexibleLayoutWrapper FlexGrow="[double]1" Height="[float]50" Id="ad6eae893714d8db4ef6dda82847a01" Left="[float]0" Top="[float]0" Width="[float]1940">
+					<FlexibleLayoutContainer Background="[SMSolidColorBrush]#ff0076a3" BorderBrush="[SMSolidColorBrush]#ff0076a3" Height="[float]34" HorizontalContentAlignment="[FlexibleLayoutHorizontalContentAlignment]Center" Id="fbf3393bacd8490baed174a0fbdcd6c5" Left="[float]8" Top="[float]8" Width="[float]1924">
+						<FlexibleLayoutComponent Height="[float]22" Id="919d564cf2b948718f8e3920e6810522" Left="[float]804" Top="[float]6" Width="[float]136">
+							<Text BaseName="[string]Text" Foreground="[SMColor]#ffffffff" Height="[float]22" Id="d0cf1da1d49e4dd2a449e8c1dca8e661" Left="[float]0" SizeMode="[TextModelSizeMode]SizeToText" Text="[string]யாதும் ஊரே !" TextAlignment="[TextAlignment]Center" TextWrapping="[TextWrapping]Wrap" Top="[float]0" Width="[float]136" xmlns="http://www.ni.com/PlatformFramework">
+								<FontSetting FontFamily="Segoe UI" FontSize="12" FontStyle="Bold" Id="8e2b40ebe1f647238ee47f608a42427c" />
+							</Text>
+						</FlexibleLayoutComponent>
+						<FlexibleLayoutComponent Height="[float]22" Id="c5f9ecc7e5e741229981959daeb9ebb3" Left="[float]948" Top="[float]6" Width="[float]172">
+							<Text BaseName="[string]Text" Foreground="[SMColor]#ffffffff" Height="[float]22" Id="661bcd0035d4534aa0d23ff53ad1792" Left="[float]0" Text="[string]யாவரும் கேளிர் !!" TextWrapping="[TextWrapping]Wrap" Top="[float]0" Width="[float]172" xmlns="http://www.ni.com/PlatformFramework">
+								<FontSetting FontFamily="Segoe UI" FontSize="12" FontStyle="Bold" Id="ca6ecdfb2020492185dd44db96e9814b" />
+							</Text>
+						</FlexibleLayoutComponent>
+					</FlexibleLayoutContainer>
+				</FlexibleLayoutWrapper>
+			</FlexibleLayoutGroup>
+			<FlexibleLayoutGroup Height="[float]346" Id="53ebe62480494bd299204395e6587692" Left="[float]30" Top="[float]80" Width="[float]1940" xmlns="http://www.ni.com/PanelCommon">
+				<FlexibleLayoutWrapper FlexGrow="[double]1" Height="[float]346" Id="f02d7d92854a46529ea7ecc7c49a72d4" Left="[float]0" Top="[float]0" Width="[float]1940">
+					<FlexibleLayoutContainer Background="[SMSolidColorBrush]#00ffffff" BorderBrush="[SMSolidColorBrush]#ff0076a3" Height="[float]330" HorizontalContentAlignment="[FlexibleLayoutHorizontalContentAlignment]Center" Id="cfa1045615ba4ecba4322fafa7834e90" Left="[float]8" Top="[float]8" Width="[float]1924">
+						<FlexibleLayoutComponent Height="[float]262" Id="9996e6336322466f9d1ccdb626ead40d" Left="[float]306" Top="[float]6" Width="[float]256">
+							<TabControl BaseName="[string]Tab" ControlResizeMode="[ControlResizeMode]Fixed" Height="[float]236" Id="7e4681663ed44315838cb590210dd71d" IncludeInCapture="[bool]False" Label="[UIModel]131636cf483141a1a28d671543acbec0" Left="[float]0" MinHeight="[float]236" SelectedIndex="{DataItemBinding Id=8a076ec6436940d5bff78f206eaf3f2d}" TabIndex="[int]0" TabSelectorVisibility="[SMVisibility]Collapsed" Top="[float]26" Width="[float]256" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+								<TabItem Header="[string]பொழுது : நாழிகை " Id="508b319e8f6e42be863c6737b90bb70f" Left="[float]0" TabIndex="[int]0" Top="[float]0">
+									<LayoutPanel Height="[float]234" Id="f80eb376ac544db9b5d41f5556612695" Left="[float]1" MinHeight="[float]234" Top="[float]1" Width="[float]254">
+										<Label Height="[float]22" Id="d04bea6b1a25443e82977e1e3c25ba0d" LabelOwner="[UIModel]91643d1336ef4bc28b95bc2ad4485320" Left="[float]3" Text="[string]திருவள்ளுவர் ஆண்டு" Top="[float]4" Visible="[bool]False" Width="[float]187" xmlns="http://www.ni.com/PanelCommon">
+											<FontSetting FontFamily="Segoe UI" FontSize="12" Id="c95fb89787d400889ff6241ef412fc9" xmlns="http://www.ni.com/PlatformFramework" />
+										</Label>
+										<Slider BaseName="[string]Slider" Height="[float]200" Id="91643d1336ef4bc28b95bc2ad4485320" InteractionMode="[NumericPointerInteractionModes]EditRange" Interval="[int]1" Label="[UIModel]d04bea6b1a25443e82977e1e3c25ba0d" LabelPresenter="[string]LV:0.0" Left="[float]3" MajorRangeDivisionsMode="[RangeDivisionsMode]Auto" MajorTickVisibility="[SMVisibility]Collapsed" Maximum="[int]3000" Minimum="[int]-3000" MinorTickVisibility="[SMVisibility]Collapsed" Orientation="[SMOrientation]Vertical" RangeLabelsVisibility="[SMVisibility]Visible" TabIndex="[int]3" Top="[float]30" Value="{DataItemBinding Id=6f5a22d2571f4b1b9cfda60333dbaf21}" ValueType="[Type]Int32" Width="[float]72">
+											<FontSetting FontFamily="Segoe UI" FontSize="12" Id="6fd1914e241f47b19f6cbea7e9a033fb" xmlns="http://www.ni.com/PlatformFramework" />
+										</Slider>
+										<Label Height="[float]22" Id="56f0afe710b64025969d70081d1ab3e0" LabelAlignment="[PartAlignment]TopCenter" LabelOwner="[UIModel]527247d50db4492fa68eec14bd9f4ccf" Left="[float]94" Text="[string]ஆண்டுநாள்கள்" Top="[float]17" Visible="[bool]False" Width="[float]137" xmlns="http://www.ni.com/PanelCommon">
+											<FontSetting FontFamily="Segoe UI" FontSize="12" Id="2a344d6726d84fdaa039eb99abaef93d" xmlns="http://www.ni.com/PlatformFramework" />
+										</Label>
+										<Gauge AnalogDisplayType="[AnalogDisplayType]Needle" BaseName="[string]Gauge" DigitalDisplayPosition="[DigitalDisplayPosition]Center" DigitalDisplayVisible="[bool]False" Height="[float]175" Id="527247d50db4492fa68eec14bd9f4ccf" InteractionMode="[NumericPointerInteractionModes]EditRange" Interval="[byte]1" IsTabStop="[bool]True" Label="[UIModel]56f0afe710b64025969d70081d1ab3e0" LabelPresenter="[string]LV:0.0" Left="[float]75" MajorRangeDivisionsMode="[RangeDivisionsMode]Auto" MajorTickVisibility="[SMVisibility]Collapsed" Maximum="[byte]255" MinHeight="[float]125" MinWidth="[float]125" Minimum="[byte]1" MinorTickVisibility="[SMVisibility]Collapsed" RangeLabelsVisibility="[SMVisibility]Visible" ScaleArc="[ArcSweep]90,0" TabIndex="[int]2" Top="[float]43" Value="{DataItemBinding Id=57ace7772831469691281c78df8fbc22}" ValueType="[Type]UInt8" Width="[float]175">
+											<FontSetting FontFamily="Segoe UI" FontSize="12" Id="d3c0e452cabc49fd9347f00ceee0c2bf" xmlns="http://www.ni.com/PlatformFramework" />
+										</Gauge>
+										<Label Height="[float]22" Id="dad68d484b334802a797cc72e65455c7" LabelOwner="[UIModel]149bf075c2fd487cb05812d2136fa4ae" Left="[float]188" Text="[string]ஆண்டுநாள்" Top="[float]-27" Visible="[bool]False" Width="[float]106" xmlns="http://www.ni.com/PanelCommon">
+											<FontSetting FontFamily="Segoe UI" FontSize="12" Id="896742ca34b24979ab3d8aa854975236" xmlns="http://www.ni.com/PlatformFramework" />
+										</Label>
+										<NumericText BaseName="[string]Numeric" Height="[float]28" Id="149bf075c2fd487cb05812d2136fa4ae" Interval="[ushort]1" IsReadOnly="[bool]True" Label="[UIModel]dad68d484b334802a797cc72e65455c7" Left="[float]188" RadixBase="[RadixBase]Decimal" TabIndex="[int]3" TextAlignment="[TextAlignment]Center" Top="[float]-1" Value="{DataItemBinding Id=e32c12be275c4131bef903c0a838c049}" ValueFormatter="[string]Decimal, Uppercase, Signed" ValueType="[Type]UInt16" Width="[float]66">
+											<FontSetting FontFamily="Segoe UI" FontSize="12" Id="6c3dd74feef14957a19b0384301e8ef4" xmlns="http://www.ni.com/PlatformFramework" />
+										</NumericText>
+										<Text BaseName="[string]Text" Height="[float]228" Id="cea9ce79724c464bb233c7820ba3f0b5" Left="[float]3" SizeMode="[TextModelSizeMode]Fixed" Text="[string]நா    " TextWrapping="[TextWrapping]Wrap" Top="[float]3" Width="[float]248" xmlns="http://www.ni.com/PlatformFramework">
+											<FontSetting FontFamily="Segoe UI" FontSize="12" Id="ab3f7c05ac8a4c7e843efa7139cfd370" />
+										</Text>
+										<NumericText BaseName="[string]Numeric" Height="[float]28" Id="a1889dbfdce048a1b1911c1151079a9a" Interval="[uint]1" IsReadOnly="[bool]True" Label="[UIModel]c9e23cafe62e407186b020ba93283be9" Left="[float]-1" RadixBase="[RadixBase]Decimal" TabIndex="[int]0" TextAlignment="[TextAlignment]Center" Top="[float]-1" Value="{DataItemBinding Id=992cd524cf164985a070d1f29fcdb7fc}" ValueFormatter="[string]Decimal, Uppercase, Signed" ValueType="[Type]UInt32" Width="[float]66">
+											<FontSetting FontFamily="Segoe UI" FontSize="12" Id="eb22de99aed94215bf7d2dc4da552d64" xmlns="http://www.ni.com/PlatformFramework" />
+										</NumericText>
+										<Label Height="[float]22" Id="c9e23cafe62e407186b020ba93283be9" LabelOwner="[UIModel]a1889dbfdce048a1b1911c1151079a9a" Left="[float]-1" Text="[string]ஆண்டு" Top="[float]-27" Visible="[bool]False" Width="[float]66" xmlns="http://www.ni.com/PanelCommon">
+											<FontSetting FontFamily="Segoe UI" FontSize="12" Id="2bb643104d97417ea9eb965ef935a89e" xmlns="http://www.ni.com/PlatformFramework" />
+										</Label>
+									</LayoutPanel>
+								</TabItem>
+								<FontSetting FontFamily="Segoe UI" FontSize="12" Id="13e50d96bdd4424a9319594fc388c99b" xmlns="http://www.ni.com/PlatformFramework" />
+							</TabControl>
+							<Label Height="[float]22" Id="131636cf483141a1a28d671543acbec0" LabelOwner="[UIModel]7e4681663ed44315838cb590210dd71d" Left="[float]0" Text="[string]திருவள்ளுவர் ஆண்டு  :  நாள்" Top="[float]0" Width="[float]249">
+								<FontSetting FontFamily="Segoe UI" FontSize="12" Id="d6cc8971be0945bd9aef003f51da2829" xmlns="http://www.ni.com/PlatformFramework" />
+							</Label>
+						</FlexibleLayoutComponent>
+						<FlexibleLayoutComponent Height="[float]318" Id="a1292878c20747b8856dc0a7660b8436" Left="[float]570" Top="[float]6" Width="[float]256">
+							<TreeControl AllowSelection="[bool]True" BaseName="[string]Tree" ColumnHeaderVisibility="[SMVisibility]Visible" ControlResizeMode="[ControlResizeMode]Fixed" DataSource="{DataItemBinding Id=bed0d190b2534254ab13b836cd977c13}" DataSourceType="[Type]@dc502994293742aeadfd94106683a9a0" Height="[float]292" Id="9792238839c646c18a6dea425b81e1fa" Label="[UIModel]b10669df6d6442d0bff0ea7243d5bde8" Left="[float]0" MinWidth="[float]125" SelectionMode="[SMTreeSelectionMode]One" TabIndex="[int]0" Top="[float]26" Width="[float]256" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+								<TabularControlColumn Id="3d6c477f2ba549729c75571ab5d60e55" Width="[double]NaN" />
+								<TabularControlColumn Id="481fc3d369ee47179d894f25b49a7c4e" />
+								<FontSetting FontFamily="Segoe UI" FontSize="12" Id="47e063b6f5154eeebd4186dd9201e930" xmlns="http://www.ni.com/PlatformFramework" />
+							</TreeControl>
+							<Label Height="[float]22" Id="b10669df6d6442d0bff0ea7243d5bde8" LabelOwner="[UIModel]9792238839c646c18a6dea425b81e1fa" Left="[float]0" Text="[string]பருவம் &gt;&gt; மாதம்  :   நாட்கள்" Top="[float]0" Width="[float]243">
+								<FontSetting FontFamily="Segoe UI" FontSize="12" Id="c648c85cfeaf4f4d993cf39dc7787227" xmlns="http://www.ni.com/PlatformFramework" />
+							</Label>
+						</FlexibleLayoutComponent>
+						<FlexibleLayoutComponent Height="[float]282" Id="a1d13ecedb87411f8bfa917a824baf64" Left="[float]834" Top="[float]6" Width="[float]256">
+							<TabControl BaseName="[string]Tab" ControlResizeMode="[ControlResizeMode]Fixed" Height="[float]256" Id="f3d407f257604ffea37f9ed0c49a5d26" IncludeInCapture="[bool]False" Label="[UIModel]8b4cb9d6d59d42beb61ed6dfad78122b" Left="[float]0" MinHeight="[float]256" SelectedIndex="{DataItemBinding Id=b2d4701b1c024a5b9c91c6eecca9188b}" TabIndex="[int]0" TabSelectorVisibility="[SMVisibility]Collapsed" TabStripPlacement="[Dock]Top" Top="[float]26" Width="[float]256" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+								<TabItem Header="[string]பொழுது : நாழிகை " Id="67498af8f3a342da975751f238629d78" Left="[float]0" TabIndex="[int]0" Top="[float]0">
+									<LayoutPanel Height="[float]254" Id="796f6b2c360c464284643b0608934734" Left="[float]1" MinHeight="[float]254" Top="[float]1" Width="[float]254">
+										<Label Height="[float]22" Id="43647a4448a4644ba07aba9857707b0" LabelAlignment="[PartAlignment]TopCenter" LabelOwner="[UIModel]940feca671004f8d827f0cd7361d2899" Left="[float]72" Text="[string]சிறுபொழுது" Top="[float]-23" Visible="[bool]False" Width="[float]111" xmlns="http://www.ni.com/PanelCommon">
+											<FontSetting FontFamily="Segoe UI" FontSize="12" Id="58d4d109aba74b7cb3b7868af659f9a9" xmlns="http://www.ni.com/PlatformFramework" />
+										</Label>
+										<Gauge AnalogDisplayType="[AnalogDisplayType]Needle" BaseName="[string]Gauge" CoercionMode="[NumericPointerCoercionMode]ToIntervalFromMinimum" DigitalDisplayPosition="[DigitalDisplayPosition]Top" DigitalDisplayVisible="[bool]False" Height="[float]248" Id="940feca671004f8d827f0cd7361d2899" InteractionMode="[NumericPointerInteractionModes]EditRange" Interval="[byte]1" Label="[UIModel]43647a4448a4644ba07aba9857707b0" LabelPresenter="[string]LV:0.000" Left="[float]3" MajorRangeDivisionsMode="[RangeDivisionsMode]Auto" MajorTickVisibility="[SMVisibility]Collapsed" Maximum="[byte]6" MinorTickVisibility="[SMVisibility]Collapsed" RangeLabelsVisibility="[SMVisibility]Collapsed" ScaleArc="[ArcSweep]270,0" TabIndex="[int]3" Top="[float]3" Value="{DataItemBinding Id=156a44abda124999bd9a3f332cd3d5c1}" ValueType="[Type]UInt8" Width="[float]248">
+											<FontSetting FontFamily="Segoe UI" FontSize="12" Id="1e47c26256fa41c4bfe102d5f0be29e4" xmlns="http://www.ni.com/PlatformFramework" />
+										</Gauge>
+										<Label Height="[float]22" Id="f649ed6ff6814282ab45cdd4ac976581" LabelOwner="[UIModel]111a85d823a041b89f7c4839ee6b291d" Left="[float]52" Text="[string]கிழமைகள்" Top="[float]26" Visible="[bool]False" Width="[float]100" xmlns="http://www.ni.com/PanelCommon">
+											<FontSetting FontFamily="Segoe UI" FontSize="12" Id="40cb95a180be49f99c1d188a7e336c78" xmlns="http://www.ni.com/PlatformFramework" />
+										</Label>
+										<Gauge AnalogDisplayType="[AnalogDisplayType]Needle" BaseName="[string]Gauge" CoercionMode="[NumericPointerCoercionMode]ToIntervalFromMinimum" DigitalDisplayPosition="[DigitalDisplayPosition]Top" DigitalDisplayVisible="[bool]False" Height="[float]150" Id="111a85d823a041b89f7c4839ee6b291d" InteractionMode="[NumericPointerInteractionModes]EditRange" Interval="[byte]1" Label="[UIModel]f649ed6ff6814282ab45cdd4ac976581" LabelPresenter="[string]LV:0.000" Left="[float]52" MajorRangeDivisionsMode="[RangeDivisionsMode]Auto" MajorTickVisibility="[SMVisibility]Collapsed" Maximum="[byte]7" Minimum="[byte]0" MinorTickVisibility="[SMVisibility]Collapsed" RangeLabelsVisibility="[SMVisibility]Collapsed" ScaleArc="[ArcSweep]115,0" ScaleVisibility="[SMVisibility]Visible" TabIndex="[int]3" Top="[float]52" Value="{DataItemBinding Id=363f1bc6f448473bbd23d3f1bebcb3e2}" ValueType="[Type]UInt8" Width="[float]150">
+											<FontSetting FontFamily="Segoe UI" FontSize="12" Id="2b5e0a8e087046c5977cd87f4c614ae6" xmlns="http://www.ni.com/PlatformFramework" />
+										</Gauge>
+										<Text BaseName="[string]Text" Height="[float]248" Id="abbc80d0b57f4f70937133a4204a8889" Left="[float]3" SizeMode="[TextModelSizeMode]Fixed" Text="[string]                     &#xD;&#xA;&#xD;&#xA;&#xD;&#xA;                    ஞா     தி&#xD;&#xA;&#xD;&#xA;              கா                 செ&#xD;&#xA;&#xD;&#xA;                 வெ           அ &#xD;&#xA;                          வி&#xD;&#xA;&#xD;&#xA;                                    " TextWrapping="[TextWrapping]Wrap" Top="[float]3" Width="[float]248" xmlns="http://www.ni.com/PlatformFramework">
+											<FontSetting FontFamily="Segoe UI" FontSize="12" Id="c19c156036c049298bd246c1bde3dc0c" />
+										</Text>
+										<Text BaseName="[string]Text" Height="[float]22" Id="2db681053865443688f4ff8fee86de32" Left="[float]98" SizeMode="[TextModelSizeMode]SizeToText" Text="[string]யாமம்" TextWrapping="[TextWrapping]Wrap" Top="[float]221" Width="[float]68" xmlns="http://www.ni.com/PlatformFramework">
+											<FontSetting FontFamily="Segoe UI" FontSize="12" Id="f8546622220b45c396cd31ec321d3afd" />
+										</Text>
+										<Text BaseName="[string]Text" Height="[float]22" Id="68fec952b374d42ac5a60e845a243fa" Left="[float]3" SizeMode="[TextModelSizeMode]SizeToText" Text="[string]வைகறை" TextWrapping="[TextWrapping]Wrap" Top="[float]177" Width="[float]94" xmlns="http://www.ni.com/PlatformFramework">
+											<FontSetting FontFamily="Segoe UI" FontSize="12" Id="5dedfa650a084f64b2fd69795deec2d8" />
+										</Text>
+										<Text BaseName="[string]Text" Height="[float]22" Id="172c543e4c964cd9b3d4b8a349d74399" Left="[float]3" SizeMode="[TextModelSizeMode]SizeToText" Text="[string]காலை" TextWrapping="[TextWrapping]Wrap" Top="[float]67" Width="[float]70" xmlns="http://www.ni.com/PlatformFramework">
+											<FontSetting FontFamily="Segoe UI" FontSize="12" Id="3327729182b14868abe44efdf63f8227" />
+										</Text>
+										<Text BaseName="[string]Text" Height="[float]22" Id="bcd417681174ddab1887fdde21c3a94" Left="[float]89" SizeMode="[TextModelSizeMode]SizeToText" Text="[string]நண்பகல்" TextWrapping="[TextWrapping]Wrap" Top="[float]28" Width="[float]93" xmlns="http://www.ni.com/PlatformFramework">
+											<FontSetting FontFamily="Segoe UI" FontSize="12" Id="f005a3a8a61341d3ac5f3453d2fd849b" />
+										</Text>
+										<Text BaseName="[string]Text" Height="[float]22" Id="4015e2a545a143f78987c59ef3877de3" Left="[float]174" SizeMode="[TextModelSizeMode]SizeToText" Text="[string]எற்பாடு" TextWrapping="[TextWrapping]Wrap" Top="[float]69" Width="[float]79" xmlns="http://www.ni.com/PlatformFramework">
+											<FontSetting FontFamily="Segoe UI" FontSize="12" Id="3dd621316cc34ee7a01500ea96ffd9da" />
+										</Text>
+										<Text BaseName="[string]Text" Height="[float]22" Id="52338dae105e4c558c32ac456d5436b3" Left="[float]180" SizeMode="[TextModelSizeMode]SizeToText" Text="[string]மாலை" TextWrapping="[TextWrapping]Wrap" Top="[float]175" Width="[float]71" xmlns="http://www.ni.com/PlatformFramework">
+											<FontSetting FontFamily="Segoe UI" FontSize="12" Id="b325e77f6aa74f47bbc9e2483b8454d5" />
+										</Text>
+										<EnumSelector AllowUndefinedValueEntry="[bool]False" BaseName="[string]Enum" Height="[float]28" Id="e8d2ce4b3225412bab0f0371cf340f9e" InteractionMode="[SelectorInteractionModes]ReadOnly" IsTypeAheadEnabled="[bool]True" Label="[UIModel]edf54f9ae9974efab58982e87ba6a7c5" Left="[float]139" MinHeight="[float]24" MinWidth="[float]24" TabIndex="[int]0" TextAlignment="[TextAlignment]Center" Top="[float]-1" Value="{DataItemBinding Id=9eadcb37aa654b059dfcdccf51ea0381}" ValueType="[Type]UInt8" VisualMode="[SelectorVisualMode]RingStyle" Width="[float]115">
+											<EnumSelectorInfo DisplayValue="[string]யாமம்" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[byte]0" ValueType="[Type]UInt8" />
+											<EnumSelectorInfo DisplayValue="[string]வைகறை" DisplayValueOverride="[string]" Id="26" IsEnabled="[bool]True" Value="[byte]1" ValueType="[Type]UInt8" />
+											<EnumSelectorInfo DisplayValue="[string]காலை" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[byte]2" ValueType="[Type]UInt8" />
+											<EnumSelectorInfo DisplayValue="[string]நண்பகல்" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[byte]3" ValueType="[Type]UInt8" />
+											<EnumSelectorInfo DisplayValue="[string]எற்பாடு" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[byte]4" ValueType="[Type]UInt8" />
+											<EnumSelectorInfo DisplayValue="[string]மாலை" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[byte]5" ValueType="[Type]UInt8" />
+											<FontSetting FontFamily="Segoe UI" FontSize="12" Id="ef4e5f81d6164914aca72edadba8394f" xmlns="http://www.ni.com/PlatformFramework" />
+										</EnumSelector>
+										<Label Height="[float]22" Id="edf54f9ae9974efab58982e87ba6a7c5" LabelOwner="[UIModel]e8d2ce4b3225412bab0f0371cf340f9e" Left="[float]139" Text="[string]பொழுது" Top="[float]-27" Visible="[bool]False" Width="[float]76" xmlns="http://www.ni.com/PanelCommon">
+											<FontSetting FontFamily="Segoe UI" FontSize="12" Id="7712e67b34e0467fb29dbb3556c1dcae" xmlns="http://www.ni.com/PlatformFramework" />
+										</Label>
+										<EnumSelector AllowUndefinedValueEntry="[bool]False" BaseName="[string]Enum" Height="[float]28" Id="a756c3430c654e928868dd63c0b62c8b" InteractionMode="[SelectorInteractionModes]ReadOnly" IsTypeAheadEnabled="[bool]True" Label="[UIModel]b39c19eb32f14471ac8699648c334b08" Left="[float]-1" TabIndex="[int]1" TextAlignment="[TextAlignment]Center" Top="[float]-1" Value="{DataItemBinding Id=2b34a30b979e4f4b80b39f279eebf00c}" ValueType="[Type]UInt8" VisualMode="[SelectorVisualMode]RingStyle" Width="[float]120">
+											<EnumSelectorInfo DisplayValue="[string]ஞாயிறு" DisplayValueOverride="[string]" Id="26" IsEnabled="[bool]True" Value="[byte]0" ValueType="[Type]UInt8" />
+											<EnumSelectorInfo DisplayValue="[string]திங்கள்" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[byte]1" ValueType="[Type]UInt8" />
+											<EnumSelectorInfo DisplayValue="[string]செவ்வாய்" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[byte]2" ValueType="[Type]UInt8" />
+											<EnumSelectorInfo DisplayValue="[string]அறிவன்" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[byte]3" ValueType="[Type]UInt8" />
+											<EnumSelectorInfo DisplayValue="[string]வியாழன்" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[byte]4" ValueType="[Type]UInt8" />
+											<EnumSelectorInfo DisplayValue="[string]வெள்ளி" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[byte]5" ValueType="[Type]UInt8" />
+											<EnumSelectorInfo DisplayValue="[string]காரி" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[byte]6" ValueType="[Type]UInt8" />
+											<FontSetting FontFamily="Segoe UI" FontSize="12" Id="cae03ce17f78471ba4a1199b65af6fe4" xmlns="http://www.ni.com/PlatformFramework" />
+										</EnumSelector>
+										<Label Height="[float]22" Id="b39c19eb32f14471ac8699648c334b08" LabelAlignment="[PartAlignment]LeftCenter" LabelOwner="[UIModel]a756c3430c654e928868dd63c0b62c8b" Left="[float]-77" Text="[string]கிழமை" Top="[float]2" Visible="[bool]False" Width="[float]68" xmlns="http://www.ni.com/PanelCommon">
+											<FontSetting FontFamily="Segoe UI" FontSize="12" Id="5ab916946cb4a2898f85026fb38d6b9" xmlns="http://www.ni.com/PlatformFramework" />
+										</Label>
+									</LayoutPanel>
+								</TabItem>
+								<FontSetting FontFamily="Segoe UI" FontSize="12" Id="18ef2dfd403349d3abfba2e1e195fd75" xmlns="http://www.ni.com/PlatformFramework" />
+							</TabControl>
+							<Label Height="[float]22" Id="8b4cb9d6d59d42beb61ed6dfad78122b" LabelOwner="[UIModel]f3d407f257604ffea37f9ed0c49a5d26" Left="[float]0" Text="[string]கிழமை             :           பொழுது" Top="[float]0" Width="[float]252">
+								<FontSetting FontFamily="Segoe UI" FontSize="12" Id="17d5676bbf9a4d57a53740c0e4a4238c" xmlns="http://www.ni.com/PlatformFramework" />
+							</Label>
+						</FlexibleLayoutComponent>
+						<FlexibleLayoutComponent Height="[float]282" Id="2785ec7faa8e413f934e6a00dbfa099f" Left="[float]1098" Top="[float]6" Width="[float]256">
+							<TabControl BaseName="[string]Tab" ControlResizeMode="[ControlResizeMode]Fixed" Height="[float]256" Id="eeaf9991ffda4b44be3b6a23ed427e9e" IncludeInCapture="[bool]False" Label="[UIModel]59690b9ea9524bbfaa65f8939280b794" Left="[float]0" MinHeight="[float]256" SelectedIndex="{DataItemBinding Id=dcd53f6902fa4abab59c64d2bb394629}" TabIndex="[int]0" TabSelectorVisibility="[SMVisibility]Collapsed" TabStripPlacement="[Dock]Top" Top="[float]26" Width="[float]256" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+								<TabItem Header="[string]பொழுது : நாழிகை " Id="e5b863b93cf3430e9d9aab1b0a4c5cda" Left="[float]0" TabIndex="[int]0" Top="[float]0">
+									<LayoutPanel Height="[float]254" Id="5ae62cc2e9064295af0f8eccc1826ce6" Left="[float]1" MinHeight="[float]254" Top="[float]1" Width="[float]254">
+										<Label Height="[float]22" Id="3c8cab89f9734c139f6cfb6976b0282d" LabelAlignment="[PartAlignment]TopCenter" LabelOwner="[UIModel]f2b38ace679f4e9291720ec57d5f7f8a" Left="[float]73" Text="[string]நாழிகைகள்" Top="[float]26" Visible="[bool]False" Width="[float]108" xmlns="http://www.ni.com/PanelCommon">
+											<FontSetting FontFamily="Segoe UI" FontSize="12" Id="1bc4d449c8e8486e8a3326f2fccd7a69" xmlns="http://www.ni.com/PlatformFramework" />
+										</Label>
+										<Gauge AnalogDisplayType="[AnalogDisplayType]Line" BaseName="[string]Gauge" DigitalDisplayPosition="[DigitalDisplayPosition]Center" DigitalDisplayVisible="[bool]False" Height="[float]150" Id="f2b38ace679f4e9291720ec57d5f7f8a" InteractionMode="[NumericPointerInteractionModes]EditRange" Interval="[byte]1" IsTabStop="[bool]True" Label="[UIModel]3c8cab89f9734c139f6cfb6976b0282d" LabelPresenter="[string]LV:0.0" Left="[float]52" MajorRangeDivisionsMode="[RangeDivisionsMode]Auto" MajorTickVisibility="[SMVisibility]Collapsed" MinHeight="[float]125" MinWidth="[float]125" MinorTickVisibility="[SMVisibility]Collapsed" RangeLabelsVisibility="[SMVisibility]Visible" ScaleArc="[ArcSweep]90,0" TabIndex="[int]3" Top="[float]52" Value="{DataItemBinding Id=24b6cbb359f24df4aafb2fe6bc1d9c31}" ValueType="[Type]UInt8" Width="[float]150">
+											<FontSetting FontFamily="Segoe UI" FontSize="12" Id="482d79ab145b8a6f4fa8e871c1938" xmlns="http://www.ni.com/PlatformFramework" />
+										</Gauge>
+										<Label Height="[float]22" Id="9678c51c4fe54ace9b2587a15bb3cfcb" LabelAlignment="[PartAlignment]TopCenter" LabelOwner="[UIModel]5b69bd8cea11460fbe61497f6b9b3988" Left="[float]82" Text="[string]கணங்கள்" Top="[float]-23" Visible="[bool]False" Width="[float]90" xmlns="http://www.ni.com/PanelCommon">
+											<FontSetting FontFamily="Segoe UI" FontSize="12" Id="9c4ca6d1795442a0bf097ee9292824b6" xmlns="http://www.ni.com/PlatformFramework" />
+										</Label>
+										<Gauge AnalogDisplayType="[AnalogDisplayType]Line" BaseName="[string]Gauge" DigitalDisplayPosition="[DigitalDisplayPosition]Top" DigitalDisplayVisible="[bool]False" Height="[float]248" Id="5b69bd8cea11460fbe61497f6b9b3988" InteractionMode="[NumericPointerInteractionModes]EditRange" Interval="[byte]1" IsTabStop="[bool]True" Label="[UIModel]9678c51c4fe54ace9b2587a15bb3cfcb" LabelPresenter="[string]LV:0.0" Left="[float]3" MajorTickVisibility="[SMVisibility]Collapsed" Maximum="[byte]6" MinHeight="[float]125" MinWidth="[float]125" MinorTickVisibility="[SMVisibility]Collapsed" ScaleArc="[ArcSweep]90,0" TabIndex="[int]2" Top="[float]3" Value="{DataItemBinding Id=27043b4c36f44f02bcd153d740c7a8fb}" ValueType="[Type]UInt8" Width="[float]248">
+											<FontSetting FontFamily="Segoe UI" FontSize="12" Id="276af36aa31e489e94807f7ecbf0b70e" xmlns="http://www.ni.com/PlatformFramework" />
+										</Gauge>
+										<Text BaseName="[string]Text" Height="[float]248" Id="a8336cf45c714d04a6c5db73a45313b9" Left="[float]3" SizeMode="[TextModelSizeMode]Fixed" Text="[string]நா    " TextWrapping="[TextWrapping]Wrap" Top="[float]3" Width="[float]248" xmlns="http://www.ni.com/PlatformFramework">
+											<FontSetting FontFamily="Segoe UI" FontSize="12" Id="7ca7104a3df44abdb82b9ddf0bdb4579" />
+										</Text>
+										<Label Height="[float]22" Id="2ac18313314a45769011d7887f4c2c6f" LabelOwner="[UIModel]eeede440d1094a0697825a0406b167ad" Left="[float]-1" Text="[string]நாழிகை" Top="[float]-27" Visible="[bool]False" Width="[float]77" xmlns="http://www.ni.com/PanelCommon">
+											<FontSetting FontFamily="Segoe UI" FontSize="12" Id="902f05eb6ade4868803a678a5d642f7d" xmlns="http://www.ni.com/PlatformFramework" />
+										</Label>
+										<NumericText BaseName="[string]Numeric" Height="[float]28" Id="eeede440d1094a0697825a0406b167ad" Interval="[byte]1" IsReadOnly="[bool]True" Label="[UIModel]2ac18313314a45769011d7887f4c2c6f" Left="[float]-1" MinHeight="[float]16" MinWidth="[float]36" RadixBase="[RadixBase]Decimal" RadixVisibility="[SMVisibility]Collapsed" TabIndex="[int]0" TextAlignment="[TextAlignment]Center" Top="[float]-1" Value="{DataItemBinding Id=b7a40914d94e444e89fe7d38d5ecb4bb}" ValueFormatter="[string]Decimal, Uppercase, Signed" ValueType="[Type]UInt8" Width="[float]55">
+											<FontSetting FontFamily="Segoe UI" FontSize="12" Id="6aac6251cb774401bb88a8d9ede92f45" xmlns="http://www.ni.com/PlatformFramework" />
+										</NumericText>
+										<NumericText BaseName="[string]Numeric" Height="[float]28" Id="f5466ced16c8408eb3852cafb1cb3c5c" Interval="[byte]1" IsReadOnly="[bool]True" Label="[UIModel]f35f6419a2474d2fb96b1f7026b354a1" Left="[float]200" MinHeight="[float]16" MinWidth="[float]36" RadixBase="[RadixBase]Decimal" RadixVisibility="[SMVisibility]Collapsed" TabIndex="[int]3" TextAlignment="[TextAlignment]Center" Top="[float]-1" Value="{DataItemBinding Id=cecd0de888b241ccb25466829e5af167}" ValueFormatter="[string]Decimal, Uppercase, Signed" ValueType="[Type]UInt8" Width="[float]54">
+											<FontSetting FontFamily="Segoe UI" FontSize="12" Id="a66fa4ca8a1e4cffad0c9dc9b1297271" xmlns="http://www.ni.com/PlatformFramework" />
+										</NumericText>
+										<Label Height="[float]22" Id="f35f6419a2474d2fb96b1f7026b354a1" LabelOwner="[UIModel]f5466ced16c8408eb3852cafb1cb3c5c" Left="[float]200" Text="[string]கணம்" Top="[float]-27" Visible="[bool]False" Width="[float]57" xmlns="http://www.ni.com/PanelCommon">
+											<FontSetting FontFamily="Segoe UI" FontSize="12" Id="66c385e394fa4b25b707ef79ed29c5a1" xmlns="http://www.ni.com/PlatformFramework" />
+										</Label>
+									</LayoutPanel>
+								</TabItem>
+								<FontSetting FontFamily="Segoe UI" FontSize="12" Id="88ba5d631e1045d488c436859c70d1cd" xmlns="http://www.ni.com/PlatformFramework" />
+							</TabControl>
+							<Label Height="[float]22" Id="59690b9ea9524bbfaa65f8939280b794" LabelOwner="[UIModel]eeaf9991ffda4b44be3b6a23ed427e9e" Left="[float]0" Text="[string]நாழிகை            :               கணம்" Top="[float]0" Width="[float]255">
+								<FontSetting FontFamily="Segoe UI" FontSize="12" Id="411702145f49419cacf0eaf011cf2e2c" xmlns="http://www.ni.com/PlatformFramework" />
+							</Label>
+						</FlexibleLayoutComponent>
+						<FlexibleLayoutComponent Height="[float]282" Id="6504cf9a07e74f9cb36f70445be6f1ee" Left="[float]1362" Top="[float]6" Width="[float]256">
+							<TabControl BaseName="[string]Tab" ControlResizeMode="[ControlResizeMode]Fixed" Height="[float]256" Id="e841a5a490514c3c9f396533d84c79c3" IncludeInCapture="[bool]False" Label="[UIModel]cbfd13b4ab7a49d887dd637e125d7079" Left="[float]0" MinHeight="[float]256" SelectedIndex="{DataItemBinding Id=d56d8320f75b47afbd92409ad407f678}" TabIndex="[int]0" TabSelectorVisibility="[SMVisibility]Collapsed" Top="[float]26" Width="[float]256" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+								<TabItem Header="[string]நிமிடம் : நொடி" Id="e7ae2517f8fe4fd4999f30f0920beaf5" Left="[float]0" TabIndex="[int]0" Top="[float]0">
+									<LayoutPanel Height="[float]254" Id="75b33bd58a6346f49693f258dcbf7982" Left="[float]1" MinHeight="[float]254" Top="[float]1" Width="[float]254">
+										<Label Height="[float]22" Id="fae308984f904435a2ac03536ee93640" LabelAlignment="[PartAlignment]TopCenter" LabelOwner="[UIModel]f2035b219f2a4448a007333c11800777" Left="[float]84" Text="[string]நொடிகள்" Top="[float]-23" Visible="[bool]False" Width="[float]86" xmlns="http://www.ni.com/PanelCommon">
+											<FontSetting FontFamily="Segoe UI" FontSize="12" Id="aebfdbd9920d430d8d9424447ed9246e" xmlns="http://www.ni.com/PlatformFramework" />
+										</Label>
+										<Gauge AnalogDisplayType="[AnalogDisplayType]Needle" BaseName="[string]Gauge" DigitalDisplayPosition="[DigitalDisplayPosition]Top" DigitalDisplayVisible="[bool]False" Height="[float]248" Id="f2035b219f2a4448a007333c11800777" InteractionMode="[NumericPointerInteractionModes]EditRange" Interval="[byte]1" IsTabStop="[bool]True" Label="[UIModel]fae308984f904435a2ac03536ee93640" LabelPresenter="[string]LV:0.0" Left="[float]3" MajorTickVisibility="[SMVisibility]Visible" Maximum="[byte]60" MinHeight="[float]125" MinWidth="[float]125" MinorTickVisibility="[SMVisibility]Visible" ScaleArc="[ArcSweep]90,0" TabIndex="[int]3" Top="[float]3" Value="{DataItemBinding Id=a43c60103b8d4720be71b39dfd680af9}" ValueType="[Type]UInt8" Width="[float]248">
+											<FontSetting FontFamily="Segoe UI" FontSize="12" Id="40c9fcc6012942fcbe1e6dc201b41d71" xmlns="http://www.ni.com/PlatformFramework" />
+										</Gauge>
+										<Label Height="[float]22" Id="f19f52d8d7e94915a104bc2ebb98b61d" LabelAlignment="[PartAlignment]TopCenter" LabelOwner="[UIModel]8c61870d832349d883113bb3518042fd" Left="[float]78" Text="[string]நிமிடங்கள்" Top="[float]26" Visible="[bool]False" Width="[float]98" xmlns="http://www.ni.com/PanelCommon">
+											<FontSetting FontFamily="Segoe UI" FontSize="12" Id="33427ed6613049bbbd23382dda704a97" xmlns="http://www.ni.com/PlatformFramework" />
+										</Label>
+										<Gauge AnalogDisplayType="[AnalogDisplayType]Needle" BaseName="[string]Gauge" DigitalDisplayPosition="[DigitalDisplayPosition]Top" DigitalDisplayVisible="[bool]False" Height="[float]150" Id="8c61870d832349d883113bb3518042fd" InteractionMode="[NumericPointerInteractionModes]EditRange" Interval="[byte]1" IsTabStop="[bool]True" Label="[UIModel]f19f52d8d7e94915a104bc2ebb98b61d" LabelPresenter="[string]LV:0.0" Left="[float]52" MajorRangeDivisionsMode="[RangeDivisionsMode]Auto" MajorTickVisibility="[SMVisibility]Visible" Maximum="[byte]4" MinHeight="[float]125" MinWidth="[float]125" MinorTickVisibility="[SMVisibility]Collapsed" RangeLabelsVisibility="[SMVisibility]Visible" ScaleArc="[ArcSweep]90,0" TabIndex="[int]2" Top="[float]52" Value="{DataItemBinding Id=93d6f9fb47fe4cbbaa35cfeec8aa16e8}" ValueType="[Type]UInt8" Width="[float]150">
+											<FontSetting FontFamily="Segoe UI" FontSize="12" Id="7a5f524d20194a3fa53f3a95183977fe" xmlns="http://www.ni.com/PlatformFramework" />
+										</Gauge>
+										<Text BaseName="[string]Text" Height="[float]248" Id="11bfb422c61a48bc9f54d72a0c94a490" Left="[float]3" SizeMode="[TextModelSizeMode]Fixed" Text="[string]நி               " TextWrapping="[TextWrapping]Wrap" Top="[float]3" Width="[float]248" xmlns="http://www.ni.com/PlatformFramework">
+											<FontSetting FontFamily="Segoe UI" FontSize="12" Id="fe525231f4f84197bc28983bc1053325" />
+										</Text>
+										<Label Height="[float]22" Id="e985655a498e424bb470ae7c27473396" LabelOwner="[UIModel]a48f52d3aced4a489c7e3abe93e9b8f5" Left="[float]190" Text="[string]நொடி" Top="[float]-27" Visible="[bool]False" Width="[float]54" xmlns="http://www.ni.com/PanelCommon">
+											<FontSetting FontFamily="Segoe UI" FontSize="12" Id="ed0c7064ef6a40839ee2fca0bf27b7f5" xmlns="http://www.ni.com/PlatformFramework" />
+										</Label>
+										<NumericText BaseName="[string]Numeric" Height="[float]28" Id="a48f52d3aced4a489c7e3abe93e9b8f5" Interval="[int]1" IsReadOnly="[bool]True" Label="[UIModel]e985655a498e424bb470ae7c27473396" Left="[float]190" MinHeight="[float]16" MinWidth="[float]36" RadixBase="[RadixBase]Decimal" RadixVisibility="[SMVisibility]Collapsed" TabIndex="[int]1" TextAlignment="[TextAlignment]Center" Top="[float]-1" Value="{DataItemBinding Id=acae751dbbbf4794916c073afcd4378a}" ValueFormatter="[string]Decimal, Uppercase, Unsigned" ValueType="[Type]Int32" Width="[float]64">
+											<FontSetting FontFamily="Segoe UI" FontSize="12" Id="e45e63612c3f4014a06146e25b446243" xmlns="http://www.ni.com/PlatformFramework" />
+										</NumericText>
+										<Label Height="[float]22" Id="c8bd543088264337be380797457069e5" LabelOwner="[UIModel]8522adf6ea042bc9452fcac2c15eaf8" Left="[float]-1" Text="[string]நிமிடம்" Top="[float]-27" Visible="[bool]False" Width="[float]65" xmlns="http://www.ni.com/PanelCommon">
+											<FontSetting FontFamily="Segoe UI" FontSize="12" Id="bf3ead5fd0f647f38bdef509a690b49d" xmlns="http://www.ni.com/PlatformFramework" />
+										</Label>
+										<NumericText BaseName="[string]Numeric" Height="[float]28" Id="8522adf6ea042bc9452fcac2c15eaf8" Interval="[byte]1" IsReadOnly="[bool]True" Label="[UIModel]c8bd543088264337be380797457069e5" Left="[float]-1" MinHeight="[float]16" MinWidth="[float]36" RadixBase="[RadixBase]Decimal" RadixVisibility="[SMVisibility]Collapsed" TabIndex="[int]0" TextAlignment="[TextAlignment]Center" Top="[float]-1" Value="{DataItemBinding Id=fa7aa36b97fa4928ae90f7cd64f8669e}" ValueFormatter="[string]Decimal, Uppercase, Signed" ValueType="[Type]UInt8" Width="[float]64">
+											<FontSetting FontFamily="Segoe UI" FontSize="12" Id="8f3c7b77c2464035b345af0e72842a29" xmlns="http://www.ni.com/PlatformFramework" />
+										</NumericText>
+									</LayoutPanel>
+								</TabItem>
+								<FontSetting FontFamily="Segoe UI" FontSize="12" Id="ce30e611c8a64511941e6c2f8d1164eb" xmlns="http://www.ni.com/PlatformFramework" />
+							</TabControl>
+							<Label Height="[float]22" Id="cbfd13b4ab7a49d887dd637e125d7079" LabelOwner="[UIModel]e841a5a490514c3c9f396533d84c79c3" Left="[float]0" Text="[string]நிமிடம்               :               நொடி" Top="[float]0" Width="[float]254">
+								<FontSetting FontFamily="Segoe UI" FontSize="12" Id="7f9f650edb6348d4a80a499095a755b2" xmlns="http://www.ni.com/PlatformFramework" />
+							</Label>
+						</FlexibleLayoutComponent>
+					</FlexibleLayoutContainer>
+				</FlexibleLayoutWrapper>
+			</FlexibleLayoutGroup>
+			<FlexibleLayoutGroup Height="[float]326" Id="761b900cdf644549bec2aa276b2e186c" Left="[float]30" Top="[float]426" Width="[float]1940" xmlns="http://www.ni.com/PanelCommon">
+				<FlexibleLayoutWrapper FlexGrow="[double]1" Height="[float]326" Id="dfff210f9a50403ca0c724b06f22e66f" Left="[float]0" Top="[float]0" Width="[float]1940">
+					<FlexibleLayoutContainer Background="[SMSolidColorBrush]#00ffffff" BorderBrush="[SMSolidColorBrush]#ff0076a3" Height="[float]310" HorizontalContentAlignment="[FlexibleLayoutHorizontalContentAlignment]Center" Id="d1b2402d09d94c9683bf6ad690fc2440" Left="[float]8" Top="[float]8" Width="[float]1924">
+						<FlexibleLayoutComponent Height="[float]50" Id="866256966ac3405db4532a0f9e77c101" Left="[float]683" Top="[float]6" Width="[float]100">
+							<EnumSelector AllowUndefinedValueEntry="[bool]False" BaseName="[string]Enum" Height="[float]24" Id="aef50102039740efa24139867f4a148c" InteractionMode="[SelectorInteractionModes]ReadOnly" IsTabStop="[bool]True" IsTypeAheadEnabled="[bool]True" Label="[UIModel]527ef363ead54d1b945e0490ba6c58e9" LabelLinked="[bool]True" Left="[float]0" TabIndex="[int]0" TextAlignment="[TextAlignment]Center" Top="[float]26" Value="{DataItemBinding Id=aca69e31e4ca4be4b34ac15a3efdedef}" ValueType="[Type]UInt16" VisualMode="[SelectorVisualMode]RingStyle" Width="[float]100" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+								<EnumSelectorInfo DisplayValue="[string]அறம்" DisplayValueOverride="[string]" Id="26" IsEnabled="[bool]True" Value="[ushort]0" ValueType="[Type]UInt16" />
+								<FontSetting FontFamily="Segoe UI" FontSize="12" Id="7421f70583094ac8a783ec698b5f0757" xmlns="http://www.ni.com/PlatformFramework" />
+								<EnumSelectorInfo DisplayValue="[string]பொருள்" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[ushort]1" ValueType="[Type]UInt16" />
+								<EnumSelectorInfo DisplayValue="[string]இன்பம்" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[ushort]2" ValueType="[Type]UInt16" />
+							</EnumSelector>
+							<Label Height="[float]22" Id="527ef363ead54d1b945e0490ba6c58e9" LabelAlignment="[PartAlignment]TopCenter" LabelOwner="[UIModel]aef50102039740efa24139867f4a148c" Left="[float]30" Text="[string]பால்" Top="[float]0" Width="[float]41">
+								<FontSetting FontFamily="Segoe UI" FontSize="12" Id="56a50542a05443be82702fa2ca7bc81d" xmlns="http://www.ni.com/PlatformFramework" />
+							</Label>
+						</FlexibleLayoutComponent>
+						<FlexibleLayoutComponent Height="[float]50" Id="f5922c965ecd43399cb9a686ead91b3b" Left="[float]791" Top="[float]6" Width="[float]152">
+							<EnumSelector AllowUndefinedValueEntry="[bool]False" BaseName="[string]Enum" Height="[float]24" Id="3aea06aec2e34b72ba2d8e37250cdbfa" InteractionMode="[SelectorInteractionModes]ReadOnly" IsTabStop="[bool]True" IsTypeAheadEnabled="[bool]True" Label="[UIModel]39dd06603692402c9a83b27e7006ccb5" LabelLinked="[bool]True" Left="[float]0" TabIndex="[int]0" TextAlignment="[TextAlignment]Center" Top="[float]26" Value="{DataItemBinding Id=1da4e818e90e4334a60d481159b821a0}" ValueType="[Type]UInt16" VisualMode="[SelectorVisualMode]RingStyle" Width="[float]152" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+								<EnumSelectorInfo DisplayValue="[string]பாயிரவியல்" DisplayValueOverride="[string]" Id="26" IsEnabled="[bool]True" Value="[ushort]0" ValueType="[Type]UInt16" />
+								<EnumSelectorInfo DisplayValue="[string]இல்லறவியல்" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[ushort]1" ValueType="[Type]UInt16" />
+								<EnumSelectorInfo DisplayValue="[string]துறவறவியல்" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[ushort]2" ValueType="[Type]UInt16" />
+								<EnumSelectorInfo DisplayValue="[string]ஊழியல் " DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[ushort]3" ValueType="[Type]UInt16" />
+								<EnumSelectorInfo DisplayValue="[string]அரசியல்" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[ushort]4" ValueType="[Type]UInt16" />
+								<EnumSelectorInfo DisplayValue="[string]அமைச்சியல்" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[ushort]5" ValueType="[Type]UInt16" />
+								<EnumSelectorInfo DisplayValue="[string]அரணியல்" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[ushort]6" ValueType="[Type]UInt16" />
+								<EnumSelectorInfo DisplayValue="[string]கூழியல்" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[ushort]7" ValueType="[Type]UInt16" />
+								<EnumSelectorInfo DisplayValue="[string]படையில்" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[ushort]8" ValueType="[Type]UInt16" />
+								<EnumSelectorInfo DisplayValue="[string]நட்பியல்" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[ushort]9" ValueType="[Type]UInt16" />
+								<EnumSelectorInfo DisplayValue="[string]குடியியல்" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[ushort]10" ValueType="[Type]UInt16" />
+								<EnumSelectorInfo DisplayValue="[string]களவியல்" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[ushort]11" ValueType="[Type]UInt16" />
+								<EnumSelectorInfo DisplayValue="[string]கற்பியல்" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[ushort]12" ValueType="[Type]UInt16" />
+								<FontSetting FontFamily="Segoe UI" FontSize="12" Id="72aec14835f7473fa0dc6a4d89767e6d" xmlns="http://www.ni.com/PlatformFramework" />
+							</EnumSelector>
+							<Label Height="[float]22" Id="39dd06603692402c9a83b27e7006ccb5" LabelAlignment="[PartAlignment]TopCenter" LabelOwner="[UIModel]3aea06aec2e34b72ba2d8e37250cdbfa" Left="[float]51" Text="[string]இயல்" Top="[float]0" Width="[float]50">
+								<FontSetting FontFamily="Segoe UI" FontSize="12" Id="cf08145a2d3c4b29ae3372035ff6f0ef" xmlns="http://www.ni.com/PlatformFramework" />
+							</Label>
+						</FlexibleLayoutComponent>
+						<FlexibleLayoutComponent Height="[float]50" Id="38b21c56dc1549a9b2de7129570d809c" Left="[float]951" Top="[float]6" Width="[float]290">
+							<EnumSelector AllowUndefinedValueEntry="[bool]False" BaseName="[string]Enum" Height="[float]24" Id="d8c2ae0b32f748d59089fa27dbd3c27e" InteractionMode="[SelectorInteractionModes]ReadOnly" IsTabStop="[bool]True" IsTypeAheadEnabled="[bool]True" Label="[UIModel]dc2fc920fcb54481865de37c79e3670e" LabelLinked="[bool]True" Left="[float]0" TabIndex="[int]0" TextAlignment="[TextAlignment]Center" Top="[float]26" Value="{DataItemBinding Id=e899c3acd2f44cd4b3879e9772d3ccdf}" ValueType="[Type]UInt8" VisualMode="[SelectorVisualMode]RingStyle" Width="[float]290" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+								<EnumSelectorInfo DisplayValue="[string]கடவுள் வாழ்த்து" DisplayValueOverride="[string]" Id="26" IsEnabled="[bool]True" Value="[byte]0" ValueType="[Type]UInt8" />
+								<EnumSelectorInfo DisplayValue="[string]வான்சிறப்பு" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[byte]1" ValueType="[Type]UInt8" />
+								<EnumSelectorInfo DisplayValue="[string]நீத்தார் பெருமை" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[byte]2" ValueType="[Type]UInt8" />
+								<EnumSelectorInfo DisplayValue="[string]அறன்வலியுறுத்தல்" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[byte]3" ValueType="[Type]UInt8" />
+								<EnumSelectorInfo DisplayValue="[string]இல்வாழ்க்கை" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[byte]4" ValueType="[Type]UInt8" />
+								<EnumSelectorInfo DisplayValue="[string]வாழ்க்கைத் துணைநலம்" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[byte]5" ValueType="[Type]UInt8" />
+								<EnumSelectorInfo DisplayValue="[string]மக்கட்பேறு" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[byte]6" ValueType="[Type]UInt8" />
+								<EnumSelectorInfo DisplayValue="[string]அன்புடைமை" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[byte]7" ValueType="[Type]UInt8" />
+								<EnumSelectorInfo DisplayValue="[string]விருந்தோம்பல்" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[byte]8" ValueType="[Type]UInt8" />
+								<EnumSelectorInfo DisplayValue="[string]இனியவைகூறல்" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[byte]9" ValueType="[Type]UInt8" />
+								<EnumSelectorInfo DisplayValue="[string]செய்ந்நன்றி அறிதல்" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[byte]10" ValueType="[Type]UInt8" />
+								<EnumSelectorInfo DisplayValue="[string]நடுவு நிலைமை" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[byte]11" ValueType="[Type]UInt8" />
+								<EnumSelectorInfo DisplayValue="[string]அடக்கமுடைமை" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[byte]12" ValueType="[Type]UInt8" />
+								<EnumSelectorInfo DisplayValue="[string]ஒழுக்கமுடைமை" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[byte]13" ValueType="[Type]UInt8" />
+								<EnumSelectorInfo DisplayValue="[string]பிறனில் விழையாமை" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[byte]14" ValueType="[Type]UInt8" />
+								<EnumSelectorInfo DisplayValue="[string]பொறையுடைமை" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[byte]15" ValueType="[Type]UInt8" />
+								<EnumSelectorInfo DisplayValue="[string]அழுக்காறாமை" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[byte]16" ValueType="[Type]UInt8" />
+								<EnumSelectorInfo DisplayValue="[string]வெஃகாமை" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[byte]17" ValueType="[Type]UInt8" />
+								<EnumSelectorInfo DisplayValue="[string]புறங்கூறாமை" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[byte]18" ValueType="[Type]UInt8" />
+								<EnumSelectorInfo DisplayValue="[string]பயனில சொல்லாமை" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[byte]19" ValueType="[Type]UInt8" />
+								<EnumSelectorInfo DisplayValue="[string]தீவினையச்சம்" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[byte]20" ValueType="[Type]UInt8" />
+								<EnumSelectorInfo DisplayValue="[string]ஒப்புரவறிதல்" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[byte]21" ValueType="[Type]UInt8" />
+								<EnumSelectorInfo DisplayValue="[string]ஈகை" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[byte]22" ValueType="[Type]UInt8" />
+								<EnumSelectorInfo DisplayValue="[string]புகழ்" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[byte]23" ValueType="[Type]UInt8" />
+								<EnumSelectorInfo DisplayValue="[string]அருளுடைமை" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[byte]24" ValueType="[Type]UInt8" />
+								<EnumSelectorInfo DisplayValue="[string]புலான்மறுத்தல்" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[byte]25" ValueType="[Type]UInt8" />
+								<EnumSelectorInfo DisplayValue="[string]தவம்" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[byte]26" ValueType="[Type]UInt8" />
+								<EnumSelectorInfo DisplayValue="[string]கூடாவொழுக்கம்" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[byte]27" ValueType="[Type]UInt8" />
+								<EnumSelectorInfo DisplayValue="[string]கள்ளாமை" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[byte]28" ValueType="[Type]UInt8" />
+								<EnumSelectorInfo DisplayValue="[string]வாய்மை" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[byte]29" ValueType="[Type]UInt8" />
+								<EnumSelectorInfo DisplayValue="[string]வெகுளாமை" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[byte]30" ValueType="[Type]UInt8" />
+								<EnumSelectorInfo DisplayValue="[string]இன்னாசெய்யாமை" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[byte]31" ValueType="[Type]UInt8" />
+								<EnumSelectorInfo DisplayValue="[string]கொல்லாமை" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[byte]32" ValueType="[Type]UInt8" />
+								<EnumSelectorInfo DisplayValue="[string]நிலையாமை" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[byte]33" ValueType="[Type]UInt8" />
+								<EnumSelectorInfo DisplayValue="[string]துறவு" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[byte]34" ValueType="[Type]UInt8" />
+								<EnumSelectorInfo DisplayValue="[string]மெய்யுணர்தல்" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[byte]35" ValueType="[Type]UInt8" />
+								<EnumSelectorInfo DisplayValue="[string]அவாவறுத்தல்" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[byte]36" ValueType="[Type]UInt8" />
+								<EnumSelectorInfo DisplayValue="[string]ஊழ்" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[byte]37" ValueType="[Type]UInt8" />
+								<EnumSelectorInfo DisplayValue="[string]இறைமாட்சி" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[byte]38" ValueType="[Type]UInt8" />
+								<EnumSelectorInfo DisplayValue="[string]கல்வி" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[byte]39" ValueType="[Type]UInt8" />
+								<EnumSelectorInfo DisplayValue="[string]கல்லாமை" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[byte]40" ValueType="[Type]UInt8" />
+								<EnumSelectorInfo DisplayValue="[string]கேள்வி" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[byte]41" ValueType="[Type]UInt8" />
+								<EnumSelectorInfo DisplayValue="[string]அறிவுடைமை" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[byte]42" ValueType="[Type]UInt8" />
+								<EnumSelectorInfo DisplayValue="[string]குற்றங்கடிதல்" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[byte]43" ValueType="[Type]UInt8" />
+								<EnumSelectorInfo DisplayValue="[string]பெரியாரைத் துணைக்கோடல்" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[byte]44" ValueType="[Type]UInt8" />
+								<EnumSelectorInfo DisplayValue="[string]சிற்றினஞ்சேராமை" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[byte]45" ValueType="[Type]UInt8" />
+								<EnumSelectorInfo DisplayValue="[string]தெரிந்துசெயல்வகை" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[byte]46" ValueType="[Type]UInt8" />
+								<EnumSelectorInfo DisplayValue="[string]வலியறிதல்" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[byte]47" ValueType="[Type]UInt8" />
+								<EnumSelectorInfo DisplayValue="[string]காலமறிதல்" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[byte]48" ValueType="[Type]UInt8" />
+								<EnumSelectorInfo DisplayValue="[string]இடனறிதல்" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[byte]49" ValueType="[Type]UInt8" />
+								<EnumSelectorInfo DisplayValue="[string]தெரிந்துதெளிதல்" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[byte]50" ValueType="[Type]UInt8" />
+								<EnumSelectorInfo DisplayValue="[string]தெரிந்துவினையாடல்" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[byte]51" ValueType="[Type]UInt8" />
+								<EnumSelectorInfo DisplayValue="[string]சுற்றந்தழால்" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[byte]52" ValueType="[Type]UInt8" />
+								<EnumSelectorInfo DisplayValue="[string]பொச்சாவாமை" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[byte]53" ValueType="[Type]UInt8" />
+								<EnumSelectorInfo DisplayValue="[string]செங்கோன்மை" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[byte]54" ValueType="[Type]UInt8" />
+								<EnumSelectorInfo DisplayValue="[string]கொடுங்கோன்மை" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[byte]55" ValueType="[Type]UInt8" />
+								<EnumSelectorInfo DisplayValue="[string]வெருவந்தசெய்யாமை" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[byte]56" ValueType="[Type]UInt8" />
+								<EnumSelectorInfo DisplayValue="[string]கண்ணோட்டம்" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[byte]57" ValueType="[Type]UInt8" />
+								<EnumSelectorInfo DisplayValue="[string]ஒற்றாடல்" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[byte]58" ValueType="[Type]UInt8" />
+								<EnumSelectorInfo DisplayValue="[string]ஊக்கமுடைமை" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[byte]59" ValueType="[Type]UInt8" />
+								<EnumSelectorInfo DisplayValue="[string]மடியின்மை" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[byte]60" ValueType="[Type]UInt8" />
+								<EnumSelectorInfo DisplayValue="[string]ஆள்வினையுடைமை" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[byte]61" ValueType="[Type]UInt8" />
+								<EnumSelectorInfo DisplayValue="[string]இடுக்கணழியாமை" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[byte]62" ValueType="[Type]UInt8" />
+								<EnumSelectorInfo DisplayValue="[string]அமைச்சு" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[byte]63" ValueType="[Type]UInt8" />
+								<EnumSelectorInfo DisplayValue="[string]சொல்வன்மை" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[byte]64" ValueType="[Type]UInt8" />
+								<EnumSelectorInfo DisplayValue="[string]வினைத்தூய்மை" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[byte]65" ValueType="[Type]UInt8" />
+								<EnumSelectorInfo DisplayValue="[string]வினைத்திட்பம்" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[byte]66" ValueType="[Type]UInt8" />
+								<EnumSelectorInfo DisplayValue="[string]வினைசெயல்வகை" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[byte]67" ValueType="[Type]UInt8" />
+								<EnumSelectorInfo DisplayValue="[string]தூது" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[byte]68" ValueType="[Type]UInt8" />
+								<EnumSelectorInfo DisplayValue="[string]மன்னரைச் சேர்ந்தொழுதல்" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[byte]69" ValueType="[Type]UInt8" />
+								<EnumSelectorInfo DisplayValue="[string]குறிப்பறிதல்" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[byte]70" ValueType="[Type]UInt8" />
+								<EnumSelectorInfo DisplayValue="[string]அவையறிதல்" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[byte]71" ValueType="[Type]UInt8" />
+								<EnumSelectorInfo DisplayValue="[string]அவையஞ்சாமை" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[byte]72" ValueType="[Type]UInt8" />
+								<EnumSelectorInfo DisplayValue="[string]நாடு" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[byte]73" ValueType="[Type]UInt8" />
+								<EnumSelectorInfo DisplayValue="[string]அரண்" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[byte]74" ValueType="[Type]UInt8" />
+								<EnumSelectorInfo DisplayValue="[string]பொருள்செயல்வகை" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[byte]75" ValueType="[Type]UInt8" />
+								<EnumSelectorInfo DisplayValue="[string]படைமாட்சி" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[byte]76" ValueType="[Type]UInt8" />
+								<EnumSelectorInfo DisplayValue="[string]படைச்செருக்கு" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[byte]77" ValueType="[Type]UInt8" />
+								<EnumSelectorInfo DisplayValue="[string]நட்பு" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[byte]78" ValueType="[Type]UInt8" />
+								<EnumSelectorInfo DisplayValue="[string]நட்பாராய்தல்" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[byte]79" ValueType="[Type]UInt8" />
+								<EnumSelectorInfo DisplayValue="[string]பழைமை" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[byte]80" ValueType="[Type]UInt8" />
+								<EnumSelectorInfo DisplayValue="[string]தீ நட்பு" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[byte]81" ValueType="[Type]UInt8" />
+								<EnumSelectorInfo DisplayValue="[string]கூடாநட்பு" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[byte]82" ValueType="[Type]UInt8" />
+								<EnumSelectorInfo DisplayValue="[string]பேதைமை" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[byte]83" ValueType="[Type]UInt8" />
+								<EnumSelectorInfo DisplayValue="[string]புல்லறிவாண்மை" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[byte]84" ValueType="[Type]UInt8" />
+								<EnumSelectorInfo DisplayValue="[string]இகல்" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[byte]85" ValueType="[Type]UInt8" />
+								<EnumSelectorInfo DisplayValue="[string]பகைமாட்சி" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[byte]86" ValueType="[Type]UInt8" />
+								<EnumSelectorInfo DisplayValue="[string]பகைத்திறந்தெரிதல்" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[byte]87" ValueType="[Type]UInt8" />
+								<EnumSelectorInfo DisplayValue="[string]உட்பகை" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[byte]88" ValueType="[Type]UInt8" />
+								<EnumSelectorInfo DisplayValue="[string]பெரியாரைப் பிழையாமை" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[byte]89" ValueType="[Type]UInt8" />
+								<EnumSelectorInfo DisplayValue="[string]பெண்வழிச்சேறல்" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[byte]90" ValueType="[Type]UInt8" />
+								<EnumSelectorInfo DisplayValue="[string]வரைவின்மகளிர்" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[byte]91" ValueType="[Type]UInt8" />
+								<EnumSelectorInfo DisplayValue="[string]கள்ளுண்ணாமை" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[byte]92" ValueType="[Type]UInt8" />
+								<EnumSelectorInfo DisplayValue="[string]சூது" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[byte]93" ValueType="[Type]UInt8" />
+								<EnumSelectorInfo DisplayValue="[string]மருந்து" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[byte]94" ValueType="[Type]UInt8" />
+								<EnumSelectorInfo DisplayValue="[string]குடிமை" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[byte]95" ValueType="[Type]UInt8" />
+								<EnumSelectorInfo DisplayValue="[string]மானம்" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[byte]96" ValueType="[Type]UInt8" />
+								<EnumSelectorInfo DisplayValue="[string]பெருமை" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[byte]97" ValueType="[Type]UInt8" />
+								<EnumSelectorInfo DisplayValue="[string]சான்றாண்மை" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[byte]98" ValueType="[Type]UInt8" />
+								<EnumSelectorInfo DisplayValue="[string]பண்புடைமை" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[byte]99" ValueType="[Type]UInt8" />
+								<EnumSelectorInfo DisplayValue="[string]நன்றியில்செல்வம்" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[byte]100" ValueType="[Type]UInt8" />
+								<EnumSelectorInfo DisplayValue="[string]நாணுடைமை" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[byte]101" ValueType="[Type]UInt8" />
+								<EnumSelectorInfo DisplayValue="[string]குடிசெயல்வகை" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[byte]102" ValueType="[Type]UInt8" />
+								<EnumSelectorInfo DisplayValue="[string]உழவு" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[byte]103" ValueType="[Type]UInt8" />
+								<EnumSelectorInfo DisplayValue="[string]நல்குரவு" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[byte]104" ValueType="[Type]UInt8" />
+								<EnumSelectorInfo DisplayValue="[string]இரவு" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[byte]105" ValueType="[Type]UInt8" />
+								<EnumSelectorInfo DisplayValue="[string]இரவச்சம்" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[byte]106" ValueType="[Type]UInt8" />
+								<EnumSelectorInfo DisplayValue="[string]கயமை" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[byte]107" ValueType="[Type]UInt8" />
+								<EnumSelectorInfo DisplayValue="[string]தகையணங்குறுத்தல்" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[byte]108" ValueType="[Type]UInt8" />
+								<EnumSelectorInfo DisplayValue="[string]குறிப்பறிதல்_2" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[byte]109" ValueType="[Type]UInt8" />
+								<EnumSelectorInfo DisplayValue="[string]புணர்ச்சிமகிழ்தல்" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[byte]110" ValueType="[Type]UInt8" />
+								<EnumSelectorInfo DisplayValue="[string]நலம்புனைந்துரைத்தல்" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[byte]111" ValueType="[Type]UInt8" />
+								<EnumSelectorInfo DisplayValue="[string]காதற்சிறப்புரைத்தல்" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[byte]112" ValueType="[Type]UInt8" />
+								<EnumSelectorInfo DisplayValue="[string]நாணுத்துறவுரைத்தல்" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[byte]113" ValueType="[Type]UInt8" />
+								<EnumSelectorInfo DisplayValue="[string]அலரறிவுறுத்தல்" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[byte]114" ValueType="[Type]UInt8" />
+								<EnumSelectorInfo DisplayValue="[string]பிரிவாற்றாமை" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[byte]115" ValueType="[Type]UInt8" />
+								<EnumSelectorInfo DisplayValue="[string]படர்மெலிந்திரங்கல்" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[byte]116" ValueType="[Type]UInt8" />
+								<EnumSelectorInfo DisplayValue="[string]கண்விதுப்பழிதல்" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[byte]117" ValueType="[Type]UInt8" />
+								<EnumSelectorInfo DisplayValue="[string]பசப்புறுபருவரல்" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[byte]118" ValueType="[Type]UInt8" />
+								<EnumSelectorInfo DisplayValue="[string]தனிப்படர்மிகுதி" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[byte]119" ValueType="[Type]UInt8" />
+								<EnumSelectorInfo DisplayValue="[string]நினைந்தவர்புலம்பல்" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[byte]120" ValueType="[Type]UInt8" />
+								<EnumSelectorInfo DisplayValue="[string]கனவுநிலையுரைத்தல்" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[byte]121" ValueType="[Type]UInt8" />
+								<EnumSelectorInfo DisplayValue="[string]பொழுதுகண்டிரங்கல்" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[byte]122" ValueType="[Type]UInt8" />
+								<EnumSelectorInfo DisplayValue="[string]உறுப்புநலனழிதல்" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[byte]123" ValueType="[Type]UInt8" />
+								<EnumSelectorInfo DisplayValue="[string]நெஞ்சொடுகிளத்தல்" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[byte]124" ValueType="[Type]UInt8" />
+								<EnumSelectorInfo DisplayValue="[string]நிறையழிதல்" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[byte]125" ValueType="[Type]UInt8" />
+								<EnumSelectorInfo DisplayValue="[string]அவர்வயின்விதும்பல்" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[byte]126" ValueType="[Type]UInt8" />
+								<EnumSelectorInfo DisplayValue="[string]குறிப்பறிவுறுத்தல்" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[byte]127" ValueType="[Type]UInt8" />
+								<EnumSelectorInfo DisplayValue="[string]புணர்ச்சிவிதும்பல்" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[byte]128" ValueType="[Type]UInt8" />
+								<EnumSelectorInfo DisplayValue="[string]நெஞ்சொடுபுலத்தல்" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[byte]129" ValueType="[Type]UInt8" />
+								<EnumSelectorInfo DisplayValue="[string]புலவி" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[byte]130" ValueType="[Type]UInt8" />
+								<EnumSelectorInfo DisplayValue="[string]புலவி நுணுக்கம்" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[byte]131" ValueType="[Type]UInt8" />
+								<EnumSelectorInfo DisplayValue="[string]ஊடலுவகை" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[byte]132" ValueType="[Type]UInt8" />
+								<FontSetting FontFamily="Segoe UI" FontSize="12" Id="8aa3fdac86f4e66b336af2008d49beb" xmlns="http://www.ni.com/PlatformFramework" />
+							</EnumSelector>
+							<Label Height="[float]22" Id="dc2fc920fcb54481865de37c79e3670e" LabelAlignment="[PartAlignment]TopCenter" LabelOwner="[UIModel]d8c2ae0b32f748d59089fa27dbd3c27e" Left="[float]101" Text="[string]அதிகாரம்" Top="[float]0" Width="[float]88">
+								<FontSetting FontFamily="Segoe UI" FontSize="12" Id="1a6ee79d27344eceb057e92323ab878d" xmlns="http://www.ni.com/PlatformFramework" />
+							</Label>
+						</FlexibleLayoutComponent>
+						<FlexibleLayoutComponent Height="[float]204" Id="4f30eb799371432687473f9d5efa7651" Left="[float]10" Top="[float]64" Width="[float]1904">
+							<StringControl AcceptsReturn="[bool]True" BaseName="[string]String" ControlResizeMode="[ControlResizeMode]Horizontally" Height="[float]204" HorizontalScrollBarVisibility="[ScrollBarVisibility]Auto" Id="2d5feb07c29b4111b0dc5fe8150e6126" IsReadOnly="[bool]True" Label="[UIModel]b44072d21a69440c958e0c750ac19b19" Left="[float]0" TabIndex="[int]0" Text="{DataItemBinding Id=8fa20102c1244f50b7dd961005e303ce}" TextAlignment="[TextAlignment]Center" Top="[float]0" VerticalScrollBarVisibility="[ScrollBarVisibility]Auto" Width="[float]1912" WordWrap="[bool]True" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+								<FontSetting FontFamily="Segoe UI" FontSize="12" Id="aaafb2101d7c41e9a11938c2ad35f891" xmlns="http://www.ni.com/PlatformFramework" />
+							</StringControl>
+							<Label Height="[float]16" Id="b44072d21a69440c958e0c750ac19b19" LabelOwner="[UIModel]2d5feb07c29b4111b0dc5fe8150e6126" Left="[float]0" Text="[string]திருக்குறள்" Top="[float]-20" Visible="[bool]False" Width="[float]73">
+								<FontSetting FontFamily="Segoe UI" FontSize="9" Id="1a63d52ca74a462a9c4683a0540ece41" xmlns="http://www.ni.com/PlatformFramework" />
+							</Label>
+						</FlexibleLayoutComponent>
+						<FlexibleLayoutComponent Height="[float]28" Id="97e7cf8867a6482a943a03fcf758f85b" Left="[float]603" Top="[float]276" Width="[float]282">
+							<EnumSelector AllowUndefinedValueEntry="[bool]False" BaseName="[string]Enum" Height="[float]28" Id="25e651d19264b79ac6d072f27c793e6" IsTabStop="[bool]True" IsTypeAheadEnabled="[bool]True" Label="[UIModel]c5e909afaca74fd9bc41df3eb09bf6ed" LabelLinked="[bool]True" Left="[float]68" TabIndex="[int]0" TextAlignment="[TextAlignment]Center" Top="[float]0" Value="{DataItemBinding Id=d37a50139fe2438cb187d5867b5d92c5}" ValueType="[Type]UInt8" VisualMode="[SelectorVisualMode]RingStyle" Width="[float]214" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+								<EnumSelectorInfo DisplayValue="[string]முத்தமிழ்" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[byte]0" ValueType="[Type]UInt8" />
+								<EnumSelectorInfo DisplayValue="[string]ஆங்கிலம் (English)" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[byte]1" ValueType="[Type]UInt8" />
+								<EnumSelectorInfo DisplayValue="[string]தெலுங்கு (తెలుగు)" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[byte]2" ValueType="[Type]UInt8" />
+								<EnumSelectorInfo DisplayValue="[string]மலையாளம் (മലയാളം)" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[byte]3" ValueType="[Type]UInt8" />
+								<EnumSelectorInfo DisplayValue="[string]கன்னடம் (ಕನ್ನಡ)" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[byte]4" ValueType="[Type]UInt8" />
+								<EnumSelectorInfo DisplayValue="[string]சீனம் (汉语)" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[byte]5" ValueType="[Type]UInt8" />
+								<EnumSelectorInfo DisplayValue="[string]மலாய் (Melayu)" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[byte]6" ValueType="[Type]UInt8" />
+								<EnumSelectorInfo DisplayValue="[string]கொரிய (한국어)" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[byte]7" ValueType="[Type]UInt8" />
+								<EnumSelectorInfo DisplayValue="[string]உருசிய (Русский)" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[byte]8" ValueType="[Type]UInt8" />
+								<EnumSelectorInfo DisplayValue="[string]அரபு (العَرَبِيَّة)" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[byte]9" ValueType="[Type]UInt8" />
+								<EnumSelectorInfo DisplayValue="[string]பிரெஞ்சு (Français)" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[byte]10" ValueType="[Type]UInt8" />
+								<EnumSelectorInfo DisplayValue="[string]செர்மன் (Deutsch)" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[byte]11" ValueType="[Type]UInt8" />
+								<EnumSelectorInfo DisplayValue="[string]சுவீடிய (Svenska)" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[byte]12" ValueType="[Type]UInt8" />
+								<EnumSelectorInfo DisplayValue="[string]இலத்தீன் (Latīna)" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[byte]13" ValueType="[Type]UInt8" />
+								<EnumSelectorInfo DisplayValue="[string]போலிய (Polski)" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[byte]14" ValueType="[Type]UInt8" />
+								<FontSetting FontFamily="Segoe UI" FontSize="12" Id="3569f25648a44002af8057347cb4c4ef" xmlns="http://www.ni.com/PlatformFramework" />
+							</EnumSelector>
+							<Label Height="[float]22" Id="c5e909afaca74fd9bc41df3eb09bf6ed" LabelAlignment="[PartAlignment]LeftCenter" LabelOwner="[UIModel]25e651d19264b79ac6d072f27c793e6" Left="[float]0" Text="[string]மொழி" Top="[float]3" Width="[float]60">
+								<FontSetting FontFamily="Segoe UI" FontSize="12" Id="96d20b79ba842f091ce439d4127ecb6" xmlns="http://www.ni.com/PlatformFramework" />
+							</Label>
+						</FlexibleLayoutComponent>
+						<FlexibleLayoutComponent Height="[float]28" Id="6473371ac3c04a50a60c69a1f08d2522" Left="[float]893" Top="[float]276" Width="[float]48">
+							<Button BaseName="[string]Stop" Content="[string]&lt;&lt;" FalseForeground="[SMColor]#ffff0000" Foreground="[SMColor]#ffff0000" Height="[float]28" Id="81b116b916904b1b802b5a7fb0f8ffb6" Label="[UIModel]6ecc896d3adc4c218bc6b4244ea4d2ea" Left="[float]0" TabIndex="[int]0" Top="[float]0" TrueForeground="[SMColor]#ffff0000" Value="{DataItemBinding Id=44c7d8a87cf476fa90536d537ed0668}" Width="[float]48" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+								<FontSetting FontFamily="Segoe UI" FontSize="9" Id="64004359ec0e4603a18568ae0cb7ffc2" xmlns="http://www.ni.com/PlatformFramework" />
+							</Button>
+							<Label Height="[float]22" Id="6ecc896d3adc4c218bc6b4244ea4d2ea" LabelOwner="[UIModel]81b116b916904b1b802b5a7fb0f8ffb6" Left="[float]0" Text="[string]முன்" Top="[float]-26" Visible="[bool]False" Width="[float]41">
+								<FontSetting FontFamily="Segoe UI" FontSize="12" Id="7c454f201b854156b495b02286066043" xmlns="http://www.ni.com/PlatformFramework" />
+							</Label>
+						</FlexibleLayoutComponent>
+						<FlexibleLayoutComponent Height="[float]28" Id="ae9ba72c26594e419939670df719dc79" Left="[float]949" Top="[float]276" Width="[float]48">
+							<NumericText BaseName="[string]Numeric" Height="[float]28" Id="17d5dd40b9bc47308d2f089709822ef9" Interval="[ushort]1" IsReadOnly="[bool]True" Label="[UIModel]7fa4306c0acf4e438eef40bc28e9e4a8" Left="[float]0" RadixBase="[RadixBase]Decimal" TabIndex="[int]0" TextAlignment="[TextAlignment]Center" Top="[float]0" Value="{DataItemBinding Id=3dc7715d6a1c43f88eb2cdc31ae17a87}" ValueFormatter="[string]Decimal, Uppercase, Signed" ValueType="[Type]UInt16" Width="[float]48" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+								<FontSetting FontFamily="Segoe UI" FontSize="12" Id="7d31aea0b9f24fbd901aabb07c33d9c5" xmlns="http://www.ni.com/PlatformFramework" />
+							</NumericText>
+							<Label Height="[float]22" Id="7fa4306c0acf4e438eef40bc28e9e4a8" LabelOwner="[UIModel]17d5dd40b9bc47308d2f089709822ef9" Left="[float]0" Text="[string]குறள் எண்" Top="[float]-26" Visible="[bool]False" Width="[float]93">
+								<FontSetting FontFamily="Segoe UI" FontSize="12" Id="76732f24db85445ebf480d0fcbff281a" xmlns="http://www.ni.com/PlatformFramework" />
+							</Label>
+						</FlexibleLayoutComponent>
+						<FlexibleLayoutComponent Height="[float]28" Id="db272f84a89340868ffaed9cee85cc38" Left="[float]1005" Top="[float]276" Width="[float]48">
+							<Button BaseName="[string]Stop" ClickMode="[ClickMode]Press" Content="[string]&gt;&gt;" FalseForeground="[SMColor]#ffff0000" Foreground="[SMColor]#ffff0000" Height="[float]28" Id="1b680b66b350416f9f954c27784d8dab" IsMomentary="[bool]False" Label="[UIModel]ee5c7691b6ca4bcab40ec7c9e5d45cc8" Left="[float]0" TabIndex="[int]0" Top="[float]0" TrueForeground="[SMColor]#ffff0000" Value="{DataItemBinding Id=857f4cb876ab4e3e8ac48743c1c0474d}" Width="[float]48" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+								<FontSetting FontFamily="Segoe UI" FontSize="9" Id="5ec0ff19783448d5965c6130ae35cb3d" xmlns="http://www.ni.com/PlatformFramework" />
+							</Button>
+							<Label Height="[float]22" Id="ee5c7691b6ca4bcab40ec7c9e5d45cc8" LabelOwner="[UIModel]1b680b66b350416f9f954c27784d8dab" Left="[float]0" Text="[string]அடுத்தது" Top="[float]-26" Visible="[bool]False" Width="[float]81">
+								<FontSetting FontFamily="Segoe UI" FontSize="12" Id="c624de971a0e40669860428d0f8699de" xmlns="http://www.ni.com/PlatformFramework" />
+							</Label>
+						</FlexibleLayoutComponent>
+						<FlexibleLayoutComponent Height="[float]24" Id="200a9bcf67794b8e9e9cc9754d3c9158" Left="[float]1061" Top="[float]276" Width="[float]261">
+							<EnumSelector AllowUndefinedValueEntry="[bool]False" BaseName="[string]Enum" Height="[float]24" Id="74e3395d895d45e0a7ae64049f81c2f4" InteractionMode="[SelectorInteractionModes]ArrowKeys, Keyboard, MouseClick, ScrollWheel, ButtonClicks" IsTypeAheadEnabled="[bool]True" Label="[UIModel]7fd49ff4cb444e4aaa489f610c3b7666" Left="[float]125" TabIndex="[int]0" TextAlignment="[TextAlignment]Center" Top="[float]0" Value="{DataItemBinding Id=89e259adc03a49eb9f086f55a6f7cfc3}" ValueType="[Type]UInt16" VisualMode="[SelectorVisualMode]RingStyle" Width="[float]136" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+								<EnumSelectorInfo DisplayValue="[string]நிமிடம்" Value="[ushort]0" ValueType="[Type]UInt16" />
+								<EnumSelectorInfo DisplayValue="[string]கணம்" Value="[ushort]1" ValueType="[Type]UInt16" />
+								<EnumSelectorInfo DisplayValue="[string]நாழிகை" Value="[ushort]2" ValueType="[Type]UInt16" />
+								<EnumSelectorInfo DisplayValue="[string]பொழுது" Value="[ushort]3" ValueType="[Type]UInt16" />
+								<FontSetting FontFamily="Segoe UI" FontSize="12" Id="c41fd43f4e04e1eae696d484b992924" xmlns="http://www.ni.com/PlatformFramework" />
+								<EnumSelectorInfo DisplayValue="[string]நாள்" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[ushort]4" ValueType="[Type]UInt16" />
+							</EnumSelector>
+							<Label Height="[float]22" Id="7fd49ff4cb444e4aaa489f610c3b7666" LabelAlignment="[PartAlignment]LeftCenter" LabelOwner="[UIModel]74e3395d895d45e0a7ae64049f81c2f4" Left="[float]0" Text="[string]அடுத்த குறள்" Top="[float]1" Width="[float]117">
+								<FontSetting FontFamily="Segoe UI" FontSize="12" Id="6711f315e90c4f48bedf8a654e468420" xmlns="http://www.ni.com/PlatformFramework" />
+							</Label>
+						</FlexibleLayoutComponent>
+					</FlexibleLayoutContainer>
+				</FlexibleLayoutWrapper>
+			</FlexibleLayoutGroup>
+			<FlexibleLayoutGroup Height="[float]48" Id="c2c9be0793c249f28497446d0eebcee7" Left="[float]30" Top="[float]752" Width="[float]1940" xmlns="http://www.ni.com/PanelCommon">
+				<FlexibleLayoutWrapper FlexGrow="[double]1" Height="[float]48" Id="b45b530b242c4523a83ee75b9c998334" Left="[float]0" Top="[float]0" Width="[float]1940">
+					<FlexibleLayoutContainer Background="[SMSolidColorBrush]#ff0076a3" BorderBrush="[SMSolidColorBrush]#ff0076a3" Height="[float]32" HorizontalContentAlignment="[FlexibleLayoutHorizontalContentAlignment]Center" Id="207fad0cf44b4878880bda5bed20604b" Left="[float]8" Top="[float]8" Width="[float]1924">
+						<FlexibleLayoutComponent Height="[float]20" Id="e18f3737147e414f94a539a086e35887" Left="[float]846" Top="[float]6" Width="[float]138">
+							<LVHyperlinkControl BaseName="[string]Hyperlink Control" Content="[string]எண்முறை&gt;&gt;" Foreground="[SMColor]#ffffffff" Height="[float]20" Id="3da764de8d3243e79cdd85f1923c701d" IsUrlSameAsContent="[bool]False" Label="[UIModel]8a455258942d43b78b9431f2d78ed5a7" Left="[float]0" TabIndex="[int]0" TargetUrl="{DataItemBinding Id=851333fd2d2f40afabba777bc70a07d8}" TextAlignment="[TextAlignment]Center" Top="[float]0" Width="[float]138" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+								<FontSetting FontFamily="Segoe UI" FontSize="12" Id="3c99d5e79ddb42a1b8932357b1e150ed" xmlns="http://www.ni.com/PlatformFramework" />
+							</LVHyperlinkControl>
+							<Label Height="[float]16" Id="8a455258942d43b78b9431f2d78ed5a7" LabelOwner="[UIModel]3da764de8d3243e79cdd85f1923c701d" Left="[float]0" Text="[string]Next" Top="[float]-20" Visible="[bool]False" Width="[float]25">
+								<FontSetting FontFamily="Segoe UI" FontSize="9" Id="d56bd3adc0db4999bc737615f2d1e64f" xmlns="http://www.ni.com/PlatformFramework" />
+							</Label>
+						</FlexibleLayoutComponent>
+						<FlexibleLayoutComponent Height="[float]20" Id="c5f8af28362b4179bc761ede71f0f672" Left="[float]992" Top="[float]6" Width="[float]86">
+							<LVHyperlinkControl BaseName="[string]Hyperlink Control" Content="[string]தகவல் &gt;&gt;" Foreground="[SMColor]#ffffffff" Height="[float]20" Id="bef788ec614c4daca8c526db6735d3ed" IsUrlSameAsContent="[bool]False" Label="[UIModel]91c0c0b065134a54888d5e37431843d8" Left="[float]0" TabIndex="[int]0" TargetUrl="{DataItemBinding Id=4b1e0595233b4a469795d649d91ab3e8}" TextAlignment="[TextAlignment]Center" Top="[float]0" Width="[float]86" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+								<FontSetting FontFamily="Segoe UI" FontSize="12" Id="a9b1424f97b44b149e3c607510d29be9" xmlns="http://www.ni.com/PlatformFramework" />
+							</LVHyperlinkControl>
+							<Label Height="[float]16" Id="91c0c0b065134a54888d5e37431843d8" LabelOwner="[UIModel]bef788ec614c4daca8c526db6735d3ed" Left="[float]0" Text="[string]Next_2" Top="[float]-20" Visible="[bool]False" Width="[float]37">
+								<FontSetting FontFamily="Segoe UI" FontSize="9" Id="2a0740dea6c74e7e96e95a9e186333c3" xmlns="http://www.ni.com/PlatformFramework" />
+							</Label>
+						</FlexibleLayoutComponent>
+					</FlexibleLayoutContainer>
+				</FlexibleLayoutWrapper>
+			</FlexibleLayoutGroup>
+		</HtmlFrontPanel>
+		<DataItem DataType="UInt8" Id="27043b4c36f44f02bcd153d740c7a8fb" Name="கணங்கள்" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>4</p.DefaultValue>
+		</DataItem>
+		<DataItem DataType="UInt8" Id="24b6cbb359f24df4aafb2fe6bc1d9c31" Name="நாழிகைகள்" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>3</p.DefaultValue>
+		</DataItem>
+		<DataItem DataType="UInt8" Id="b7a40914d94e444e89fe7d38d5ecb4bb" Name="நாழிகை" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>3</p.DefaultValue>
+		</DataItem>
+		<DataItem DataType="UInt8" Id="fa7aa36b97fa4928ae90f7cd64f8669e" Name="நிமிடம்" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>1</p.DefaultValue>
+		</DataItem>
+		<DataItem AdaptToDiagramType="True" DataType="Int32" Id="acae751dbbbf4794916c073afcd4378a" Name="நொடி" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>11</p.DefaultValue>
+		</DataItem>
+		<DataItem DataType="UInt8" Id="93d6f9fb47fe4cbbaa35cfeec8aa16e8" Name="நிமிடங்கள்" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>1</p.DefaultValue>
+		</DataItem>
+		<DataItem DataType="@1a0a8480262d4ec793dadf151a4ba029" Id="2b34a30b979e4f4b80b39f279eebf00c" Name="கிழமை" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>6</p.DefaultValue>
+		</DataItem>
+		<DataItem DataType="UInt16" Id="e32c12be275c4131bef903c0a838c049" Name="ஆண்டுநாள்" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>173</p.DefaultValue>
+		</DataItem>
+		<DataItem DataType="UInt32" Id="992cd524cf164985a070d1f29fcdb7fc" Name="ஆண்டு" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>2051</p.DefaultValue>
+		</DataItem>
+		<DataItem AdaptToDiagramType="True" DataType="Int32" Id="dcd53f6902fa4abab59c64d2bb394629" Name="நாழிகை            :               கணம்" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>0</p.DefaultValue>
+		</DataItem>
+		<DataItem AdaptToDiagramType="True" DataType="Int32" Id="8a076ec6436940d5bff78f206eaf3f2d" Name="திருவள்ளுவர் ஆண்டு  :  நாள்" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>0</p.DefaultValue>
+		</DataItem>
+		<DataItem DataType="@dc502994293742aeadfd94106683a9a0" Id="bed0d190b2534254ab13b836cd977c13" Name="பருவம் &gt;&gt; மாதம்  :   நாட்கள்" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>
+				<Array Lengths="12" IsBinary="True" Compression="GZip">
+					<BinaryElements>H4sIAAAAAAAEAM1UzY/SUBAv2/Jo+RDxO8ZE4lXSsAIuHDgYjLpZXYyse2EJPsrTVB/tpq816SYevBkTDx486NmLHooHz/Kv9D/RmbYGNgGzBxK3TafT+fjNvJnpSClJkn7DhW+88htAurvUNW2L8m1LuI43YZYr9I7tsEp5nzkCVO2mXsW7Uu543PUc1raY5zqUV8qPvRE3jR3m79mvmNW2PM7TiN5YBnqXunSfco8BPveEy5x7JuPjjs05M9BcAU/yHGUibdEJE9noY88/ZKJoxC4dekgN0/VlWZbep3o+yCb6HELo95nFHNPQH5rCfbbZ7y8x2UZdpTwRhu1wczQ/aP2kBx1tbdGG0bi92arVWbXZGgw+LsulO3oJ7CN7zLj+hNFx1+L+XL+QXc91TOvFmlN6c/LqYInXHF3F4dJkJNhXLQ0EGQVFp6lzmA8ZmhBKpIfCPGLq8HWMCpqrq5LoD1RVI+C6kTwKHu4UTgH+jgqHjOXisTD9gZZBFfbl/07KPxtQWIgb1VxdqHkGGyClksmSr6xqlqbhBGaBFDZKmcSZ5ICo3DaiVUXyiDKGFZVRj4HmFhLQCohTiHG0xIKcAXIzDIJw+jYMvoXTD2HwHZlgdoDS4FcY/Iikn8LgJ0hJERyurXL4Gk7fkbNgcSOSzlZBfkGkUhx6uR1wn5O4caBgVsr+TfockPStll5rkPMJW2+QC6gGtkkuorBWBb2C572eVOGpBbu3B4NBuXkUFe6BzcfMwR4quOC1yAKLlb8jBJuMuL8LqzwlpVRySZr3Mx7CKJXLQHbWOFG5PyeM4avpBgAA</BinaryElements>
+					<BinaryElements>H4sIAAAAAAAEAM1UO4/TQBB2Xhs7D0J4i4aUSERWQpLLpUiBgoDTwQWR45oQhY2zIMPGPnltpJxEcQ2ckCgoaGhoaGgcBKKFv7L/BGZso+Sk3CnFSdxaHu+8vp2dGY8SUxTlDyz84srFgXS3qGvaFuUblnAdb8IsV+gd22Hl0g5zBKja63oFn3Kp43HXc1jbYp7rUF4uPfRG3DQ22XTbfsmstuVxnkL0xjLQ29SlO5R7DPC5J1zm3DEZH3dszpmB5knwJM9QJlIWnTCRCZjt6S4TBSN06dBdapjuNJFIKO9ivSnIJvocQuh3mcUc09Dvm8J9Wu33l5hsoK5cmgjDdrg5ml+0vupFR80mbRiNtWqrVmeV9dZg8GFZLN3RC9g+sMeM648YHXctPp3rF6LruY5pPT/hkF6vnh1M8QmfrmJzaQkkWFctBQQ3SRSdpsphPGRowlEiNRTmHlOHr0JU0Fw9Koj+QFU1Aq7x6E3i5U5hF+DvmOQQcaJw6Jj+QEujCuvyfzvl2ALkF84Ncq4u5DyNBVBiUWclrhxVLE3DDswAyceL6ciZZIGo3DaCUUVyiDKGEZVWD4FmFwLQ8oiTD3G0yIKcAVKV/lvp/5D+TzmDzVfp/5b+dzl7/0T6nwLmCzBIcf9Nzg5IAdxuHOMGogPpf5T+rxCCnAWH69L35Ww/gNtf6vYm5ElxVevPwBcz/y5zDkiqVtFbN8l5lNWqep1cCIRVfa1KLkb6ejOJebgWZeexBTO5Bw1DubkXJPSezcfMwdomcfBrgQUmMXdLCDYZ8ekWjPiYElPJJWVe57A5g1AuA9k8wU7L/gVHtNw+AQcAAA==</BinaryElements>
+					<BinaryElements>H4sIAAAAAAAEAM1Uv2/TQBR2Ysex84MQfsNCFiSGyEqahDRDBhQEVIUGkdIljcLFOSqXi135bCRXYoABIaRKMLCwMMDE4LCwwr/i/wTesw1JUYo6RKK2/OXuvu+9e/feywkJQRB+woO/+OSSAN0N4hiWSdiayR3bnVDT4VrHsmm5tEVtDlR7VavgWy51XOa4Nm2b1HVswsqlB+6IGfo69Tatp9Rsmy5jKfTeWOT0FnHIFmEuBf/M5Q61bxuUjTsWY1RHuQSW8hNc4ymTTCjPhJNNb4/ygh6ZdMge0Q3HE0VReJPoebA20WYuuHaHmtQ2dO2ewZ3H1X5/gWQNuXJpwnXLZsZodtD6cQ86ajZJQ2/cqLZqdVpZbQ0G7xbF0h3twvC+NaZMe0jJuGsyb8bPRddzbMPcWXJIz4+fHUzxkndXsLlUEQHrqqYAcCDh0kmqHMYjDw3YiqeG3NinyvBZ5BWYK0cF0R8oiiqDaTL+JDzcCewC/DtKDCIWC4e26Q/UNFJYl//bKf8sQH5u3zDnylzO01gAIRF3lnjpqGKpKnZgBiCfLKZjYzkLoDBLD68qOYdexnBFpZVDTrNzAah59JOP/KixQj4FcDnw3wf+98D/GkwPtgP/VeB/C/xPgf9DLgB9/S/6SzB9gRP/I8wRkfuA6tOgvobq6cvA/wwrf2zehmYHiJG0CNLqQulsLyQiRBqkr4uZ33GfAUjVVrRKTT4bDitavSmfQ3qlpbXk8/GoIeGJr8Z5eGTC7duD1iDM2A9Td9diY2pjFSW84tVQgenK3eScTkbM24DLPCEkFPmCMKto1IZhJBcB1pfYU9lfk4U/j+sGAAA=</BinaryElements>
+				</Array>
+			</p.DefaultValue>
+		</DataItem>
+		<DataItem AdaptToDiagramType="True" DataType="String" Id="851333fd2d2f40afabba777bc70a07d8" Name="Next" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>எண்முறை.html</p.DefaultValue>
+		</DataItem>
+		<DataItem DataType="UInt8" Id="cecd0de888b241ccb25466829e5af167" Name="கணம்" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>4</p.DefaultValue>
+		</DataItem>
+		<DataItem AdaptToDiagramType="True" DataType="Int32" Id="d56d8320f75b47afbd92409ad407f678" Name="நிமிடம்               :               நொடி" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>0</p.DefaultValue>
+		</DataItem>
+		<DataItem DataType="UInt8" Id="a43c60103b8d4720be71b39dfd680af9" Name="நொடிகள்" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>11</p.DefaultValue>
+		</DataItem>
+		<DataItem AdaptToDiagramType="True" DataType="String" Id="8fa20102c1244f50b7dd961005e303ce" Name="திருக்குறள்" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>""</p.DefaultValue>
+		</DataItem>
+		<DataItem AdaptToDiagramType="True" DataType="String" Id="4b1e0595233b4a469795d649d91ab3e8" Name="Next_2" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>தகவல்.html</p.DefaultValue>
+		</DataItem>
+		<DataItem AdaptToDiagramType="True" DataType="Int32" Id="b2d4701b1c024a5b9c91c6eecca9188b" Name="கிழமை             :           பொழுது" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>0</p.DefaultValue>
+		</DataItem>
+		<DataItem DataType="UInt8" Id="156a44abda124999bd9a3f332cd3d5c1" Name="சிறுபொழுது" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>2</p.DefaultValue>
+		</DataItem>
+		<DataItem DataType="@8fb2b2be1db34145b0eb94ce8b726c4d" Id="9eadcb37aa654b059dfcdccf51ea0381" Name="பொழுது" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>2</p.DefaultValue>
+		</DataItem>
+		<DataItem DataType="UInt8" Id="363f1bc6f448473bbd23d3f1bebcb3e2" Name="கிழமைகள்" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>6</p.DefaultValue>
+		</DataItem>
+		<DataItem DataType="UInt8" Id="57ace7772831469691281c78df8fbc22" Name="ஆண்டுநாள்கள்" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>173</p.DefaultValue>
+		</DataItem>
+		<DataItem DataType="Boolean" Id="44c7d8a87cf476fa90536d537ed0668" IsLatched="True" Name="முன்" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>False</p.DefaultValue>
+		</DataItem>
+		<DataItem DataType="Boolean" Id="857f4cb876ab4e3e8ac48743c1c0474d" IsLatched="True" Name="அடுத்தது" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>False</p.DefaultValue>
+		</DataItem>
+		<DataItem DataType="UInt16" Id="3dc7715d6a1c43f88eb2cdc31ae17a87" Name="குறள் எண்" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>210</p.DefaultValue>
+		</DataItem>
+		<DataItem DataType="@33c55de015ca49d2a0f221452f9d046e" Id="d37a50139fe2438cb187d5867b5d92c5" Name="மொழி" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>0</p.DefaultValue>
+		</DataItem>
+		<DataItem AdaptToDiagramType="True" DataType="@e7408ea99de140c287cc13ef235e34ca" Id="89e259adc03a49eb9f086f55a6f7cfc3" Name="அடுத்த குறள்" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>0</p.DefaultValue>
+		</DataItem>
+		<DataItem DataType="Int32" Id="6f5a22d2571f4b1b9cfda60333dbaf21" Name="திருவள்ளுவர் ஆண்டு" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>2051</p.DefaultValue>
+		</DataItem>
+		<DataItem DataType="@e5e89f32c7f747619b72e02b41fda6e9" Id="aca69e31e4ca4be4b34ac15a3efdedef" Name="பால்" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>0</p.DefaultValue>
+		</DataItem>
+		<DataItem DataType="@0353c461f8354c9f87f43bb02b05146c" Id="1da4e818e90e4334a60d481159b821a0" Name="இயல்" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>5</p.DefaultValue>
+		</DataItem>
+		<DataItem DataType="@ab31d5e25cd24bbe8d0563eaf23b2f47" Id="e899c3acd2f44cd4b3879e9772d3ccdf" Name="அதிகாரம்" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>44</p.DefaultValue>
+		</DataItem>
+	</VirtualInstrument>
+	<DataTypeReferenceTable xmlns="http://www.ni.com/PlatformFramework">
+		<p.TypeReference TypeId="33c55de015ca49d2a0f221452f9d046e">
+			<Enumeration>
+				<Members>
+					<EnumerationMember Value="0" Name="முத்தமிழ்" />
+					<EnumerationMember Value="1" Name="ஆங்கிலம் (English)" />
+					<EnumerationMember Value="2" Name="தெலுங்கு (తెలుగు)" />
+					<EnumerationMember Value="3" Name="மலையாளம் (മലയാളം)" />
+					<EnumerationMember Value="4" Name="கன்னடம் (ಕನ್ನಡ)" />
+					<EnumerationMember Value="5" Name="சீனம் (汉语)" />
+					<EnumerationMember Value="6" Name="மலாய் (Melayu)" />
+					<EnumerationMember Value="7" Name="கொரிய (한국어)" />
+					<EnumerationMember Value="8" Name="உருசிய (Русский)" />
+					<EnumerationMember Value="9" Name="அரபு (العَرَبِيَّة)" />
+					<EnumerationMember Value="10" Name="பிரெஞ்சு (Français)" />
+					<EnumerationMember Value="11" Name="செர்மன் (Deutsch)" />
+					<EnumerationMember Value="12" Name="சுவீடிய (Svenska)" />
+					<EnumerationMember Value="13" Name="இலத்தீன் (Latīna)" />
+					<EnumerationMember Value="14" Name="போலிய (Polski)" />
+				</Members>
+				<DataType>UInt8</DataType>
+			</Enumeration>
+		</p.TypeReference>
+		<p.TypeReference TypeId="e5e89f32c7f747619b72e02b41fda6e9">
+			<Enumeration>
+				<Members>
+					<EnumerationMember Value="0" Name="அறம்" />
+					<EnumerationMember Value="1" Name="பொருள்" />
+					<EnumerationMember Value="2" Name="இன்பம்" />
+				</Members>
+				<DataType>UInt16</DataType>
+			</Enumeration>
+		</p.TypeReference>
+		<p.TypeReference TypeId="ab31d5e25cd24bbe8d0563eaf23b2f47">
+			<Enumeration>
+				<Members>
+					<EnumerationMember Value="0" Name="கடவுள் வாழ்த்து" />
+					<EnumerationMember Value="1" Name="வான்சிறப்பு" />
+					<EnumerationMember Value="2" Name="நீத்தார் பெருமை" />
+					<EnumerationMember Value="3" Name="அறன்வலியுறுத்தல்" />
+					<EnumerationMember Value="4" Name="இல்வாழ்க்கை" />
+					<EnumerationMember Value="5" Name="வாழ்க்கைத் துணைநலம்" />
+					<EnumerationMember Value="6" Name="மக்கட்பேறு" />
+					<EnumerationMember Value="7" Name="அன்புடைமை" />
+					<EnumerationMember Value="8" Name="விருந்தோம்பல்" />
+					<EnumerationMember Value="9" Name="இனியவைகூறல்" />
+					<EnumerationMember Value="10" Name="செய்ந்நன்றி அறிதல்" />
+					<EnumerationMember Value="11" Name="நடுவு நிலைமை" />
+					<EnumerationMember Value="12" Name="அடக்கமுடைமை" />
+					<EnumerationMember Value="13" Name="ஒழுக்கமுடைமை" />
+					<EnumerationMember Value="14" Name="பிறனில் விழையாமை" />
+					<EnumerationMember Value="15" Name="பொறையுடைமை" />
+					<EnumerationMember Value="16" Name="அழுக்காறாமை" />
+					<EnumerationMember Value="17" Name="வெஃகாமை" />
+					<EnumerationMember Value="18" Name="புறங்கூறாமை" />
+					<EnumerationMember Value="19" Name="பயனில சொல்லாமை" />
+					<EnumerationMember Value="20" Name="தீவினையச்சம்" />
+					<EnumerationMember Value="21" Name="ஒப்புரவறிதல்" />
+					<EnumerationMember Value="22" Name="ஈகை" />
+					<EnumerationMember Value="23" Name="புகழ்" />
+					<EnumerationMember Value="24" Name="அருளுடைமை" />
+					<EnumerationMember Value="25" Name="புலான்மறுத்தல்" />
+					<EnumerationMember Value="26" Name="தவம்" />
+					<EnumerationMember Value="27" Name="கூடாவொழுக்கம்" />
+					<EnumerationMember Value="28" Name="கள்ளாமை" />
+					<EnumerationMember Value="29" Name="வாய்மை" />
+					<EnumerationMember Value="30" Name="வெகுளாமை" />
+					<EnumerationMember Value="31" Name="இன்னாசெய்யாமை" />
+					<EnumerationMember Value="32" Name="கொல்லாமை" />
+					<EnumerationMember Value="33" Name="நிலையாமை" />
+					<EnumerationMember Value="34" Name="துறவு" />
+					<EnumerationMember Value="35" Name="மெய்யுணர்தல்" />
+					<EnumerationMember Value="36" Name="அவாவறுத்தல்" />
+					<EnumerationMember Value="37" Name="ஊழ்" />
+					<EnumerationMember Value="38" Name="இறைமாட்சி" />
+					<EnumerationMember Value="39" Name="கல்வி" />
+					<EnumerationMember Value="40" Name="கல்லாமை" />
+					<EnumerationMember Value="41" Name="கேள்வி" />
+					<EnumerationMember Value="42" Name="அறிவுடைமை" />
+					<EnumerationMember Value="43" Name="குற்றங்கடிதல்" />
+					<EnumerationMember Value="44" Name="பெரியாரைத் துணைக்கோடல்" />
+					<EnumerationMember Value="45" Name="சிற்றினஞ்சேராமை" />
+					<EnumerationMember Value="46" Name="தெரிந்துசெயல்வகை" />
+					<EnumerationMember Value="47" Name="வலியறிதல்" />
+					<EnumerationMember Value="48" Name="காலமறிதல்" />
+					<EnumerationMember Value="49" Name="இடனறிதல்" />
+					<EnumerationMember Value="50" Name="தெரிந்துதெளிதல்" />
+					<EnumerationMember Value="51" Name="தெரிந்துவினையாடல்" />
+					<EnumerationMember Value="52" Name="சுற்றந்தழால்" />
+					<EnumerationMember Value="53" Name="பொச்சாவாமை" />
+					<EnumerationMember Value="54" Name="செங்கோன்மை" />
+					<EnumerationMember Value="55" Name="கொடுங்கோன்மை" />
+					<EnumerationMember Value="56" Name="வெருவந்தசெய்யாமை" />
+					<EnumerationMember Value="57" Name="கண்ணோட்டம்" />
+					<EnumerationMember Value="58" Name="ஒற்றாடல்" />
+					<EnumerationMember Value="59" Name="ஊக்கமுடைமை" />
+					<EnumerationMember Value="60" Name="மடியின்மை" />
+					<EnumerationMember Value="61" Name="ஆள்வினையுடைமை" />
+					<EnumerationMember Value="62" Name="இடுக்கணழியாமை" />
+					<EnumerationMember Value="63" Name="அமைச்சு" />
+					<EnumerationMember Value="64" Name="சொல்வன்மை" />
+					<EnumerationMember Value="65" Name="வினைத்தூய்மை" />
+					<EnumerationMember Value="66" Name="வினைத்திட்பம்" />
+					<EnumerationMember Value="67" Name="வினைசெயல்வகை" />
+					<EnumerationMember Value="68" Name="தூது" />
+					<EnumerationMember Value="69" Name="மன்னரைச் சேர்ந்தொழுதல்" />
+					<EnumerationMember Value="70" Name="குறிப்பறிதல்" />
+					<EnumerationMember Value="71" Name="அவையறிதல்" />
+					<EnumerationMember Value="72" Name="அவையஞ்சாமை" />
+					<EnumerationMember Value="73" Name="நாடு" />
+					<EnumerationMember Value="74" Name="அரண்" />
+					<EnumerationMember Value="75" Name="பொருள்செயல்வகை" />
+					<EnumerationMember Value="76" Name="படைமாட்சி" />
+					<EnumerationMember Value="77" Name="படைச்செருக்கு" />
+					<EnumerationMember Value="78" Name="நட்பு" />
+					<EnumerationMember Value="79" Name="நட்பாராய்தல்" />
+					<EnumerationMember Value="80" Name="பழைமை" />
+					<EnumerationMember Value="81" Name="தீ நட்பு" />
+					<EnumerationMember Value="82" Name="கூடாநட்பு" />
+					<EnumerationMember Value="83" Name="பேதைமை" />
+					<EnumerationMember Value="84" Name="புல்லறிவாண்மை" />
+					<EnumerationMember Value="85" Name="இகல்" />
+					<EnumerationMember Value="86" Name="பகைமாட்சி" />
+					<EnumerationMember Value="87" Name="பகைத்திறந்தெரிதல்" />
+					<EnumerationMember Value="88" Name="உட்பகை" />
+					<EnumerationMember Value="89" Name="பெரியாரைப் பிழையாமை" />
+					<EnumerationMember Value="90" Name="பெண்வழிச்சேறல்" />
+					<EnumerationMember Value="91" Name="வரைவின்மகளிர்" />
+					<EnumerationMember Value="92" Name="கள்ளுண்ணாமை" />
+					<EnumerationMember Value="93" Name="சூது" />
+					<EnumerationMember Value="94" Name="மருந்து" />
+					<EnumerationMember Value="95" Name="குடிமை" />
+					<EnumerationMember Value="96" Name="மானம்" />
+					<EnumerationMember Value="97" Name="பெருமை" />
+					<EnumerationMember Value="98" Name="சான்றாண்மை" />
+					<EnumerationMember Value="99" Name="பண்புடைமை" />
+					<EnumerationMember Value="100" Name="நன்றியில்செல்வம்" />
+					<EnumerationMember Value="101" Name="நாணுடைமை" />
+					<EnumerationMember Value="102" Name="குடிசெயல்வகை" />
+					<EnumerationMember Value="103" Name="உழவு" />
+					<EnumerationMember Value="104" Name="நல்குரவு" />
+					<EnumerationMember Value="105" Name="இரவு" />
+					<EnumerationMember Value="106" Name="இரவச்சம்" />
+					<EnumerationMember Value="107" Name="கயமை" />
+					<EnumerationMember Value="108" Name="தகையணங்குறுத்தல்" />
+					<EnumerationMember Value="109" Name="குறிப்பறிதல்_2" />
+					<EnumerationMember Value="110" Name="புணர்ச்சிமகிழ்தல்" />
+					<EnumerationMember Value="111" Name="நலம்புனைந்துரைத்தல்" />
+					<EnumerationMember Value="112" Name="காதற்சிறப்புரைத்தல்" />
+					<EnumerationMember Value="113" Name="நாணுத்துறவுரைத்தல்" />
+					<EnumerationMember Value="114" Name="அலரறிவுறுத்தல்" />
+					<EnumerationMember Value="115" Name="பிரிவாற்றாமை" />
+					<EnumerationMember Value="116" Name="படர்மெலிந்திரங்கல்" />
+					<EnumerationMember Value="117" Name="கண்விதுப்பழிதல்" />
+					<EnumerationMember Value="118" Name="பசப்புறுபருவரல்" />
+					<EnumerationMember Value="119" Name="தனிப்படர்மிகுதி" />
+					<EnumerationMember Value="120" Name="நினைந்தவர்புலம்பல்" />
+					<EnumerationMember Value="121" Name="கனவுநிலையுரைத்தல்" />
+					<EnumerationMember Value="122" Name="பொழுதுகண்டிரங்கல்" />
+					<EnumerationMember Value="123" Name="உறுப்புநலனழிதல்" />
+					<EnumerationMember Value="124" Name="நெஞ்சொடுகிளத்தல்" />
+					<EnumerationMember Value="125" Name="நிறையழிதல்" />
+					<EnumerationMember Value="126" Name="அவர்வயின்விதும்பல்" />
+					<EnumerationMember Value="127" Name="குறிப்பறிவுறுத்தல்" />
+					<EnumerationMember Value="128" Name="புணர்ச்சிவிதும்பல்" />
+					<EnumerationMember Value="129" Name="நெஞ்சொடுபுலத்தல்" />
+					<EnumerationMember Value="130" Name="புலவி" />
+					<EnumerationMember Value="131" Name="புலவி நுணுக்கம்" />
+					<EnumerationMember Value="132" Name="ஊடலுவகை" />
+				</Members>
+				<DataType>UInt8</DataType>
+			</Enumeration>
+		</p.TypeReference>
+		<p.TypeReference TypeId="0353c461f8354c9f87f43bb02b05146c">
+			<Enumeration>
+				<Members>
+					<EnumerationMember Value="0" Name="பாயிரவியல்" />
+					<EnumerationMember Value="1" Name="இல்லறவியல்" />
+					<EnumerationMember Value="2" Name="துறவறவியல்" />
+					<EnumerationMember Value="3" Name="ஊழியல் " />
+					<EnumerationMember Value="4" Name="அரசியல்" />
+					<EnumerationMember Value="5" Name="அமைச்சியல்" />
+					<EnumerationMember Value="6" Name="அரணியல்" />
+					<EnumerationMember Value="7" Name="கூழியல்" />
+					<EnumerationMember Value="8" Name="படையில்" />
+					<EnumerationMember Value="9" Name="நட்பியல்" />
+					<EnumerationMember Value="10" Name="குடியியல்" />
+					<EnumerationMember Value="11" Name="களவியல்" />
+					<EnumerationMember Value="12" Name="கற்பியல்" />
+				</Members>
+				<DataType>UInt16</DataType>
+			</Enumeration>
+		</p.TypeReference>
+		<p.TypeReference TypeId="774f8c1e884b4ef3ba3cc9fc93b833da">
+			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
+				<Members>
+					<Field FieldAccessPolicy="ReadWrite" Name="பால்" DataType="@e5e89f32c7f747619b72e02b41fda6e9" />
+					<Field FieldAccessPolicy="ReadWrite" Name="இயல்" DataType="@9f91e29f03f2407b9a544d96dfd01f2d" />
+					<Field FieldAccessPolicy="ReadWrite" Name="அதிகாரம்" DataType="@ab31d5e25cd24bbe8d0563eaf23b2f47" />
+				</Members>
+			</Composite>
+		</p.TypeReference>
+		<p.TypeReference TypeId="9f91e29f03f2407b9a544d96dfd01f2d">
+			<Enumeration>
+				<Members>
+					<EnumerationMember Value="0" Name="பாயிரவியல்" />
+					<EnumerationMember Value="1" Name="இல்லறவியல்" />
+					<EnumerationMember Value="2" Name="துறவறவியல்" />
+					<EnumerationMember Value="3" Name="ஊழியல் " />
+					<EnumerationMember Value="4" Name="அரசியல்" />
+					<EnumerationMember Value="5" Name="அமைச்சியல்" />
+					<EnumerationMember Value="6" Name="அரணியல்" />
+					<EnumerationMember Value="7" Name="கூழியல்" />
+					<EnumerationMember Value="8" Name="படையில்" />
+					<EnumerationMember Value="9" Name="நட்பியல்" />
+					<EnumerationMember Value="10" Name="குடியியல்" />
+					<EnumerationMember Value="11" Name="களவியல்" />
+					<EnumerationMember Value="12" Name="கற்பியல்" />
+				</Members>
+				<DataType>UInt8</DataType>
+			</Enumeration>
+		</p.TypeReference>
+		<p.TypeReference TypeId="1a0a8480262d4ec793dadf151a4ba029">
+			<Enumeration>
+				<Members>
+					<EnumerationMember Value="0" Name="ஞாயிறு" />
+					<EnumerationMember Value="1" Name="திங்கள்" />
+					<EnumerationMember Value="2" Name="செவ்வாய்" />
+					<EnumerationMember Value="3" Name="அறிவன்" />
+					<EnumerationMember Value="4" Name="வியாழன்" />
+					<EnumerationMember Value="5" Name="வெள்ளி" />
+					<EnumerationMember Value="6" Name="காரி" />
+				</Members>
+				<DataType>UInt8</DataType>
+			</Enumeration>
+		</p.TypeReference>
+		<p.TypeReference TypeId="c56984567cc44a6ca9929f0595ccee4c">
+			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
+				<Members>
+					<Field FieldAccessPolicy="ReadWrite" Name="location" DataType="String" />
+					<Field FieldAccessPolicy="ReadWrite" Name="data" DataType="String" />
+				</Members>
+			</Composite>
+		</p.TypeReference>
+		<p.TypeReference TypeId="dc502994293742aeadfd94106683a9a0">
+			<VariableArray DereferenceType="@c56984567cc44a6ca9929f0595ccee4c" />
+		</p.TypeReference>
+		<p.TypeReference TypeId="66dd3b1400b84734ba20b581bb2b46ae">
+			<Attributed AttributedType="@ed02b4e4b85f4062972aefff6fd06ea6">
+				<AttributeValues>
+					<AttributeValue Name="NI.ConnectorPaneHeight" Value="[int]40" />
+					<AttributeValue Name="NI.ConnectorPaneWidth" Value="[int]40" />
+				</AttributeValues>
+			</Attributed>
+		</p.TypeReference>
+		<p.TypeReference TypeId="1d3849759cf9478bbbb04229fd434a20">
+			<Enumeration>
+				<Members>
+					<EnumerationMember Value="0" Name="முன்பனி" />
+					<EnumerationMember Value="1" Name="பின்பனி " />
+					<EnumerationMember Value="2" Name="இளவேனில்" />
+					<EnumerationMember Value="3" Name="முதுவேனில்" />
+					<EnumerationMember Value="4" Name="கார்" />
+					<EnumerationMember Value="5" Name="கூதிர்" />
+				</Members>
+				<DataType>UInt8</DataType>
+			</Enumeration>
+		</p.TypeReference>
+		<p.TypeReference TypeId="16f4cfaf044c45348fe93f8775520157">
+			<Enumeration>
+				<Members>
+					<EnumerationMember Value="0" Name="மார்கழி" />
+					<EnumerationMember Value="1" Name="தை" />
+					<EnumerationMember Value="2" Name="மாசி" />
+					<EnumerationMember Value="3" Name="பங்குனி" />
+					<EnumerationMember Value="4" Name="சித்திரை" />
+					<EnumerationMember Value="5" Name="வைகாசி" />
+					<EnumerationMember Value="6" Name="ஆனி" />
+					<EnumerationMember Value="7" Name="ஆடி" />
+					<EnumerationMember Value="8" Name="ஆவணி" />
+					<EnumerationMember Value="9" Name="புரட்டாசி" />
+					<EnumerationMember Value="10" Name="ஐப்பசி" />
+					<EnumerationMember Value="11" Name="கார்த்திகை" />
+				</Members>
+				<DataType>UInt8</DataType>
+			</Enumeration>
+		</p.TypeReference>
+		<p.TypeReference TypeId="b1a941ced33f4c8db36ccad6b913c8e6">
+			<Attributed AttributedType="@a60fc11df9a04889946337141a0376f7">
+				<AttributeValues>
+					<AttributeValue Name="NI.ConnectorPaneHeight" Value="[int]40" />
+					<AttributeValue Name="NI.ConnectorPaneWidth" Value="[int]40" />
+				</AttributeValues>
+			</Attributed>
+		</p.TypeReference>
+		<p.TypeReference TypeId="e7408ea99de140c287cc13ef235e34ca">
+			<Enumeration>
+				<Members>
+					<EnumerationMember Value="0" Name="நிமிடம்" />
+					<EnumerationMember Value="1" Name="கணம்" />
+					<EnumerationMember Value="2" Name="நாழிகை" />
+					<EnumerationMember Value="3" Name="பொழுது" />
+					<EnumerationMember Value="4" Name="நாள்" />
+				</Members>
+				<DataType>UInt16</DataType>
+			</Enumeration>
+		</p.TypeReference>
+		<p.TypeReference TypeId="8fb2b2be1db34145b0eb94ce8b726c4d">
+			<Enumeration>
+				<Members>
+					<EnumerationMember Value="0" Name="யாமம்" />
+					<EnumerationMember Value="1" Name="வைகறை" />
+					<EnumerationMember Value="2" Name="காலை" />
+					<EnumerationMember Value="3" Name="நண்பகல்" />
+					<EnumerationMember Value="4" Name="எற்பாடு" />
+					<EnumerationMember Value="5" Name="மாலை" />
+				</Members>
+				<DataType>UInt8</DataType>
+			</Enumeration>
+		</p.TypeReference>
+		<p.TypeReference TypeId="2f30ebad99d94bb4aff764efdf3c9f10">
+			<Attributed AttributedType="@51745016144d49b092be85d98f719d42">
+				<AttributeValues>
+					<AttributeValue Name="NI.ConnectorPaneHeight" Value="[int]40" />
+					<AttributeValue Name="NI.ConnectorPaneWidth" Value="[int]40" />
+				</AttributeValues>
+			</Attributed>
+		</p.TypeReference>
+		<p.TypeReference TypeId="ce022d6d79ee44d1845b0156c4b68643">
+			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
+				<Members>
+					<Field FieldAccessPolicy="ReadWrite" Name="fractional second" DataType="Double" />
+					<Field FieldAccessPolicy="ReadWrite" Name="second" DataType="Int32" />
+					<Field FieldAccessPolicy="ReadWrite" Name="minute" DataType="Int32" />
+					<Field FieldAccessPolicy="ReadWrite" Name="hour" DataType="Int32" />
+					<Field FieldAccessPolicy="ReadWrite" Name="day of month" DataType="Int32" />
+					<Field FieldAccessPolicy="ReadWrite" Name="month" DataType="Int32" />
+					<Field FieldAccessPolicy="ReadWrite" Name="year" DataType="Int32" />
+					<Field FieldAccessPolicy="ReadWrite" Name="day of week" DataType="Int32" />
+					<Field FieldAccessPolicy="ReadWrite" Name="day of year" DataType="Int32" />
+					<Field FieldAccessPolicy="ReadWrite" Name="DST" DataType="Int32" />
+				</Members>
+			</Composite>
+		</p.TypeReference>
+		<p.TypeReference TypeId="c76cd323ac1644c898aab90a0506b95a">
+			<Attributed AttributedType="@4390c943de524fe0a07f687baadbadac">
+				<AttributeValues>
+					<AttributeValue Name="NI.ConnectorPaneHeight" Value="[int]40" />
+					<AttributeValue Name="NI.ConnectorPaneWidth" Value="[int]40" />
+				</AttributeValues>
+			</Attributed>
+		</p.TypeReference>
+		<p.TypeReference TypeId="ed02b4e4b85f4062972aefff6fd06ea6">
+			<Function Id="1" IsStatic="True" IsConstructor="False" Name="தேதிமாற்றம்.gviweb" ReturnType="Void" GenericTypeDefinition="Void">
+				<Parameters>
+					<Attributed AttributedType="@f319caa174ad4aabb3783666f6ae8127">
+						<AttributeValues>
+							<AttributeValue Name="NI.UserDefinedName" Value="[string]பருவம்" />
+						</AttributeValues>
+					</Attributed>
+					<Attributed AttributedType="@6b012628adc642b58b4671ee0a980e20">
+						<AttributeValues>
+							<AttributeValue Name="NI.UserDefinedName" Value="[string]ஆண்டு" />
+						</AttributeValues>
+					</Attributed>
+					<Attributed AttributedType="@7b653ed195124d72bc97fbf111c8d96b">
+						<AttributeValues>
+							<AttributeValue Name="NI.UserDefinedName" Value="[string]நாள்" />
+						</AttributeValues>
+					</Attributed>
+					<Attributed AttributedType="@21b3968d51904638ba4a2096ef2d0eea">
+						<AttributeValues>
+							<AttributeValue Name="NI.UserDefinedName" Value="[string]மாதம்" />
+						</AttributeValues>
+					</Attributed>
+					<Attributed AttributedType="@8aea503fba9c4823940f5afb5d512a53">
+						<AttributeValues>
+							<AttributeValue Name="NI.UserDefinedName" Value="[string]மாதநாள்" />
+						</AttributeValues>
+					</Attributed>
+				</Parameters>
+			</Function>
+		</p.TypeReference>
+		<p.TypeReference TypeId="a60fc11df9a04889946337141a0376f7">
+			<Function Id="1" IsStatic="True" IsConstructor="False" Name="நேரமாற்றம்.gviweb" ReturnType="Void" GenericTypeDefinition="Void">
+				<Parameters>
+					<Attributed AttributedType="@be18011db4cd46ad8f02148cc10b6893">
+						<AttributeValues>
+							<AttributeValue Name="NI.UserDefinedName" Value="[string]அடுத்த குறள்" />
+						</AttributeValues>
+					</Attributed>
+					<Attributed AttributedType="@d6a408099a2b480c9d08e0aabfa51575">
+						<AttributeValues>
+							<AttributeValue Name="NI.UserDefinedName" Value="[string]அடுத்தது?" />
+						</AttributeValues>
+					</Attributed>
+					<Attributed AttributedType="@2aae9954238a4513ad340bdbb3123d8e">
+						<AttributeValues>
+							<AttributeValue Name="NI.UserDefinedName" Value="[string]சிறுபொழுது" />
+						</AttributeValues>
+					</Attributed>
+					<Attributed AttributedType="@7aed5f1735d44f929eb0c0111f74c605">
+						<AttributeValues>
+							<AttributeValue Name="NI.UserDefinedName" Value="[string]நாழிகை" />
+						</AttributeValues>
+					</Attributed>
+					<Attributed AttributedType="@b84f10fde51f4e288c90378ba139d6c3">
+						<AttributeValues>
+							<AttributeValue Name="NI.UserDefinedName" Value="[string]கணம்" />
+						</AttributeValues>
+					</Attributed>
+					<Attributed AttributedType="@ba10a6e9884040d2946661d3c60d68ca">
+						<AttributeValues>
+							<AttributeValue Name="NI.UserDefinedName" Value="[string]நிமிடம்" />
+						</AttributeValues>
+					</Attributed>
+					<Attributed AttributedType="@c9c2e6b2139b4909a3a883022aaf7e7d">
+						<AttributeValues>
+							<AttributeValue Name="NI.UserDefinedName" Value="[string]கிழமை" />
+						</AttributeValues>
+					</Attributed>
+				</Parameters>
+			</Function>
+		</p.TypeReference>
+		<p.TypeReference TypeId="51745016144d49b092be85d98f719d42">
+			<Function Id="1" IsStatic="True" IsConstructor="False" Name="குறள்படி.gviweb" ReturnType="Void" GenericTypeDefinition="Void">
+				<Parameters>
+					<Attributed AttributedType="@9599e9002142487fbd8839677e4819d0">
+						<AttributeValues>
+							<AttributeValue Name="NI.UserDefinedName" Value="[string]அடைவு" />
+						</AttributeValues>
+					</Attributed>
+					<Attributed AttributedType="@59fa79c4b6884926aca1c866df227a2a">
+						<AttributeValues>
+							<AttributeValue Name="NI.UserDefinedName" Value="[string]குறள் எண்" />
+						</AttributeValues>
+					</Attributed>
+					<Attributed AttributedType="@446190a82e2f47f8adcb3478b8bc9251">
+						<AttributeValues>
+							<AttributeValue Name="NI.UserDefinedName" Value="[string]திருக்குறள்" />
+						</AttributeValues>
+					</Attributed>
+					<Attributed AttributedType="@09addb26ea4f41fc8722cf44f0f5ac85">
+						<AttributeValues>
+							<AttributeValue Name="NI.UserDefinedName" Value="[string]பொருள்" />
+						</AttributeValues>
+					</Attributed>
+					<Attributed AttributedType="@64da084794e24e8281c22cc73f65a79d">
+						<AttributeValues>
+							<AttributeValue Name="NI.UserDefinedName" Value="[string]தகவல்" />
+						</AttributeValues>
+					</Attributed>
+				</Parameters>
+			</Function>
+		</p.TypeReference>
+		<p.TypeReference TypeId="4390c943de524fe0a07f687baadbadac">
+			<Function Id="1" IsStatic="True" IsConstructor="False" Name="குறள்தொடக்கம்.gviweb" ReturnType="Void" GenericTypeDefinition="Void">
+				<Parameters>
+					<Attributed AttributedType="@03aa82abaa744add91f627ce569b354e">
+						<AttributeValues>
+							<AttributeValue Name="NI.UserDefinedName" Value="[string]கணம்?" />
+						</AttributeValues>
+					</Attributed>
+					<Attributed AttributedType="@59fa79c4b6884926aca1c866df227a2a">
+						<AttributeValues>
+							<AttributeValue Name="NI.UserDefinedName" Value="[string]தொடக்கம்" />
+						</AttributeValues>
+					</Attributed>
+				</Parameters>
+			</Function>
+		</p.TypeReference>
+		<p.TypeReference TypeId="f319caa174ad4aabb3783666f6ae8127">
+			<Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Recommended" Name="B1" DataType="@1d3849759cf9478bbbb04229fd434a20" />
+		</p.TypeReference>
+		<p.TypeReference TypeId="6b012628adc642b58b4671ee0a980e20">
+			<Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Recommended" Name="R0" DataType="UInt32" />
+		</p.TypeReference>
+		<p.TypeReference TypeId="7b653ed195124d72bc97fbf111c8d96b">
+			<Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Recommended" Name="R1" DataType="Int32" />
+		</p.TypeReference>
+		<p.TypeReference TypeId="21b3968d51904638ba4a2096ef2d0eea">
+			<Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Recommended" Name="R2" DataType="@16f4cfaf044c45348fe93f8775520157" />
+		</p.TypeReference>
+		<p.TypeReference TypeId="8aea503fba9c4823940f5afb5d512a53">
+			<Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Recommended" Name="R3" DataType="Int16" />
+		</p.TypeReference>
+		<p.TypeReference TypeId="be18011db4cd46ad8f02148cc10b6893">
+			<Parameter InputParameterPassingRule="Required" OutputParameterPassingRule="NotAllowed" Name="L3" DataType="@e7408ea99de140c287cc13ef235e34ca" />
+		</p.TypeReference>
+		<p.TypeReference TypeId="d6a408099a2b480c9d08e0aabfa51575">
+			<Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Recommended" Name="B1" DataType="Boolean" />
+		</p.TypeReference>
+		<p.TypeReference TypeId="2aae9954238a4513ad340bdbb3123d8e">
+			<Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Recommended" Name="R0" DataType="@8fb2b2be1db34145b0eb94ce8b726c4d" />
+		</p.TypeReference>
+		<p.TypeReference TypeId="7aed5f1735d44f929eb0c0111f74c605">
+			<Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Recommended" Name="R1" DataType="UInt8" />
+		</p.TypeReference>
+		<p.TypeReference TypeId="b84f10fde51f4e288c90378ba139d6c3">
+			<Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Recommended" Name="R2" DataType="UInt8" />
+		</p.TypeReference>
+		<p.TypeReference TypeId="ba10a6e9884040d2946661d3c60d68ca">
+			<Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Recommended" Name="R3" DataType="UInt8" />
+		</p.TypeReference>
+		<p.TypeReference TypeId="c9c2e6b2139b4909a3a883022aaf7e7d">
+			<Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Recommended" Name="T1" DataType="@1a0a8480262d4ec793dadf151a4ba029" />
+		</p.TypeReference>
+		<p.TypeReference TypeId="9599e9002142487fbd8839677e4819d0">
+			<Parameter InputParameterPassingRule="Required" OutputParameterPassingRule="NotAllowed" Name="L0" DataType="UInt16" />
+		</p.TypeReference>
+		<p.TypeReference TypeId="59fa79c4b6884926aca1c866df227a2a">
+			<Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Recommended" Name="R0" DataType="UInt16" />
+		</p.TypeReference>
+		<p.TypeReference TypeId="446190a82e2f47f8adcb3478b8bc9251">
+			<Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Recommended" Name="R1" DataType="String" />
+		</p.TypeReference>
+		<p.TypeReference TypeId="09addb26ea4f41fc8722cf44f0f5ac85">
+			<Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Recommended" Name="R2" DataType="String[]" />
+		</p.TypeReference>
+		<p.TypeReference TypeId="64da084794e24e8281c22cc73f65a79d">
+			<Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Recommended" Name="R3" DataType="@774f8c1e884b4ef3ba3cc9fc93b833da" />
+		</p.TypeReference>
+		<p.TypeReference TypeId="03aa82abaa744add91f627ce569b354e">
+			<Parameter InputParameterPassingRule="Recommended" OutputParameterPassingRule="NotAllowed" Name="L0" DataType="Boolean" />
+		</p.TypeReference>
+	</DataTypeReferenceTable>
+	<IconTable xmlns="http://www.ni.com/PlatformFramework">
+		<p.IconModel Target="வலை::தேதிமாற்றம்.gviweb">
+			<MergeScript>
+				<MergeItem Path="." IsPrimary="True">
+					<Icon ListViewIconCrop="0 0 40 40">
+						<IconPanel Height="[float]40" Left="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+							<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Left="[float]0" TemplateName="[string]Gray" Top="[float]0" Width="[float]40">
+								<Rectangle Fill="[SMSolidColorBrush]#ff727272" IsHitTestVisible="[bool]False" Left="[float]0" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+								<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+								<FileNameText Attached="[bool]True" Left="[float]0" Margin="[SMThickness]2,2,2,2" SizeMode="[TextModelSizeMode]AutoFont" Text="[string]தேதிமாற்றம்" TextAlignment="[TextAlignment]Center" TextWrapping="[TextWrapping]Wrap" Top="[float]0" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden">
+									<FontSetting FontFamily="Segoe UI" FontSize="6" />
+								</FileNameText>
+							</IconTemplate>
+							<IconTemplate Height="[float]40" IsHitTestVisible="[bool]False" Left="[float]0" TemplateName="[string][Comp]வலை.gcomp" Top="[float]0" Width="[float]40" />
+						</IconPanel>
+					</Icon>
+				</MergeItem>
+			</MergeScript>
+		</p.IconModel>
+		<p.IconModel Target="வலை::நேரமாற்றம்.gviweb">
+			<MergeScript>
+				<MergeItem Path="." IsPrimary="True">
+					<Icon ListViewIconCrop="0 0 40 40">
+						<IconPanel Height="[float]40" Left="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+							<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" HorizontalAlignment="[HorizontalAlignment]Stretch" Left="[float]0" TemplateName="[string]Gray" Top="[float]0" VerticalAlignment="[VerticalAlignment]Stretch" Width="[float]40">
+								<Rectangle Fill="[SMSolidColorBrush]#ff727272" IsHitTestVisible="[bool]False" Left="[float]0" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+								<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+								<FileNameText Attached="[bool]True" Left="[float]0" Margin="[SMThickness]2,2,2,2" SizeMode="[TextModelSizeMode]AutoFont" Text="[string]நேரமாற்றம்" TextAlignment="[TextAlignment]Center" TextWrapping="[TextWrapping]Wrap" Top="[float]0" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden">
+									<FontSetting FontFamily="Segoe UI" FontSize="6" />
+								</FileNameText>
+							</IconTemplate>
+							<IconTemplate Height="[float]40" IsHitTestVisible="[bool]False" Left="[float]0" TemplateName="[string][Comp]வலை.gcomp" Top="[float]0" Width="[float]40" />
+						</IconPanel>
+					</Icon>
+				</MergeItem>
+			</MergeScript>
+		</p.IconModel>
+		<p.IconModel Target="வலை::குறள்படி.gviweb">
+			<MergeScript>
+				<MergeItem Path="." IsPrimary="True">
+					<Icon ListViewIconCrop="0 0 40 40">
+						<IconPanel Height="[float]40" Left="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+							<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Left="[float]0" TemplateName="[string]Gray" Top="[float]0" Width="[float]40">
+								<Rectangle Fill="[SMSolidColorBrush]#ff727272" IsHitTestVisible="[bool]False" Left="[float]0" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+								<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+								<FileNameText Attached="[bool]True" Left="[float]0" Margin="[SMThickness]2,2,2,2" SizeMode="[TextModelSizeMode]AutoFont" Text="[string]குறள்படி" TextAlignment="[TextAlignment]Center" TextWrapping="[TextWrapping]Wrap" Top="[float]0" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden">
+									<FontSetting FontFamily="Segoe UI" FontSize="6" />
+								</FileNameText>
+							</IconTemplate>
+							<IconTemplate Height="[float]40" IsHitTestVisible="[bool]False" Left="[float]0" TemplateName="[string][Comp]வலை.gcomp" Top="[float]0" Width="[float]40" />
+						</IconPanel>
+					</Icon>
+				</MergeItem>
+			</MergeScript>
+		</p.IconModel>
+		<p.IconModel Target="வலை::குறள்தொடக்கம்.gviweb">
+			<MergeScript>
+				<MergeItem Path="." IsPrimary="True">
+					<Icon ListViewIconCrop="0 0 40 40">
+						<IconPanel Height="[float]40" Left="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+							<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Left="[float]0" TemplateName="[string]Gray" Top="[float]0" Width="[float]40">
+								<Rectangle Fill="[SMSolidColorBrush]#ff727272" IsHitTestVisible="[bool]False" Left="[float]0" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+								<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+								<FileNameText Attached="[bool]True" Left="[float]0" Margin="[SMThickness]2,2,2,2" SizeMode="[TextModelSizeMode]AutoFont" Text="[string]குறள்தொடக்கம்" TextAlignment="[TextAlignment]Center" TextWrapping="[TextWrapping]Wrap" Top="[float]0" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden">
+									<FontSetting FontFamily="Segoe UI" FontSize="6" />
+								</FileNameText>
+							</IconTemplate>
+							<IconTemplate Height="[float]40" IsHitTestVisible="[bool]False" Left="[float]0" TemplateName="[string][Comp]வலை.gcomp" Top="[float]0" Width="[float]40" />
+						</IconPanel>
+					</Icon>
+				</MergeItem>
+			</MergeScript>
+		</p.IconModel>
+	</IconTable>
+</SourceFile>

@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SourceFile Checksum="BE731B86ED9DD5CE895AEBA0A4A812143DB962970464F091952E64447D1CA57B3916C3BB3DA48E4347589BE52140D9C2D431F758B4A10548867131DA24C053AA" Timestamp="1D6540099E4E84D" xmlns="http://www.ni.com/PlatformFramework">
+	<SourceModelFeatureSet>
+		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="GComponentFeatureSet" Name="http://www.ni.com/GComponent.xsd" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="Web Module: WebVI" Name="http://www.ni.com/NationalInstruments.LabVIEW.HtmlVI" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
+		<ApplicationVersionInfo Build="8.1.0.50414" Name="LabVIEW NXG" Version="5.0.0" />
+	</SourceModelFeatureSet>
+	<ComponentDefinition AutoIncrementOnBuild="True" Company="தமிழ்" DefaultConfigurationName="Configuration1" Description="தமிழ் நாட்காட்டி" Id="1" Product="நேரம்" RootNamespaceId="c5bff0dc5bdd426db4e2eac53eef1017" UserVersion="1.2.0.74" xmlns="http://www.ni.com/GComponent.xsd">
+		<Icon Id="2" ListViewIconCrop="0 0 40 40" xmlns="http://www.ni.com/PlatformFramework">
+			<IconPanel Height="[float]40" Id="3" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+				<IconTemplate Height="[float]40" Id="4" Left="[float]0" TemplateName="[string]Blank" Top="[float]0" Width="[float]40" />
+			</IconPanel>
+		</Icon>
+		<CompilerSymbolTable Id="5" xmlns="http://www.ni.com/PlatformFramework" />
+		<ComponentConfiguration ComponentSubtypeIdentifier="WebApplication" Id="10" Name="Configuration1">
+			<CompilerSymbolTable Id="11" xmlns="http://www.ni.com/PlatformFramework" />
+			<WebApplicationOutputTypeProperties IconFileEnvoy="ea7359825d614cc9a478cccf525283d2" Id="12" xmlns="http://www.ni.com/NationalInstruments.LabVIEW.HtmlVI" />
+			<ComponentItemProperties AlwaysInclude="True" AssociatedEnvoyId="e7fca7f0317b478b8935e0878f546e26" Id="8b085d4a9c594791a29f173ad20a9a4c" TopLevel="True" />
+			<ComponentItemProperties AlwaysInclude="True" AssociatedEnvoyId="5080fda64659410dafcd35e75dc2202c" Id="ee21fe7babb347bdbb6f698b69f9bb12" TopLevel="True" />
+			<ComponentItemProperties AlwaysInclude="True" AssociatedEnvoyId="d2bc6b83fdd3473d8eda35c720f55ba3" Id="12e4b58e1ede414fbbd294bdc9a7073a" />
+			<ComponentItemProperties AlwaysInclude="True" AssociatedEnvoyId="b2c0626e349342508c3258fe3d7ae199" Id="c0a419d26c854d4e8f74771b0447d16c" />
+			<ComponentItemProperties AlwaysInclude="True" AssociatedEnvoyId="2c5ec197bcfb485f9bd188e3136d52f1" Id="2e1583de95544c99b1b32810452e6bc9" TopLevel="True" />
+			<ComponentItemProperties AlwaysInclude="True" AssociatedEnvoyId="74daae6cca304a0084ecaf76fe09c894" Id="ea5ba53964af4104b1ef295d9e225623" />
+			<ComponentItemProperties AlwaysInclude="True" AssociatedEnvoyId="ea7359825d614cc9a478cccf525283d2" Id="f3166b44e98548f7ab7240946ede3536" />
+			<ComponentItemProperties AlwaysInclude="True" AssociatedEnvoyId="d977e4752c0401892afff0e0749518f" Id="a95217ce95294bd291721b335e2ab794" />
+			<ComponentItemProperties AlwaysInclude="True" AssociatedEnvoyId="2461b788a12c4026b4902a187c6b756e" Id="326a4e8cc883409e8f76e0ccc945f48d" />
+		</ComponentConfiguration>
+	</ComponentDefinition>
+	<EnvoyManagerFile Id="6" xmlns="http://www.ni.com/PlatformFramework">
+		<EnvoyManagerRootEnvoy Id="7" ModelDefinitionType="EnvoyManagerRootEnvoy" Name="RootEnvoy" />
+		<EmbeddedDefinitionReference Id="8" ModelDefinitionType="{http://www.ni.com/GComponent.xsd}ComponentDefinitionEnvoyHierarchyRoot" Name="Global namespace">
+			<ComponentDefinitionEnvoyHierarchyRoot xmlns="http://www.ni.com/GComponent.xsd" />
+			<NameScopingEnvoy AutomaticallyResolveUp="True" Id="c5bff0dc5bdd426db4e2eac53eef1017" Name="வலை">
+				<SourceFileReference Id="e7fca7f0317b478b8935e0878f546e26" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="index.gviweb" OverridingModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.HTMLVirtualInstrument" StoragePath="index.gviweb" />
+				<SourceFileReference Id="5080fda64659410dafcd35e75dc2202c" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="எண்முறை.gviweb" OverridingModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.HTMLVirtualInstrument" StoragePath="எண்முறை.gviweb" />
+				<SourceFileReference Id="d2bc6b83fdd3473d8eda35c720f55ba3" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="நேரமாற்றம்.gviweb" OverridingModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.HTMLVirtualInstrument" StoragePath="நேரமாற்றம்.gviweb" />
+				<SourceFileReference Id="b2c0626e349342508c3258fe3d7ae199" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="தேதிமாற்றம்.gviweb" OverridingModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.HTMLVirtualInstrument" StoragePath="தேதிமாற்றம்.gviweb" />
+				<SourceFileReference Id="2c5ec197bcfb485f9bd188e3136d52f1" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="தகவல்.gviweb" OverridingModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.HTMLVirtualInstrument" StoragePath="தகவல்.gviweb" />
+				<SourceFileReference Id="74daae6cca304a0084ecaf76fe09c894" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="குறள்தொடக்கம்.gviweb" OverridingModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.HTMLVirtualInstrument" StoragePath="குறள்தொடக்கம்.gviweb" />
+				<FileReference Bindings=".ico" Id="ea7359825d614cc9a478cccf525283d2" ModelDefinitionType="{http://www.ni.com/PlatformFramework}ExternalFile" Name="கடிகாரம்.ico" StoragePath="கடிகாரம்.ico" />
+				<SourceFileReference Id="d977e4752c0401892afff0e0749518f" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="குறள்படி.gviweb" OverridingModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.HTMLVirtualInstrument" StoragePath="குறள்படி.gviweb" />
+				<SourceFileReference Id="2461b788a12c4026b4902a187c6b756e" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="குறளிசை.gviweb" OverridingModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.HTMLVirtualInstrument" StoragePath="குறளிசை.gviweb" />
+			</NameScopingEnvoy>
+		</EmbeddedDefinitionReference>
+		<NameScopingEnvoy Id="9" Name="வலை.gcomp" NameTracksFileName="True">
+			<ContentReference ContentIdentifier="10" Id="13" Name="Configuration1" OverridingModelDefinitionType="{http://www.ni.com/GComponent.xsd}ComponentConfiguration" />
+		</NameScopingEnvoy>
+	</EnvoyManagerFile>
+</SourceFile>
