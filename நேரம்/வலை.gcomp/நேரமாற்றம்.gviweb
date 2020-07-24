@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="23744B33591950E99A1EA143CE221283A5D694C49CE7F4832199C6A00B9091BE07003E49D6C6F9EDA4A82560F2C6C62F22DC57F8A13DD6C226CF5494A49AE655" Timestamp="1D63F7F5FE78044" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="DA851D5276EE7D524771425B1F236722B129582597ADD47569B3DD59FDC2B60098661F4F6B04C55AEFD8246F212F79F0C40FF7E038F2DCF822454C30DA405363" Timestamp="1D6616D28F29F29" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
 		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
@@ -179,8 +179,8 @@
 			<NodeLabel AttachedTo="6305806868cb4248992d4aefc4c76cc8" Bounds="1160 135 76 14" Id="527d301084854ef8ac6a9ddac3945eb0" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>சிறுபொழுது</p.Text>
 			</NodeLabel>
-			<CaseStructure Bounds="1140 290 111 90" DataType="@e7408ea99de140c287cc13ef235e34ca" Default="56e2c0acdc124b1eac1d65a2e0cb3765" Id="2e471c85aa62482f84c27b9747bcf0b4" Selected="f0940247588d46249956d4ad3a6ac92a" UserSelectorBounds="0 0 111.2 16.8">
-				<CaseStructure.Case Bounds="5 5 101 80" Id="d874c3b65e4746dca2b9832425b69394" Pattern="&quot;நிமிடம்&quot;">
+			<CaseStructure Bounds="1140 290 111 90" DataType="@84b5f84ee5fa45b4aee29a573daece1e" Default="56e2c0acdc124b1eac1d65a2e0cb3765" Id="2e471c85aa62482f84c27b9747bcf0b4" Selected="56e2c0acdc124b1eac1d65a2e0cb3765" UserSelectorBounds="0 0 111.2 16.8">
+				<CaseStructure.Case Bounds="5 5 101 80" Id="d874c3b65e4746dca2b9832425b69394" Pattern="&quot;நிமையம்&quot;">
 					<Wire Id="d2c68b87f0ea460aa614a452daa145ef" Joints="N(ddead12e298b4d3daf6eca6abf1aabf0:d874c3b65e4746dca2b9832425b69394)|(4,20) h(48) v(5) N(69f4b1d65fbd41ce9ba2fa70e067f5bd:d874c3b65e4746dca2b9832425b69394)|(97,25)" xmlns="http://www.ni.com/PlatformFramework" />
 				</CaseStructure.Case>
 				<CaseStructure.Case Bounds="5 5 101 80" Id="eb4b7c90eea544dbb2c66336a77ab201" Pattern="&quot;கணம்&quot;">
@@ -234,7 +234,7 @@
 			<Wire Id="d2f6dbf4d4a24b528746e32c9a842635" Joints="N(c05bd1dc83a14d2cb20ba43eaf8f4c7b:c3t0v)|(705.8,90) h(11) v(225) N(ddead12e298b4d3daf6eca6abf1aabf0:2e471c85aa62482f84c27b9747bcf0b4)|(1136,315)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Add Bounds="795 150 30 30" Id="2d34aac7d98f4ec6bb7b15a2d7a10002" Terminals="o=cacaaae484b4d39bb7ba7464555008b, c0t0v=b121833e04944e89224cc059c3f82ee, c1t0v=8d6d671ee4bd4372b4aee471b32ae467" />
 			<DataAccessor Bounds="705 365 40 15" DataItem="5627ef51bb9744e090bddcef67022f3f" Id="1c82fb6bde5a4513bc2d84ec2cd501aa" Label="b3c3a9395955412f840c2eaf4a2a5f71" xmlns="http://www.ni.com/MocCommon">
-				<Terminal DataType="@e7408ea99de140c287cc13ef235e34ca" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="@84b5f84ee5fa45b4aee29a573daece1e" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
 			</DataAccessor>
 			<NodeLabel AttachedTo="1c82fb6bde5a4513bc2d84ec2cd501aa" Bounds="618 365 82 14" Id="b3c3a9395955412f840c2eaf4a2a5f71" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>அடுத்த குறள்</p.Text>
@@ -293,7 +293,7 @@
 			<LED BaseName="[string]Square LED" FalseContent="[string]Off" Height="[float]24" Id="223260bd4dad4274acee251e164bb9b5" IsReadOnly="[bool]True" Label="[UIModel]666fa7a4fde84b438d024546e7a3ae6c" Left="[float]456" Shape="[LEDShape]Square" TabIndex="[int]4" Top="[float]310" TrueContent="[string]On" Value="{DataItemBinding Id=27f93e581f194a32aeed5a2f66fdc1a5}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 			<Label Height="[float]16" Id="666fa7a4fde84b438d024546e7a3ae6c" LabelOwner="[UIModel]223260bd4dad4274acee251e164bb9b5" Left="[float]456" Text="[string]அடுத்தது?" Top="[float]290" Width="[float]67" xmlns="http://www.ni.com/PanelCommon" />
 			<EnumSelector AllowUndefinedValueEntry="[bool]False" BaseName="[string]Enum" Height="[float]24" Id="aa91aa5c2660496eb675dd6dcd402110" InteractionMode="[SelectorInteractionModes]ArrowKeys, Keyboard, MouseClick, ScrollWheel, ButtonClicks" IsTypeAheadEnabled="[bool]True" Label="[UIModel]5a75b8b9bd524cf5bcb9765012b15343" Left="[float]100" TabIndex="[int]5" TextAlignment="[TextAlignment]Center" Top="[float]310" Value="{DataItemBinding Id=5627ef51bb9744e090bddcef67022f3f}" ValueType="[Type]UInt16" VisualMode="[SelectorVisualMode]RingStyle" Width="[float]136" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
-				<EnumSelectorInfo DisplayValue="[string]நிமிடம்" Value="[ushort]0" ValueType="[Type]UInt16" />
+				<EnumSelectorInfo DisplayValue="[string]நிமையம்" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[ushort]0" ValueType="[Type]UInt16" />
 				<EnumSelectorInfo DisplayValue="[string]கணம்" Value="[ushort]1" ValueType="[Type]UInt16" />
 				<EnumSelectorInfo DisplayValue="[string]நாழிகை" Value="[ushort]2" ValueType="[Type]UInt16" />
 				<EnumSelectorInfo DisplayValue="[string]பொழுது" Value="[ushort]3" ValueType="[Type]UInt16" />
@@ -332,7 +332,7 @@
 		<DataItem AdaptToDiagramType="True" CallDirection="Output" CallIndex="5" DataType="Boolean" Id="27f93e581f194a32aeed5a2f66fdc1a5" Name="அடுத்தது?" xmlns="http://www.ni.com/MocCommon">
 			<p.DefaultValue>False</p.DefaultValue>
 		</DataItem>
-		<DataItem AdaptToDiagramType="True" CallDirection="Input" CallIndex="2" CallUsage="Required" DataType="@e7408ea99de140c287cc13ef235e34ca" Id="5627ef51bb9744e090bddcef67022f3f" Name="அடுத்த குறள்" xmlns="http://www.ni.com/MocCommon">
+		<DataItem AdaptToDiagramType="True" CallDirection="Input" CallIndex="2" CallUsage="Required" DataType="@84b5f84ee5fa45b4aee29a573daece1e" Id="5627ef51bb9744e090bddcef67022f3f" Name="அடுத்த குறள்" xmlns="http://www.ni.com/MocCommon">
 			<p.DefaultValue>3</p.DefaultValue>
 		</DataItem>
 		<DataItem CallDirection="Output" CallIndex="0" DataType="@1a0a8480262d4ec793dadf151a4ba029" Id="989f7db0bc9a4013a2d79c1a3f2a269a" Name="கிழமை" xmlns="http://www.ni.com/MocCommon">
@@ -353,10 +353,10 @@
 				<DataType>UInt8</DataType>
 			</Enumeration>
 		</p.TypeReference>
-		<p.TypeReference TypeId="e7408ea99de140c287cc13ef235e34ca">
+		<p.TypeReference TypeId="84b5f84ee5fa45b4aee29a573daece1e">
 			<Enumeration>
 				<Members>
-					<EnumerationMember Value="0" Name="நிமிடம்" />
+					<EnumerationMember Value="0" Name="நிமையம்" />
 					<EnumerationMember Value="1" Name="கணம்" />
 					<EnumerationMember Value="2" Name="நாழிகை" />
 					<EnumerationMember Value="3" Name="பொழுது" />
