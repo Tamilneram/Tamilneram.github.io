@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="151F92AC24B2DB860D8A08E5C3E4AAD0CDAED094337ADEFF5093B2E8599A192F8B6D0CB3F65E2F970EE67EBD7AF2FE1665B99A2C75476534AA0F97A0D8D87C70" Timestamp="1D69EDDD705F4BC" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="D032F1B844373260292DFC73CFB77AA9AF7691ACC489582A3A40084F5C16D408843348298869FB144864908AEAB25302008F79410F6983AFAD64A23D77CA9EDF" Timestamp="1D69EE24303AAEB" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
 		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
@@ -600,10 +600,10 @@
 			<FlexibleLayoutGroup Height="[float]310" Id="53ebe62480494bd299204395e6587692" Left="[float]30" Top="[float]80" Width="[float]1940" xmlns="http://www.ni.com/PanelCommon">
 				<FlexibleLayoutWrapper FlexGrow="[double]1" Height="[float]310" Id="f02d7d92854a46529ea7ecc7c49a72d4" Left="[float]0" Top="[float]0" Width="[float]1940">
 					<FlexibleLayoutContainer Background="[SMSolidColorBrush]#00ffffff" BorderBrush="[SMSolidColorBrush]#ff0076a3" Height="[float]294" HorizontalContentAlignment="[FlexibleLayoutHorizontalContentAlignment]Center" Id="cfa1045615ba4ecba4322fafa7834e90" Left="[float]8" Top="[float]8" Width="[float]1924">
-						<FlexibleLayoutComponent Height="[float]262" Id="9996e6336322466f9d1ccdb626ead40d" Left="[float]514" Top="[float]6" Width="[float]256">
-							<TabControl BaseName="[string]Tab" ControlResizeMode="[ControlResizeMode]Fixed" Height="[float]236" Id="7e4681663ed44315838cb590210dd71d" IncludeInCapture="[bool]False" Label="[UIModel]131636cf483141a1a28d671543acbec0" Left="[float]0" MinHeight="[float]236" SelectedIndex="{DataItemBinding Id=8a076ec6436940d5bff78f206eaf3f2d}" TabIndex="[int]0" TabSelectorVisibility="[SMVisibility]Collapsed" Top="[float]26" Width="[float]256" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+						<FlexibleLayoutComponent Height="[float]279" Id="9996e6336322466f9d1ccdb626ead40d" Left="[float]514" Top="[float]6" Width="[float]256">
+							<TabControl BaseName="[string]Tab" ControlResizeMode="[ControlResizeMode]Fixed" Height="[float]253" Id="7e4681663ed44315838cb590210dd71d" IncludeInCapture="[bool]False" Label="[UIModel]131636cf483141a1a28d671543acbec0" Left="[float]0" MinHeight="[float]236" SelectedIndex="{DataItemBinding Id=8a076ec6436940d5bff78f206eaf3f2d}" TabIndex="[int]0" TabSelectorVisibility="[SMVisibility]Collapsed" Top="[float]26" Width="[float]256" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
 								<TabItem Header="[string]பொழுது : நாழிகை " Id="508b319e8f6e42be863c6737b90bb70f" Left="[float]0" TabIndex="[int]0" Top="[float]0">
-									<LayoutPanel Height="[float]234" Id="f80eb376ac544db9b5d41f5556612695" Left="[float]1" MinHeight="[float]234" Top="[float]1" Width="[float]254">
+									<LayoutPanel Height="[float]251" Id="f80eb376ac544db9b5d41f5556612695" Left="[float]1" MinHeight="[float]234" Top="[float]1" Width="[float]254">
 										<Label Height="[float]22" Id="d04bea6b1a25443e82977e1e3c25ba0d" LabelOwner="[UIModel]91643d1336ef4bc28b95bc2ad4485320" Left="[float]3" Text="[string]திருவள்ளுவர் ஆண்டு" Top="[float]4" Visible="[bool]False" Width="[float]187" xmlns="http://www.ni.com/PanelCommon">
 											<FontSetting FontFamily="Segoe UI" FontSize="12" Id="c95fb89787d400889ff6241ef412fc9" xmlns="http://www.ni.com/PlatformFramework" />
 										</Label>
@@ -622,7 +622,7 @@
 										<NumericText BaseName="[string]Numeric" Height="[float]28" Id="149bf075c2fd487cb05812d2136fa4ae" Interval="[ushort]1" IsReadOnly="[bool]True" Label="[UIModel]dad68d484b334802a797cc72e65455c7" Left="[float]188" RadixBase="[RadixBase]Decimal" TabIndex="[int]3" TextAlignment="[TextAlignment]Center" Top="[float]-1" Value="{DataItemBinding Id=e32c12be275c4131bef903c0a838c049}" ValueFormatter="[string]Decimal, Uppercase, Signed" ValueType="[Type]UInt16" Width="[float]66">
 											<FontSetting FontFamily="Segoe UI" FontSize="12" Id="6c3dd74feef14957a19b0384301e8ef4" xmlns="http://www.ni.com/PlatformFramework" />
 										</NumericText>
-										<Text BaseName="[string]Text" Height="[float]228" Id="cea9ce79724c464bb233c7820ba3f0b5" Left="[float]3" SizeMode="[TextModelSizeMode]Fixed" Text="[string]நா    " TextWrapping="[TextWrapping]Wrap" Top="[float]3" Width="[float]248" xmlns="http://www.ni.com/PlatformFramework">
+										<Text BaseName="[string]Text" Height="[float]248" Id="cea9ce79724c464bb233c7820ba3f0b5" Left="[float]3" SizeMode="[TextModelSizeMode]Fixed" Text="[string]நா    " TextWrapping="[TextWrapping]Wrap" Top="[float]3" Width="[float]248" xmlns="http://www.ni.com/PlatformFramework">
 											<FontSetting FontFamily="Segoe UI" FontSize="12" Id="ab3f7c05ac8a4c7e843efa7139cfd370" />
 										</Text>
 										<NumericText BaseName="[string]Numeric" Height="[float]28" Id="a1889dbfdce048a1b1911c1151079a9a" Interval="[uint]1" IsReadOnly="[bool]True" Label="[UIModel]c9e23cafe62e407186b020ba93283be9" Left="[float]-1" RadixBase="[RadixBase]Decimal" TabIndex="[int]0" TextAlignment="[TextAlignment]Center" Top="[float]-1" Value="{DataItemBinding Id=992cd524cf164985a070d1f29fcdb7fc}" ValueFormatter="[string]Decimal, Uppercase, Signed" ValueType="[Type]UInt32" Width="[float]66">
@@ -649,7 +649,7 @@
 								<FontSetting FontFamily="Segoe UI" FontSize="12" Id="c648c85cfeaf4f4d993cf39dc7787227" xmlns="http://www.ni.com/PlatformFramework" />
 							</Label>
 						</FlexibleLayoutComponent>
-						<FlexibleLayoutComponent Height="[float]282" Id="a1d13ecedb87411f8bfa917a824baf64" Left="[float]1042" Top="[float]6" Width="[float]256">
+						<FlexibleLayoutComponent Height="[float]282" Id="c787cca96a8f434ca1492acbeb9dbec4" Left="[float]1042" Top="[float]6" Width="[float]256">
 							<TabControl BaseName="[string]Tab" ControlResizeMode="[ControlResizeMode]Fixed" Height="[float]256" Id="f3d407f257604ffea37f9ed0c49a5d26" IncludeInCapture="[bool]False" Label="[UIModel]8b4cb9d6d59d42beb61ed6dfad78122b" Left="[float]0" MinHeight="[float]256" SelectedIndex="{DataItemBinding Id=b2d4701b1c024a5b9c91c6eecca9188b}" TabIndex="[int]0" TabSelectorVisibility="[SMVisibility]Collapsed" TabStripPlacement="[Dock]Top" Top="[float]26" Width="[float]256" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
 								<TabItem Header="[string]பொழுது : நாழிகை " Id="67498af8f3a342da975751f238629d78" Left="[float]0" TabIndex="[int]0" Top="[float]0">
 									<LayoutPanel Height="[float]254" Id="796f6b2c360c464284643b0608934734" Left="[float]1" MinHeight="[float]254" Top="[float]1" Width="[float]254">
@@ -659,7 +659,7 @@
 										<Label Height="[float]22" Id="f649ed6ff6814282ab45cdd4ac976581" LabelOwner="[UIModel]111a85d823a041b89f7c4839ee6b291d" Left="[float]2" Text="[string]மாதநாள்_2" Top="[float]-23" Visible="[bool]False" Width="[float]96" xmlns="http://www.ni.com/PanelCommon">
 											<FontSetting FontFamily="Segoe UI" FontSize="12" Id="40cb95a180be49f99c1d188a7e336c78" xmlns="http://www.ni.com/PlatformFramework" />
 										</Label>
-										<EnumSelector AllowUndefinedValueEntry="[bool]False" BaseName="[string]Enum" Height="[float]24" Id="b7839a480d974431869cf2d54375388e" InteractionMode="[SelectorInteractionModes]ReadOnly" IsTypeAheadEnabled="[bool]True" Label="[UIModel]734197fd0593497f852102a093fbf234" Left="[float]58" TabIndex="[int]1" TextAlignment="[TextAlignment]Center" Top="[float]115" Value="{DataItemBinding Id=93a6b6bbe5db4f0d9417cec1762498a1}" ValueType="[Type]UInt8" VisualMode="[SelectorVisualMode]RingStyle" Width="[float]136">
+										<EnumSelector AllowUndefinedValueEntry="[bool]False" BaseName="[string]Enum" Height="[float]24" Id="b7839a480d974431869cf2d54375388e" InteractionMode="[SelectorInteractionModes]ReadOnly" IsTypeAheadEnabled="[bool]True" Label="[UIModel]734197fd0593497f852102a093fbf234" Left="[float]58" TabIndex="[int]1" TextAlignment="[TextAlignment]Center" Top="[float]75" Value="{DataItemBinding Id=93a6b6bbe5db4f0d9417cec1762498a1}" ValueType="[Type]UInt8" VisualMode="[SelectorVisualMode]RingStyle" Width="[float]136">
 											<EnumSelectorInfo DisplayValue="[string]மார்கழி" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[byte]0" ValueType="[Type]UInt8" />
 											<EnumSelectorInfo DisplayValue="[string]தை" DisplayValueOverride="[string]" Id="26" IsEnabled="[bool]True" Value="[byte]1" ValueType="[Type]UInt8" />
 											<EnumSelectorInfo DisplayValue="[string]மாசி" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[byte]2" ValueType="[Type]UInt8" />
@@ -674,9 +674,12 @@
 											<EnumSelectorInfo DisplayValue="[string]கார்த்திகை" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[byte]11" ValueType="[Type]UInt8" />
 											<FontSetting FontFamily="Segoe UI" FontSize="12" Id="bb4c6fdfde6e4b06b15f89978457b5c4" xmlns="http://www.ni.com/PlatformFramework" />
 										</EnumSelector>
-										<Label Height="[float]22" Id="734197fd0593497f852102a093fbf234" LabelOwner="[UIModel]b7839a480d974431869cf2d54375388e" Left="[float]58" Text="[string]மாதம்" Top="[float]89" Visible="[bool]False" Width="[float]55" xmlns="http://www.ni.com/PanelCommon">
+										<Label Height="[float]22" Id="734197fd0593497f852102a093fbf234" LabelOwner="[UIModel]b7839a480d974431869cf2d54375388e" Left="[float]58" Text="[string]மாதம்" Top="[float]49" Visible="[bool]False" Width="[float]55" xmlns="http://www.ni.com/PanelCommon">
 											<FontSetting FontFamily="Segoe UI" FontSize="12" Id="108fa07b13a6415080c8feae19b0b550" xmlns="http://www.ni.com/PlatformFramework" />
 										</Label>
+										<Text BaseName="[string]Text" Height="[float]264" Id="91fc37c4ba74db1b38fe402f4472991" Left="[float]3" SizeMode="[TextModelSizeMode]Fixed" Text="[string]&#xD;&#xA;&#xD;&#xA;                     மாதம்&#xD;&#xA;" TextWrapping="[TextWrapping]Wrap" Top="[float]3" Width="[float]248" xmlns="http://www.ni.com/PlatformFramework">
+											<FontSetting FontFamily="Segoe UI" FontSize="12" Id="dfc93c3d25274c50b31306da424c075a" />
+										</Text>
 									</LayoutPanel>
 								</TabItem>
 								<FontSetting FontFamily="Segoe UI" FontSize="12" Id="18ef2dfd403349d3abfba2e1e195fd75" xmlns="http://www.ni.com/PlatformFramework" />
@@ -725,16 +728,16 @@
 										<Text BaseName="[string]Text" Height="[float]22" Id="1445ed97256443cb0248e46379738b1" Left="[float]3" SizeMode="[TextModelSizeMode]SizeToText" Text="[string]காலை" TextWrapping="[TextWrapping]Wrap" Top="[float]67" Width="[float]70" xmlns="http://www.ni.com/PlatformFramework">
 											<FontSetting FontFamily="Segoe UI" FontSize="12" Id="8bac3589d6764ae7953b01606ec39074" />
 										</Text>
-										<Text BaseName="[string]Text" Height="[float]22" Id="3c6ef3208ed244868513c4ccb2761c4f" Left="[float]80" SizeMode="[TextModelSizeMode]SizeToText" Text="[string]நண்பகல்" TextWrapping="[TextWrapping]Wrap" Top="[float]3" Width="[float]93" xmlns="http://www.ni.com/PlatformFramework">
+										<Text BaseName="[string]Text" Height="[float]248" Id="3c6ef3208ed244868513c4ccb2761c4f" Left="[float]3" SizeMode="[TextModelSizeMode]Fixed" Text="[string]                  நண்பகல்" TextWrapping="[TextWrapping]Wrap" Top="[float]3" Width="[float]248" xmlns="http://www.ni.com/PlatformFramework">
 											<FontSetting FontFamily="Segoe UI" FontSize="12" Id="1247fd52fcc74a78bd4e3ea66100acb4" />
 										</Text>
-										<Text BaseName="[string]Text" Height="[float]22" Id="6e11755358ce414aad16607e6ff6312f" Left="[float]174" SizeMode="[TextModelSizeMode]SizeToText" Text="[string]எற்பாடு" TextWrapping="[TextWrapping]Wrap" Top="[float]69" Width="[float]79" xmlns="http://www.ni.com/PlatformFramework">
+										<Text BaseName="[string]Text" Height="[float]22" Id="6e11755358ce414aad16607e6ff6312f" Left="[float]177" SizeMode="[TextModelSizeMode]Fixed" Text="[string]எற்பாடு" TextWrapping="[TextWrapping]Wrap" Top="[float]67" Width="[float]74" xmlns="http://www.ni.com/PlatformFramework">
 											<FontSetting FontFamily="Segoe UI" FontSize="12" Id="ff74df1a1d694b8396b2a42302260ad2" />
 										</Text>
-										<Text BaseName="[string]Text" Height="[float]22" Id="f3e976dd7f1a4b72bb5b0338d624d75c" Left="[float]177" SizeMode="[TextModelSizeMode]SizeToText" Text="[string]மாலை" TextWrapping="[TextWrapping]Wrap" Top="[float]170" Width="[float]71" xmlns="http://www.ni.com/PlatformFramework">
+										<Text BaseName="[string]Text" Height="[float]22" Id="f3e976dd7f1a4b72bb5b0338d624d75c" Left="[float]184" SizeMode="[TextModelSizeMode]Fixed" Text="[string]மாலை" TextWrapping="[TextWrapping]Wrap" Top="[float]170" Width="[float]68" xmlns="http://www.ni.com/PlatformFramework">
 											<FontSetting FontFamily="Segoe UI" FontSize="12" Id="badfb34941a54ef68d5af69c98e8148e" />
 										</Text>
-										<EnumSelector AllowUndefinedValueEntry="[bool]False" BaseName="[string]Enum" Height="[float]28" Id="e8d2ce4b3225412bab0f0371cf340f9e" InteractionMode="[SelectorInteractionModes]ReadOnly" IsTypeAheadEnabled="[bool]True" Label="[UIModel]edf54f9ae9974efab58982e87ba6a7c5" Left="[float]70" MinHeight="[float]24" MinWidth="[float]24" TabIndex="[int]0" TextAlignment="[TextAlignment]Center" Top="[float]113" Value="{DataItemBinding Id=9eadcb37aa654b059dfcdccf51ea0381}" ValueType="[Type]UInt8" VisualMode="[SelectorVisualMode]RingStyle" Width="[float]115">
+										<EnumSelector AllowUndefinedValueEntry="[bool]False" BaseName="[string]Enum" Height="[float]28" Id="e8d2ce4b3225412bab0f0371cf340f9e" InteractionMode="[SelectorInteractionModes]ReadOnly" IsTypeAheadEnabled="[bool]True" Label="[UIModel]edf54f9ae9974efab58982e87ba6a7c5" Left="[float]70" MinHeight="[float]24" MinWidth="[float]24" TabIndex="[int]0" TextAlignment="[TextAlignment]Center" Top="[float]127" Value="{DataItemBinding Id=9eadcb37aa654b059dfcdccf51ea0381}" ValueType="[Type]UInt8" VisualMode="[SelectorVisualMode]RingStyle" Width="[float]115">
 											<EnumSelectorInfo DisplayValue="[string]யாமம்" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[byte]0" ValueType="[Type]UInt8" />
 											<EnumSelectorInfo DisplayValue="[string]வைகறை" DisplayValueOverride="[string]" Id="26" IsEnabled="[bool]True" Value="[byte]1" ValueType="[Type]UInt8" />
 											<EnumSelectorInfo DisplayValue="[string]காலை" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[byte]2" ValueType="[Type]UInt8" />
@@ -743,7 +746,7 @@
 											<EnumSelectorInfo DisplayValue="[string]மாலை" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[byte]5" ValueType="[Type]UInt8" />
 											<FontSetting FontFamily="Segoe UI" FontSize="12" Id="ef4e5f81d6164914aca72edadba8394f" xmlns="http://www.ni.com/PlatformFramework" />
 										</EnumSelector>
-										<Label Height="[float]22" Id="edf54f9ae9974efab58982e87ba6a7c5" LabelOwner="[UIModel]e8d2ce4b3225412bab0f0371cf340f9e" Left="[float]70" Text="[string]பொழுது" Top="[float]87" Visible="[bool]False" Width="[float]76" xmlns="http://www.ni.com/PanelCommon">
+										<Label Height="[float]22" Id="edf54f9ae9974efab58982e87ba6a7c5" LabelAlignment="[PartAlignment]TopCenter" LabelOwner="[UIModel]e8d2ce4b3225412bab0f0371cf340f9e" Left="[float]90" Text="[string]பொழுது" Top="[float]101" Width="[float]76" xmlns="http://www.ni.com/PanelCommon">
 											<FontSetting FontFamily="Segoe UI" FontSize="12" Id="7712e67b34e0467fb29dbb3556c1dcae" xmlns="http://www.ni.com/PlatformFramework" />
 										</Label>
 									</LayoutPanel>
@@ -758,9 +761,6 @@
 							<TabControl BaseName="[string]Tab" ControlResizeMode="[ControlResizeMode]Fixed" Height="[float]256" Id="eeaf9991ffda4b44be3b6a23ed427e9e" IncludeInCapture="[bool]False" Label="[UIModel]59690b9ea9524bbfaa65f8939280b794" Left="[float]0" MinHeight="[float]256" SelectedIndex="{DataItemBinding Id=dcd53f6902fa4abab59c64d2bb394629}" TabIndex="[int]0" TabSelectorVisibility="[SMVisibility]Collapsed" TabStripPlacement="[Dock]Top" Top="[float]26" Width="[float]256" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
 								<TabItem Header="[string]பொழுது : நாழிகை " Id="e5b863b93cf3430e9d9aab1b0a4c5cda" Left="[float]0" TabIndex="[int]0" Top="[float]0">
 									<LayoutPanel Height="[float]254" Id="5ae62cc2e9064295af0f8eccc1826ce6" Left="[float]1" MinHeight="[float]254" Top="[float]1" Width="[float]254">
-										<Text BaseName="[string]Text" Height="[float]248" Id="a8336cf45c714d04a6c5db73a45313b9" Left="[float]3" SizeMode="[TextModelSizeMode]Fixed" Text="[string]நா    " TextWrapping="[TextWrapping]Wrap" Top="[float]3" Width="[float]248" xmlns="http://www.ni.com/PlatformFramework">
-											<FontSetting FontFamily="Segoe UI" FontSize="12" Id="7ca7104a3df44abdb82b9ddf0bdb4579" />
-										</Text>
 										<Label Height="[float]22" Id="9678c51c4fe54ace9b2587a15bb3cfcb" LabelAlignment="[PartAlignment]TopCenter" LabelOwner="[UIModel]5b69bd8cea11460fbe61497f6b9b3988" Left="[float]82" Text="[string]கணங்கள்" Top="[float]-23" Visible="[bool]False" Width="[float]90" xmlns="http://www.ni.com/PanelCommon">
 											<FontSetting FontFamily="Segoe UI" FontSize="12" Id="9c4ca6d1795442a0bf097ee9292824b6" xmlns="http://www.ni.com/PlatformFramework" />
 										</Label>
@@ -770,9 +770,12 @@
 										<Label Height="[float]22" Id="3c8cab89f9734c139f6cfb6976b0282d" LabelAlignment="[PartAlignment]TopCenter" LabelOwner="[UIModel]f2b38ace679f4e9291720ec57d5f7f8a" Left="[float]73" Text="[string]நாழிகைகள்" Top="[float]26" Visible="[bool]False" Width="[float]108" xmlns="http://www.ni.com/PanelCommon">
 											<FontSetting FontFamily="Segoe UI" FontSize="12" Id="1bc4d449c8e8486e8a3326f2fccd7a69" xmlns="http://www.ni.com/PlatformFramework" />
 										</Label>
-										<Gauge AnalogDisplayType="[AnalogDisplayType]Line" BaseName="[string]Gauge" DigitalDisplayPosition="[DigitalDisplayPosition]Center" DigitalDisplayVisible="[bool]False" Height="[float]150" Id="f2b38ace679f4e9291720ec57d5f7f8a" InteractionMode="[NumericPointerInteractionModes]EditRange" Interval="[byte]1" IsTabStop="[bool]True" Label="[UIModel]3c8cab89f9734c139f6cfb6976b0282d" LabelPresenter="[string]LV:0.0" Left="[float]52" MajorRangeDivisionsMode="[RangeDivisionsMode]Auto" MajorTickVisibility="[SMVisibility]Collapsed" MinHeight="[float]125" MinWidth="[float]125" MinorTickVisibility="[SMVisibility]Collapsed" RangeLabelsVisibility="[SMVisibility]Visible" ScaleArc="[ArcSweep]90,0" TabIndex="[int]1" Top="[float]52" Value="{DataItemBinding Id=24b6cbb359f24df4aafb2fe6bc1d9c31}" ValueType="[Type]UInt8" Width="[float]150">
+										<Gauge AnalogDisplayType="[AnalogDisplayType]Line" BaseName="[string]Gauge" DigitalDisplayPosition="[DigitalDisplayPosition]Center" DigitalDisplayVisible="[bool]False" Height="[float]150" Id="f2b38ace679f4e9291720ec57d5f7f8a" InteractionMode="[NumericPointerInteractionModes]EditRange" Interval="[byte]1" IsTabStop="[bool]True" Label="[UIModel]3c8cab89f9734c139f6cfb6976b0282d" LabelPresenter="[string]LV:0.0" Left="[float]52" MajorRangeDivisionsMode="[RangeDivisionsMode]Auto" MajorTickVisibility="[SMVisibility]Collapsed" MinHeight="[float]125" MinWidth="[float]125" MinorTickVisibility="[SMVisibility]Collapsed" RangeLabelsVisibility="[SMVisibility]Visible" ScaleArc="[ArcSweep]90,0" TabIndex="[int]2" Top="[float]52" Value="{DataItemBinding Id=24b6cbb359f24df4aafb2fe6bc1d9c31}" ValueType="[Type]UInt8" Width="[float]150">
 											<FontSetting FontFamily="Segoe UI" FontSize="12" Id="482d79ab145b8a6f4fa8e871c1938" xmlns="http://www.ni.com/PlatformFramework" />
 										</Gauge>
+										<Text BaseName="[string]Text" Height="[float]248" Id="a8336cf45c714d04a6c5db73a45313b9" Left="[float]3" SizeMode="[TextModelSizeMode]Fixed" Text="[string]நா    " TextWrapping="[TextWrapping]Wrap" Top="[float]3" Width="[float]248" xmlns="http://www.ni.com/PlatformFramework">
+											<FontSetting FontFamily="Segoe UI" FontSize="12" Id="7ca7104a3df44abdb82b9ddf0bdb4579" />
+										</Text>
 										<Label Height="[float]22" Id="2ac18313314a45769011d7887f4c2c6f" LabelOwner="[UIModel]eeede440d1094a0697825a0406b167ad" Left="[float]-1" Text="[string]நாழிகை" Top="[float]-27" Visible="[bool]False" Width="[float]77" xmlns="http://www.ni.com/PanelCommon">
 											<FontSetting FontFamily="Segoe UI" FontSize="12" Id="902f05eb6ade4868803a678a5d642f7d" xmlns="http://www.ni.com/PlatformFramework" />
 										</Label>
